@@ -458,7 +458,7 @@ select:focus { outline: none; border-color: var(--purple-mid); }
   <div class="header-meta">
     <div class="header-meta-item">
       <span class="header-meta-label">Período</span>
-      <span class="header-meta-value">YTD al 20 de Abril 2026</span>
+      <span class="header-meta-value">YTD al 23 de Abril 2026</span>
     </div>
   </div>
   <div class="header-badge">Uso Interno · Confidencial</div>
@@ -524,30 +524,19 @@ select:focus { outline: none; border-color: var(--purple-mid); }
 <!-- ═══════════ PAGE: RESUMEN ═══════════ -->
 <div class="page active" id="page-resumen">
 
-  <div class="section-label" style="margin-bottom:8px;font-size:9px;color:var(--text-light);letter-spacing:0.15em">SEMANA 17 · AL INICIO DE LA SEMANA</div>
+  <div class="section-label" style="margin-bottom:8px;font-size:9px;color:var(--text-light);letter-spacing:0.15em">SEMANA 17</div>
   <div class="kpi-row" style="grid-template-columns:repeat(3,1fr);margin-bottom:8px">
     <div class="kpi-card" style="border-top-color:var(--copper)">
       <div class="kpi-label" id="k-cajas-sem-label">CAJAS 9L · ABRIL 2026</div>
       <div class="kpi-value" id="k-cajas-sem">37,709</div>
-      <div class="kpi-badges">
-        <span class="badge red" id="k-cjsem-abs">— cj vs Ppto</span>
-        <span class="badge red" id="k-cjsem-pp">— vs Ppto</span>
-      </div>
     </div>
     <div class="kpi-card" style="border-top-color:var(--copper)">
       <div class="kpi-label" id="k-precio-sem-label">PRECIO PROM. · ABRIL 2026</div>
       <div class="kpi-value" id="k-precio-sem">$73.1</div>
-      <div class="kpi-badges">
-        <span class="badge yellow" id="k-pxsem-pp">▼ −7.0% vs Ppto</span>
-      </div>
     </div>
     <div class="kpi-card" style="border-top-color:var(--copper)">
       <div class="kpi-label" id="k-fob-mes-label">FOB USD · ABRIL 2026</div>
       <div class="kpi-value" id="k-fob-mes">$2,097,548</div>
-      <div class="kpi-badges">
-        <span class="badge red" id="k-mes-25">▼ −28.2% vs Abr 2025</span>
-        <span class="badge red" id="k-mes-pp">— vs Ppto</span>
-      </div>
     </div>
   </div>
   <div class="section-label" style="margin-bottom:8px;font-size:9px;color:var(--text-light);letter-spacing:0.15em">YTD ACUMULADO 2026</div>
@@ -584,7 +573,7 @@ select:focus { outline: none; border-color: var(--purple-mid); }
 
   <!-- RANGE CARDS -->
   <div class="kpi-label" style="margin:16px 0 6px;font-size:9px;letter-spacing:.12em;color:var(--text-light)">CAJAS 9L · YTD ACUMULADO 2026 · POR RANGE</div>
-  <div class="kpi-row" style="grid-template-columns:repeat(3,1fr);margin-bottom:16px" id="range-cards-row">
+  <div class="kpi-row" style="grid-template-columns:repeat(4,1fr);margin-bottom:16px" id="range-cards-row">
     <div class="kpi-card" style="border-top-color:#534AB7">
       <div class="kpi-label">ÍCONOS</div>
       <div class="kpi-value" id="rc-iconos-val">5,039</div>
@@ -601,12 +590,20 @@ select:focus { outline: none; border-color: var(--purple-mid); }
         <span class="badge" id="rc-alpha-b2">▼ −27.3% vs Ppto</span>
       </div>
     </div>
+    <div class="kpi-card" style="border-top-color:#C49A6C">
+      <div class="kpi-label">LIMITED SELECTION</div>
+      <div class="kpi-value" id="rc-limited-val">24,017</div>
+      <div class="kpi-badges">
+        <span class="badge" id="rc-limited-b1">▼ −3,228 cj</span>
+        <span class="badge" id="rc-limited-b2">▼ −11.8% vs Ppto</span>
+      </div>
+    </div>
     <div class="kpi-card" style="border-top-color:#888780">
       <div class="kpi-label">CLASSIC SERIES</div>
-      <div class="kpi-value" id="rc-classic-val">111,190</div>
+      <div class="kpi-value" id="rc-classic-val">86,094</div>
       <div class="kpi-badges">
-        <span class="badge" id="rc-classic-b1">▼ −16,048 cj</span>
-        <span class="badge" id="rc-classic-b2">▼ −12.6% vs Ppto</span>
+        <span class="badge" id="rc-classic-b1">▼ −11,951 cj</span>
+        <span class="badge" id="rc-classic-b2">▼ −12.2% vs Ppto</span>
       </div>
     </div>
   </div>
@@ -637,7 +634,7 @@ select:focus { outline: none; border-color: var(--purple-mid); }
 <div class="page" id="page-managers">
 
   <!-- IDEA 3: Line summary cards at top -->
-  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:14px" id="em-line-cards">
+  <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-bottom:14px" id="em-line-cards">
     <div style="background:var(--white);border:1px solid var(--border);border-radius:6px;padding:12px 14px">
       <div style="font-size:9px;text-transform:uppercase;letter-spacing:.1em;color:var(--text-light);margin-bottom:4px">Total</div>
       <div style="font-size:20px;font-weight:700;color:var(--purple)" id="lc-total-fob">—</div>
@@ -653,6 +650,11 @@ select:focus { outline: none; border-color: var(--purple-mid); }
       <div style="font-size:20px;font-weight:700;color:var(--purple)" id="lc-alpha-fob">—</div>
       <div style="font-size:11px;margin-top:3px" id="lc-alpha-sub">—</div>
     </div>
+    <div style="background:var(--white);border:1px solid var(--border);border-left:3px solid #C49A6C;border-radius:6px;padding:12px 14px">
+      <div style="font-size:9px;text-transform:uppercase;letter-spacing:.1em;color:#8B6636;margin-bottom:4px">Limited Selection</div>
+      <div style="font-size:20px;font-weight:700;color:var(--purple)" id="lc-limited-fob">—</div>
+      <div style="font-size:11px;margin-top:3px" id="lc-limited-sub">—</div>
+    </div>
     <div style="background:var(--white);border:1px solid var(--border);border-left:3px solid #888780;border-radius:6px;padding:12px 14px">
       <div style="font-size:9px;text-transform:uppercase;letter-spacing:.1em;color:#444441;margin-bottom:4px">Classic Series</div>
       <div style="font-size:20px;font-weight:700;color:var(--purple)" id="lc-otros-fob">—</div>
@@ -667,6 +669,7 @@ select:focus { outline: none; border-color: var(--purple-mid); }
       <span style="display:flex;gap:8px">
         <span style="display:flex;align-items:center;gap:3px;font-size:10px;color:var(--text-sec)"><span style="width:8px;height:8px;border-radius:2px;background:#534AB7;display:inline-block"></span>Íconos</span>
         <span style="display:flex;align-items:center;gap:3px;font-size:10px;color:var(--text-sec)"><span style="width:8px;height:8px;border-radius:2px;background:#0F6E56;display:inline-block"></span>Alpha</span>
+        <span style="display:flex;align-items:center;gap:3px;font-size:10px;color:var(--text-sec)"><span style="width:8px;height:8px;border-radius:2px;background:#C49A6C;display:inline-block"></span>Limited</span>
         <span style="display:flex;align-items:center;gap:3px;font-size:10px;color:var(--text-sec)"><span style="width:8px;height:8px;border-radius:2px;background:#888780;display:inline-block"></span>Classic</span>
       </span>
     </div>
@@ -879,250 +882,178 @@ select:focus { outline: none; border-color: var(--purple-mid); }
 <script>
 // ══════════════ MASTER DATA (validated against Excel TOTAL row) ══════════════
 const MARKETS_BY_LINE = [
-  {linea:"Iconos", mercado:"China", zona:"Asia", manager:"Jason Li", cc:"CN", fob_ytd:983652, cajas_ytd:1808, fob_abr:40054, cajas_abr:75, fob_ytd25:1369635, fob_ppto:915556, cajas_ppto:1674, precio_ytd:544.2, precio_ppto:546.93, dif_ppto:0.2309, dif_25:-0.2152},
-  {linea:"Iconos", mercado:"Korea", zona:"Asia", manager:"Juan Pablo Velasco", cc:"KR", fob_ytd:269674, cajas_ytd:607, fob_abr:69915, cajas_abr:132, fob_ytd25:97864, fob_ppto:126834, cajas_ppto:281, precio_ytd:444.3, precio_ppto:450.73, dif_ppto:-0.1993, dif_25:-0.1471},
-  {linea:"Iconos", mercado:"Canada", zona:"N. America", manager:"Isidora Rodriguez", cc:"CA", fob_ytd:217730, cajas_ytd:499, fob_abr:0, cajas_abr:0, fob_ytd25:109606, fob_ppto:168080, cajas_ppto:395, precio_ytd:436.3, precio_ppto:425.3, dif_ppto:-0.1712, dif_25:0.0125},
-  {linea:"Iconos", mercado:"Usa", zona:"N. America", manager:"Isidora Rodriguez", cc:"US", fob_ytd:114281, cajas_ytd:379, fob_abr:39225, cajas_abr:112, fob_ytd25:365896, fob_ppto:231901, cajas_ppto:514, precio_ytd:301.5, precio_ppto:450.99, dif_ppto:-0.1054, dif_25:-0.3442},
-  {linea:"Iconos", mercado:"Chile", zona:"Chile", manager:"Evelyn Ramirez", cc:"CL", fob_ytd:229872, cajas_ytd:337, fob_abr:61257, cajas_abr:106, fob_ytd25:228458, fob_ppto:302983, cajas_ppto:493, precio_ytd:682.7, precio_ppto:614.57, dif_ppto:-0.3516, dif_25:-0.2287},
-  {linea:"Iconos", mercado:"Malasia", zona:"Asia", manager:"Juan Yañez", cc:"MY", fob_ytd:167850, cajas_ytd:305, fob_abr:50998, cajas_abr:87, fob_ytd25:0, fob_ppto:68536, cajas_ppto:119, precio_ytd:551.2, precio_ppto:574.01, dif_ppto:0.3121, dif_25:0.0},
-  {linea:"Iconos", mercado:"Japón", zona:"Asia", manager:"Eduardo Stark", cc:"JP", fob_ytd:84773, cajas_ytd:166, fob_abr:16992, cajas_abr:30, fob_ytd25:22274, fob_ppto:49453, cajas_ppto:108, precio_ytd:511.5, precio_ppto:457.05, dif_ppto:-0.1435, dif_25:-0.1626},
-  {linea:"Iconos", mercado:"Tailandia", zona:"Asia", manager:"Juan Yañez", cc:"TH", fob_ytd:59910, cajas_ytd:110, fob_abr:0, cajas_abr:0, fob_ytd25:18187, fob_ppto:47886, cajas_ppto:107, precio_ytd:544.6, precio_ppto:448.37, dif_ppto:-0.548, dif_25:-0.4},
-  {linea:"Iconos", mercado:"Costa Rica", zona:"C. America", manager:"Patricia Osenga", cc:"CR", fob_ytd:37370, cajas_ytd:82, fob_abr:9320, cajas_abr:20, fob_ytd25:6299, fob_ppto:25724, cajas_ppto:53, precio_ytd:455.7, precio_ppto:484.45, dif_ppto:-0.1322, dif_25:0.026},
-  {linea:"Iconos", mercado:"Brasil", zona:"S. America", manager:"Daniela Rojas", cc:"BR", fob_ytd:43767, cajas_ytd:75, fob_abr:43767, cajas_abr:75, fob_ytd25:162937, fob_ppto:123268, cajas_ppto:203, precio_ytd:583.6, precio_ppto:607.23, dif_ppto:-0.5491, dif_25:-0.2116},
-  {linea:"Iconos", mercado:"Alemania", zona:"Europa", manager:"Eduardo Stark", cc:"DE", fob_ytd:30823, cajas_ytd:66, fob_abr:0, cajas_abr:0, fob_ytd25:93029, fob_ppto:70558, cajas_ppto:153, precio_ytd:463.5, precio_ppto:462.37, dif_ppto:-0.346, dif_25:-0.3345},
-  {linea:"Iconos", mercado:"Vietnam", zona:"Asia", manager:"Juan Yañez", cc:"VN", fob_ytd:34497, cajas_ytd:62, fob_abr:27817, cajas_abr:50, fob_ytd25:86032, fob_ppto:71215, cajas_ppto:135, precio_ytd:551.9, precio_ppto:527.13, dif_ppto:-0.0438, dif_25:0.1948},
-  {linea:"Iconos", mercado:"Taiwan", zona:"Asia", manager:"Juan Yañez", cc:"TW", fob_ytd:14625, cajas_ytd:58, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:69021, cajas_ppto:144, precio_ytd:250.0, precio_ppto:478.65, dif_ppto:0.1227, dif_25:-0.0609},
-  {linea:"Iconos", mercado:"Inglaterra", zona:"Europa", manager:"Eduardo Stark", cc:"GB", fob_ytd:25708, cajas_ytd:55, fob_abr:0, cajas_abr:0, fob_ytd25:43829, fob_ppto:66373, cajas_ppto:144, precio_ytd:467.4, precio_ppto:460.28, dif_ppto:-0.4609, dif_25:-0.5104},
-  {linea:"Iconos", mercado:"Hong Kong", zona:"Asia", manager:"Juan Yañez", cc:"HK", fob_ytd:26483, cajas_ytd:50, fob_abr:0, cajas_abr:0, fob_ytd25:44873, fob_ppto:31593, cajas_ppto:64, precio_ytd:529.7, precio_ppto:492.87, dif_ppto:-0.3135, dif_25:-0.4254},
-  {linea:"Iconos", mercado:"Emiratos Arabes", zona:"Medio Oriente", manager:"Juan Pablo Velasco", cc:"AE", fob_ytd:24061, cajas_ytd:48, fob_abr:0, cajas_abr:0, fob_ytd25:18585, fob_ppto:27702, cajas_ppto:55, precio_ytd:506.6, precio_ppto:500.94, dif_ppto:-0.7023, dif_25:-0.5785},
-  {linea:"Iconos", mercado:"Holanda", zona:"Europa", manager:"Eduardo Stark", cc:"NL", fob_ytd:26085, cajas_ytd:46, fob_abr:0, cajas_abr:0, fob_ytd25:42268, fob_ppto:82817, cajas_ppto:166, precio_ytd:567.1, precio_ppto:498.9, dif_ppto:-0.4002, dif_25:-0.2171},
-  {linea:"Iconos", mercado:"Singapur", zona:"Asia", manager:"Juan Yañez", cc:"SG", fob_ytd:21203, cajas_ytd:45, fob_abr:7844, cajas_abr:20, fob_ytd25:8839, fob_ppto:21569, cajas_ppto:47, precio_ytd:471.2, precio_ppto:462.86, dif_ppto:-0.1406, dif_25:-0.0167},
-  {linea:"Iconos", mercado:"México", zona:"C. America", manager:"Daniela Rojas", cc:"MX", fob_ytd:18690, cajas_ytd:35, fob_abr:0, cajas_abr:0, fob_ytd25:18690, fob_ppto:33638, cajas_ppto:63, precio_ytd:534.0, precio_ppto:533.93, dif_ppto:-0.5549, dif_25:-0.3967},
-  {linea:"Iconos", mercado:"Malvinas", zona:"S. America", manager:"Daniela Rojas", cc:"FK", fob_ytd:13312, cajas_ytd:31, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:14073, cajas_ppto:26, precio_ytd:429.4, precio_ppto:533.06, dif_ppto:1.4362, dif_25:0.0},
-  {linea:"Iconos", mercado:"Hungria", zona:"Europa", manager:"Juan Pablo Velasco", cc:"HU", fob_ytd:14924, cajas_ytd:30, fob_abr:0, cajas_abr:0, fob_ytd25:7370, fob_ppto:3947, cajas_ppto:9, precio_ytd:497.5, precio_ppto:433.75, dif_ppto:-0.0371, dif_25:-0.5264},
-  {linea:"Iconos", mercado:"Serbia", zona:"Europa", manager:"Juan Pablo Velasco", cc:"RS", fob_ytd:19640, cajas_ytd:29, fob_abr:19640, cajas_abr:29, fob_ytd25:0, fob_ppto:11862, cajas_ppto:25, precio_ytd:677.2, precio_ppto:478.33, dif_ppto:0.4912, dif_25:0.0},
-  {linea:"Iconos", mercado:"Cambodia", zona:"Asia", manager:"Juan Yañez", cc:"KH", fob_ytd:10315, cajas_ytd:19, fob_abr:0, cajas_abr:0, fob_ytd25:4645, fob_ppto:14695, cajas_ppto:28, precio_ytd:533.5, precio_ppto:528.59, dif_ppto:0.0965, dif_25:0.1548},
-  {linea:"Iconos", mercado:"Cruceros", zona:"Caribe", manager:"Patricia Osenga", cc:"", fob_ytd:12877, cajas_ytd:18, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:0, cajas_ppto:0, precio_ytd:715.4, precio_ppto:0.0, dif_ppto:0.0, dif_25:0.0},
-  {linea:"Iconos", mercado:"Perú", zona:"S. America", manager:"Daniela Rojas", cc:"PE", fob_ytd:11465, cajas_ytd:17, fob_abr:11465, cajas_abr:17, fob_ytd25:0, fob_ppto:33124, cajas_ppto:54, precio_ytd:674.4, precio_ppto:619.14, dif_ppto:-0.4357, dif_25:0.0},
-  {linea:"Iconos", mercado:"Rep Dominicana", zona:"Caribe", manager:"Patricia Osenga", cc:"DO", fob_ytd:5073, cajas_ytd:10, fob_abr:0, cajas_abr:0, fob_ytd25:5340, fob_ppto:3503, cajas_ppto:6, precio_ytd:534.0, precio_ppto:538.94, dif_ppto:0.4689, dif_25:-0.1542},
-  {linea:"Iconos", mercado:"Uruguay", zona:"S. America", manager:"Daniela Rojas", cc:"UY", fob_ytd:7554, cajas_ytd:8, fob_abr:0, cajas_abr:0, fob_ytd25:14113, fob_ppto:13176, cajas_ppto:23, precio_ytd:888.7, precio_ppto:565.49, dif_ppto:0.1896, dif_25:-0.4791},
-  {linea:"Iconos", mercado:"St. Maarten", zona:"Caribe", manager:"Patricia Osenga", cc:"SX", fob_ytd:3734, cajas_ytd:7, fob_abr:0, cajas_abr:0, fob_ytd25:9334, fob_ppto:3150, cajas_ppto:6, precio_ytd:533.4, precio_ppto:543.1, dif_ppto:1.3947, dif_25:-0.2},
-  {linea:"Iconos", mercado:"Honduras", zona:"C. America", manager:"Patricia Osenga", cc:"HN", fob_ytd:2667, cajas_ytd:5, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:0, cajas_ppto:0, precio_ytd:533.4, precio_ppto:0.0, dif_ppto:3.5363, dif_25:0.0},
-  {linea:"Iconos", mercado:"Islas Cayman", zona:"Caribe", manager:"Patricia Osenga", cc:"KY", fob_ytd:2670, cajas_ytd:5, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:0, cajas_ppto:0, precio_ytd:534.0, precio_ppto:0.0, dif_ppto:0.0, dif_25:0.0},
-  {linea:"Iconos", mercado:"Finlandia", zona:"Europa", manager:"Isidora Rodriguez", cc:"FI", fob_ytd:2601, cajas_ytd:5, fob_abr:2601, cajas_abr:5, fob_ytd25:0, fob_ppto:8935, cajas_ppto:18, precio_ytd:520.2, precio_ppto:493.64, dif_ppto:-0.1474, dif_25:-0.3632},
-  {linea:"Iconos", mercado:"Luxemburgo", zona:"Europa", manager:"Juan Pablo Velasco", cc:"LU", fob_ytd:2311, cajas_ytd:5, fob_abr:0, cajas_abr:0, fob_ytd25:3889, fob_ppto:3341, cajas_ppto:8, precio_ytd:462.3, precio_ppto:417.62, dif_ppto:0.2061, dif_25:1.7273},
-  {linea:"Iconos", mercado:"Jamaica", zona:"Caribe", manager:"Patricia Osenga", cc:"JM", fob_ytd:1867, cajas_ytd:4, fob_abr:1867, cajas_abr:4, fob_ytd25:0, fob_ppto:1226, cajas_ppto:2, precio_ytd:533.4, precio_ppto:533.13, dif_ppto:2.7454, dif_25:0.0},
-  {linea:"Iconos", mercado:"Ucrania", zona:"Europa", manager:"Isidora Rodriguez", cc:"UA", fob_ytd:3274, cajas_ytd:4, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:6237, cajas_ppto:11, precio_ytd:935.5, precio_ppto:551.91, dif_ppto:0.1681, dif_25:0.0},
-  {linea:"Iconos", mercado:"Barbados", zona:"Caribe", manager:"Patricia Osenga", cc:"BB", fob_ytd:1335, cajas_ytd:2, fob_abr:1335, cajas_abr:2, fob_ytd25:0, fob_ppto:0, cajas_ppto:0, precio_ytd:534.0, precio_ppto:0.0, dif_ppto:0.7974, dif_25:0.0},
-  {linea:"Iconos", mercado:"Islas Virgen", zona:"Caribe", manager:"Patricia Osenga", cc:"VI", fob_ytd:1334, cajas_ytd:2, fob_abr:0, cajas_abr:0, fob_ytd25:2604, fob_ppto:3417, cajas_ppto:7, precio_ytd:533.4, precio_ppto:502.54, dif_ppto:-0.241, dif_25:0.0668},
-  {linea:"Iconos", mercado:"Eslovaquia", zona:"Europa", manager:"Juan Pablo Velasco", cc:"SK", fob_ytd:1088, cajas_ytd:2, fob_abr:0, cajas_abr:0, fob_ytd25:2406, fob_ppto:843, cajas_ppto:2, precio_ytd:543.8, precio_ppto:526.81, dif_ppto:0.2642, dif_25:0.0698},
-  {linea:"Iconos", mercado:"Jordania", zona:"Medio Oriente", manager:"Juan Pablo Velasco", cc:"JO", fob_ytd:786, cajas_ytd:2, fob_abr:0, cajas_abr:0, fob_ytd25:3145, fob_ppto:1315, cajas_ppto:3, precio_ytd:524.2, precio_ppto:505.92, dif_ppto:1.7431, dif_25:10.8125},
-  {linea:"Iconos", mercado:"Guatemala", zona:"C. America", manager:"Patricia Osenga", cc:"GT", fob_ytd:533, cajas_ytd:1, fob_abr:533, cajas_abr:1, fob_ytd25:4239, fob_ppto:9309, cajas_ppto:19, precio_ytd:533.4, precio_ppto:500.46, dif_ppto:-0.4081, dif_25:-0.3536},
-  {linea:"Iconos", mercado:"Republic Of Maldives", zona:"Asia", manager:"Isidora Rodriguez", cc:"MV", fob_ytd:533, cajas_ytd:1, fob_abr:0, cajas_abr:0, fob_ytd25:4000, fob_ppto:175, cajas_ppto:0, precio_ytd:533.4, precio_ppto:437.5, dif_ppto:2.0615, dif_25:0.5382},
-  {linea:"Iconos", mercado:"Tahiti", zona:"Oceania", manager:"Patricia Osenga", cc:"PF", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:2697, cajas_ppto:5, precio_ytd:0.0, precio_ppto:561.88, dif_ppto:0.7007, dif_25:0.4428},
-  {linea:"Iconos", mercado:"Bermuda", zona:"Caribe", manager:"Patricia Osenga", cc:"BM", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:2529, cajas_ppto:6, precio_ytd:0.0, precio_ppto:421.43, dif_ppto:-1.0, dif_25:0.0},
-  {linea:"Iconos", mercado:"Belize", zona:"Caribe", manager:"Patricia Osenga", cc:"BZ", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:667, cajas_ppto:1, precio_ytd:0.0, precio_ppto:476.14, dif_ppto:-1.0, dif_25:0.0},
-  {linea:"Iconos", mercado:"Panamá", zona:"C. America", manager:"Patricia Osenga", cc:"PA", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:13335, fob_ppto:8758, cajas_ppto:16, precio_ytd:0.0, precio_ppto:543.95, dif_ppto:0.2136, dif_25:0.0},
-  {linea:"Iconos", mercado:"Puerto Rico", zona:"Caribe", manager:"Daniela Rojas", cc:"PR", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:38430, fob_ppto:17615, cajas_ppto:30, precio_ytd:0.0, precio_ppto:581.36, dif_ppto:-0.4184, dif_25:-0.6568},
-  {linea:"Iconos", mercado:"St. Lucia", zona:"Caribe", manager:"Patricia Osenga", cc:"LC", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:667, cajas_ppto:1, precio_ytd:0.0, precio_ppto:476.14, dif_ppto:-1.0, dif_25:0.0},
-  {linea:"Iconos", mercado:"Trinidad & Tobago", zona:"Caribe", manager:"Patricia Osenga", cc:"TT", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:7812, fob_ppto:3241, cajas_ppto:6, precio_ytd:0.0, precio_ppto:531.38, dif_ppto:-1.0, dif_25:-1.0},
-  {linea:"Iconos", mercado:"Anguilla", zona:"Caribe", manager:"Patricia Osenga", cc:"AI", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:2286, fob_ppto:1167, cajas_ppto:2, precio_ytd:0.0, precio_ppto:507.22, dif_ppto:-1.0, dif_25:-1.0},
-  {linea:"Iconos", mercado:"Islas Caicos", zona:"Caribe", manager:"Patricia Osenga", cc:"TC", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:4115, fob_ppto:2127, cajas_ppto:4, precio_ytd:0.0, precio_ppto:518.88, dif_ppto:-1.0, dif_25:-1.0},
-  {linea:"Iconos", mercado:"St. Kitts And Nevis", zona:"Caribe", manager:"Patricia Osenga", cc:"KN", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:1400, cajas_ppto:3, precio_ytd:0.0, precio_ppto:518.41, dif_ppto:-1.0, dif_25:0.0},
-  {linea:"Iconos", mercado:"Argentina", zona:"S. America", manager:"Daniela Rojas", cc:"AR", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:10914, cajas_ppto:25, precio_ytd:0.0, precio_ppto:433.11, dif_ppto:-1.0, dif_25:0.0},
-  {linea:"Iconos", mercado:"Bolivia", zona:"S. America", manager:"Daniela Rojas", cc:"BO", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:6867, cajas_ppto:12, precio_ytd:0.0, precio_ppto:577.03, dif_ppto:-1.0, dif_25:0.0},
-  {linea:"Iconos", mercado:"Brasil (JPV)", zona:"S. America", manager:"Juan Pablo Velasco", cc:"BR", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:12002, fob_ppto:20624, cajas_ppto:38, precio_ytd:0.0, precio_ppto:541.32, dif_ppto:-1.0, dif_25:-1.0},
-  {linea:"Iconos", mercado:"Colombia", zona:"S. America", manager:"Daniela Rojas", cc:"CO", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:27428, fob_ppto:27013, cajas_ppto:46, precio_ytd:0.0, precio_ppto:580.92, dif_ppto:-1.0, dif_25:-1.0},
-  {linea:"Iconos", mercado:"Ecuador", zona:"S. America", manager:"Daniela Rojas", cc:"EC", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:8890, fob_ppto:6786, cajas_ppto:10, precio_ytd:0.0, precio_ppto:652.49, dif_ppto:-1.0, dif_25:-1.0},
-  {linea:"Iconos", mercado:"Guyana", zona:"S. America", manager:"Daniela Rojas", cc:"", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:9216, cajas_ppto:18, precio_ytd:0.0, precio_ppto:520.66, dif_ppto:-1.0, dif_25:0.0},
-  {linea:"Iconos", mercado:"Paraguay", zona:"S. America", manager:"Daniela Rojas", cc:"", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:11766, cajas_ppto:22, precio_ytd:0.0, precio_ppto:522.91, dif_ppto:-1.0, dif_25:-1.0},
-  {linea:"Iconos", mercado:"Venezuela", zona:"S. America", manager:"Daniela Rojas", cc:"", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:4873, cajas_ppto:10, precio_ytd:0.0, precio_ppto:507.57, dif_ppto:-1.0, dif_25:0.0},
-  {linea:"Iconos", mercado:"Aruba", zona:"Caribe", manager:"Patricia Osenga", cc:"AW", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:4000, fob_ppto:2126, cajas_ppto:4, precio_ytd:0.0, precio_ppto:518.54, dif_ppto:-1.0, dif_25:-1.0},
-  {linea:"Iconos", mercado:"Curacao", zona:"Caribe", manager:"Patricia Osenga", cc:"CW", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:1429, cajas_ppto:2, precio_ytd:0.0, precio_ppto:571.6, dif_ppto:0.0126, dif_25:0.0},
-  {linea:"Iconos", mercado:"Bulgaria", zona:"Europa", manager:"Juan Pablo Velasco", cc:"", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:354, cajas_ppto:1, precio_ytd:0.0, precio_ppto:442.88, dif_ppto:-1.0, dif_25:0.0},
-  {linea:"Iconos", mercado:"Croacia", zona:"Europa", manager:"Juan Pablo Velasco", cc:"", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:5953, cajas_ppto:11, precio_ytd:0.0, precio_ppto:522.18, dif_ppto:-1.0, dif_25:0.0},
-  {linea:"Iconos", mercado:"Francia", zona:"Europa", manager:"Sin Responsable", cc:"", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:66912, cajas_ppto:49, precio_ytd:0.0, precio_ppto:1360.0, dif_ppto:-1.0, dif_25:0.0},
-  {linea:"Iconos", mercado:"Islandia", zona:"Europa", manager:"Isidora Rodriguez", cc:"", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:1983, cajas_ppto:4, precio_ytd:0.0, precio_ppto:483.73, dif_ppto:-1.0, dif_25:-1.0},
-  {linea:"Iconos", mercado:"Letonia", zona:"Europa", manager:"Isidora Rodriguez", cc:"", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:1933, cajas_ppto:4, precio_ytd:0.0, precio_ppto:508.66, dif_ppto:-1.0, dif_25:0.0},
-  {linea:"Iconos", mercado:"Malta", zona:"Europa", manager:"Juan Pablo Velasco", cc:"", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:455, fob_ppto:1147, cajas_ppto:2, precio_ytd:0.0, precio_ppto:498.7, dif_ppto:-1.0, dif_25:-1.0},
-  {linea:"Iconos", mercado:"Polonia", zona:"Europa", manager:"Juan Pablo Velasco", cc:"PL", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:4723, cajas_ppto:10, precio_ytd:0.0, precio_ppto:477.09, dif_ppto:0.7024, dif_25:1.5556},
-  {linea:"Iconos", mercado:"Suiza", zona:"Europa", manager:"Eduardo Stark", cc:"CH", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:26514, cajas_ppto:49, precio_ytd:0.0, precio_ppto:538.91, dif_ppto:-1.0, dif_25:-1.0},
-  {linea:"Iconos", mercado:"Kenia", zona:"Africa", manager:"Juan Pablo Velasco", cc:"", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:5155, cajas_ppto:10, precio_ytd:0.0, precio_ppto:500.51, dif_ppto:-1.0, dif_25:0.0},
-  {linea:"Iconos", mercado:"Chipre", zona:"Europa", manager:"Juan Pablo Velasco", cc:"CY", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:16140, fob_ppto:16944, cajas_ppto:39, precio_ytd:0.0, precio_ppto:431.13, dif_ppto:0.2892, dif_25:-0.0575},
-  {linea:"Iconos", mercado:"Filipinas", zona:"Asia", manager:"Juan Yañez", cc:"", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:32555, cajas_ppto:82, precio_ytd:0.0, precio_ppto:395.08, dif_ppto:-1.0, dif_25:0.0},
-  {linea:"Iconos", mercado:"Indonesia", zona:"Asia", manager:"Juan Yañez", cc:"", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:18863, cajas_ppto:37, precio_ytd:0.0, precio_ppto:508.44, dif_ppto:-1.0, dif_25:-1.0},
-  {linea:"Iconos", mercado:"Laos", zona:"Asia", manager:"Juan Yañez", cc:"", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:9929, cajas_ppto:18, precio_ytd:0.0, precio_ppto:567.37, dif_ppto:-1.0, dif_25:-1.0},
-  {linea:"Iconos", mercado:"Myanmar", zona:"Asia", manager:"Juan Yañez", cc:"", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:522, fob_ppto:342, cajas_ppto:1, precio_ytd:0.0, precio_ppto:428.0, dif_ppto:-1.0, dif_25:-1.0},
-  {linea:"Iconos", mercado:"Australia", zona:"Oceania", manager:"Sin Responsable", cc:"", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:66933, cajas_ppto:132, precio_ytd:0.0, precio_ppto:508.61, dif_ppto:-1.0, dif_25:0.0},
-  {linea:"Iconos", mercado:"Islas Cook", zona:"Oceania", manager:"Patricia Osenga", cc:"", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:2102, cajas_ppto:4, precio_ytd:0.0, precio_ppto:512.59, dif_ppto:-1.0, dif_25:0.0},
-  {linea:"Iconos", mercado:"Nueva Zelanda", zona:"Oceania", manager:"Patricia Osenga", cc:"NZ", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:1031, cajas_ppto:2, precio_ytd:0.0, precio_ppto:491.05, dif_ppto:0.3575, dif_25:0.0},
-  {linea:"Montes Alpha", mercado:"Korea", zona:"Asia", manager:"Juan Pablo Velasco", cc:"KR", fob_ytd:716702, cajas_ytd:7858, fob_abr:186998, cajas_abr:2100, fob_ytd25:755156, fob_ppto:939992, cajas_ppto:10183, precio_ytd:91.2, precio_ppto:92.31, dif_ppto:-0.1993, dif_25:-0.1471},
-  {linea:"Montes Alpha", mercado:"Chile", zona:"Chile", manager:"Evelyn Ramirez", cc:"CL", fob_ytd:611702, cajas_ytd:7423, fob_abr:151506, cajas_abr:1926, fob_ytd25:604772, fob_ppto:768134, cajas_ppto:10057, precio_ytd:82.4, precio_ppto:76.38, dif_ppto:-0.3516, dif_25:-0.2287},
-  {linea:"Montes Alpha", mercado:"China", zona:"Asia", manager:"Jason Li", cc:"CN", fob_ytd:579004, cajas_ytd:5315, fob_abr:160995, cajas_abr:1450, fob_ytd25:510580, fob_ppto:367300, cajas_ppto:3250, precio_ytd:108.9, precio_ppto:113.03, dif_ppto:0.2309, dif_25:-0.2152},
-  {linea:"Montes Alpha", mercado:"Japón", zona:"Asia", manager:"Eduardo Stark", cc:"JP", fob_ytd:544511, cajas_ytd:5122, fob_abr:96531, cajas_abr:890, fob_ytd25:518645, fob_ppto:698868, cajas_ppto:6304, precio_ytd:106.3, precio_ppto:110.86, dif_ppto:-0.1435, dif_25:-0.1626},
-  {linea:"Montes Alpha", mercado:"Alemania", zona:"Europa", manager:"Eduardo Stark", cc:"DE", fob_ytd:223518, cajas_ytd:2410, fob_abr:0, cajas_abr:0, fob_ytd25:192938, fob_ppto:290588, cajas_ppto:3143, precio_ytd:92.7, precio_ppto:92.45, dif_ppto:-0.346, dif_25:-0.3345},
-  {linea:"Montes Alpha", mercado:"Canada", zona:"N. America", manager:"Isidora Rodriguez", cc:"CA", fob_ytd:139564, cajas_ytd:1841, fob_abr:66712, cajas_abr:853, fob_ytd25:152422, fob_ppto:258227, cajas_ppto:3325, precio_ytd:75.8, precio_ppto:77.67, dif_ppto:-0.1712, dif_25:0.0125},
-  {linea:"Montes Alpha", mercado:"Usa", zona:"N. America", manager:"Isidora Rodriguez", cc:"US", fob_ytd:128612, cajas_ytd:1657, fob_abr:46058, cajas_abr:598, fob_ytd25:266893, fob_ppto:177975, cajas_ppto:1991, precio_ytd:77.6, precio_ppto:89.39, dif_ppto:-0.1054, dif_25:-0.3442},
-  {linea:"Montes Alpha", mercado:"Inglaterra", zona:"Europa", manager:"Eduardo Stark", cc:"GB", fob_ytd:65589, cajas_ytd:800, fob_abr:26664, cajas_abr:330, fob_ytd25:122041, fob_ppto:120155, cajas_ppto:1505, precio_ytd:82.0, precio_ppto:79.82, dif_ppto:-0.4609, dif_25:-0.5104},
-  {linea:"Montes Alpha", mercado:"Polonia", zona:"Europa", manager:"Juan Pablo Velasco", cc:"PL", fob_ytd:64158, cajas_ytd:700, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:9446, cajas_ppto:105, precio_ytd:91.7, precio_ppto:90.05, dif_ppto:0.7024, dif_25:1.5556},
-  {linea:"Montes Alpha", mercado:"Vietnam", zona:"Asia", manager:"Juan Yañez", cc:"VN", fob_ytd:76182, cajas_ytd:665, fob_abr:64612, cajas_abr:565, fob_ytd25:59511, fob_ppto:60640, cajas_ppto:547, precio_ytd:114.6, precio_ppto:110.94, dif_ppto:-0.0438, dif_25:0.1948},
-  {linea:"Montes Alpha", mercado:"Holanda", zona:"Europa", manager:"Eduardo Stark", cc:"NL", fob_ytd:60490, cajas_ytd:587, fob_abr:0, cajas_abr:0, fob_ytd25:40168, fob_ppto:113891, cajas_ppto:1109, precio_ytd:103.0, precio_ppto:102.72, dif_ppto:-0.4002, dif_25:-0.2171},
-  {linea:"Montes Alpha", mercado:"Brasil", zona:"S. America", manager:"Daniela Rojas", cc:"BR", fob_ytd:52042, cajas_ytd:488, fob_abr:52042, cajas_abr:488, fob_ytd25:228909, fob_ppto:402000, cajas_ppto:3818, precio_ytd:106.6, precio_ppto:105.29, dif_ppto:-0.5491, dif_25:-0.2116},
-  {linea:"Montes Alpha", mercado:"Uruguay", zona:"S. America", manager:"Daniela Rojas", cc:"UY", fob_ytd:40052, cajas_ytd:370, fob_abr:0, cajas_abr:0, fob_ytd25:63814, fob_ppto:30432, cajas_ppto:277, precio_ytd:108.2, precio_ppto:109.7, dif_ppto:0.1896, dif_25:-0.4791},
-  {linea:"Montes Alpha", mercado:"Emiratos Arabes", zona:"Medio Oriente", manager:"Juan Pablo Velasco", cc:"AE", fob_ytd:33642, cajas_ytd:341, fob_abr:0, cajas_abr:0, fob_ytd25:27104, fob_ppto:69762, cajas_ppto:704, precio_ytd:98.7, precio_ppto:99.04, dif_ppto:-0.7023, dif_25:-0.5785},
-  {linea:"Montes Alpha", mercado:"Tailandia", zona:"Asia", manager:"Juan Yañez", cc:"TH", fob_ytd:29799, cajas_ytd:300, fob_abr:0, cajas_abr:0, fob_ytd25:71299, fob_ppto:100532, cajas_ppto:970, precio_ytd:99.3, precio_ppto:103.6, dif_ppto:-0.548, dif_25:-0.4},
-  {linea:"Montes Alpha", mercado:"Perú", zona:"S. America", manager:"Daniela Rojas", cc:"PE", fob_ytd:33060, cajas_ytd:298, fob_abr:33060, cajas_abr:298, fob_ytd25:0, fob_ppto:67908, cajas_ppto:616, precio_ytd:111.1, precio_ppto:110.26, dif_ppto:-0.4357, dif_25:0.0},
-  {linea:"Montes Alpha", mercado:"Hungria", zona:"Europa", manager:"Juan Pablo Velasco", cc:"HU", fob_ytd:28179, cajas_ytd:290, fob_abr:0, cajas_abr:0, fob_ytd25:14980, fob_ppto:8462, cajas_ppto:93, precio_ytd:97.2, precio_ppto:91.28, dif_ppto:-0.0371, dif_25:-0.5264},
-  {linea:"Montes Alpha", mercado:"Malvinas", zona:"S. America", manager:"Daniela Rojas", cc:"FK", fob_ytd:29390, cajas_ytd:270, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:14212, cajas_ppto:128, precio_ytd:108.9, precio_ppto:110.86, dif_ppto:1.4362, dif_25:0.0},
-  {linea:"Montes Alpha", mercado:"Chipre", zona:"Europa", manager:"Juan Pablo Velasco", cc:"CY", fob_ytd:25140, cajas_ytd:260, fob_abr:0, cajas_abr:0, fob_ytd25:22071, fob_ppto:18668, cajas_ppto:203, precio_ytd:96.7, precio_ppto:92.05, dif_ppto:0.2892, dif_25:-0.0575},
-  {linea:"Montes Alpha", mercado:"Serbia", zona:"Europa", manager:"Juan Pablo Velasco", cc:"RS", fob_ytd:20956, cajas_ytd:173, fob_abr:20956, cajas_abr:173, fob_ytd25:0, fob_ppto:17857, cajas_ppto:151, precio_ytd:121.1, precio_ppto:118.49, dif_ppto:0.4912, dif_25:0.0},
-  {linea:"Montes Alpha", mercado:"Costa Rica", zona:"C. America", manager:"Patricia Osenga", cc:"CR", fob_ytd:16241, cajas_ytd:149, fob_abr:8829, cajas_abr:81, fob_ytd25:4469, fob_ppto:15447, cajas_ppto:142, precio_ytd:109.0, precio_ppto:109.17, dif_ppto:-0.1322, dif_25:0.026},
-  {linea:"Montes Alpha", mercado:"Panamá", zona:"C. America", manager:"Patricia Osenga", cc:"PA", fob_ytd:13000, cajas_ytd:125, fob_abr:0, cajas_abr:0, fob_ytd25:10400, fob_ppto:12316, cajas_ppto:116, precio_ytd:104.0, precio_ppto:105.9, dif_ppto:0.2136, dif_25:0.0},
-  {linea:"Montes Alpha", mercado:"Republic Of Maldives", zona:"Asia", manager:"Isidora Rodriguez", cc:"MV", fob_ytd:12075, cajas_ytd:115, fob_abr:0, cajas_abr:0, fob_ytd25:8925, fob_ppto:3960, cajas_ppto:37, precio_ytd:105.0, precio_ppto:105.89, dif_ppto:2.0615, dif_25:0.5382},
-  {linea:"Montes Alpha", mercado:"Singapur", zona:"Asia", manager:"Juan Yañez", cc:"SG", fob_ytd:12390, cajas_ytd:109, fob_abr:6394, cajas_abr:61, fob_ytd25:30253, fob_ppto:30519, cajas_ppto:282, precio_ytd:113.7, precio_ppto:108.15, dif_ppto:-0.1406, dif_25:-0.0167},
-  {linea:"Montes Alpha", mercado:"México", zona:"C. America", manager:"Daniela Rojas", cc:"MX", fob_ytd:10600, cajas_ytd:100, fob_abr:0, cajas_abr:0, fob_ytd25:20479, fob_ppto:24413, cajas_ppto:224, precio_ytd:106.0, precio_ppto:109.08, dif_ppto:-0.5549, dif_25:-0.3967},
-  {linea:"Montes Alpha", mercado:"Bélgica", zona:"Europa", manager:"Juan Pablo Velasco", cc:"BE", fob_ytd:8389, cajas_ytd:100, fob_abr:0, cajas_abr:0, fob_ytd25:47882, fob_ppto:11419, cajas_ppto:140, precio_ytd:83.9, precio_ppto:81.57, dif_ppto:0.2574, dif_25:0.0312},
-  {linea:"Montes Alpha", mercado:"Tahiti", zona:"Oceania", manager:"Patricia Osenga", cc:"PF", fob_ytd:9975, cajas_ytd:95, fob_abr:0, cajas_abr:0, fob_ytd25:1440, fob_ppto:3008, cajas_ppto:29, precio_ytd:105.0, precio_ppto:103.74, dif_ppto:0.7007, dif_25:0.4428},
-  {linea:"Montes Alpha", mercado:"Guatemala", zona:"C. America", manager:"Patricia Osenga", cc:"GT", fob_ytd:8720, cajas_ytd:80, fob_abr:2725, cajas_abr:25, fob_ytd25:8720, fob_ppto:19778, cajas_ppto:180, precio_ytd:109.0, precio_ppto:109.88, dif_ppto:-0.4081, dif_25:-0.3536},
-  {linea:"Montes Alpha", mercado:"Honduras", zona:"C. America", manager:"Patricia Osenga", cc:"HN", fob_ytd:8175, cajas_ytd:75, fob_abr:8175, cajas_abr:75, fob_ytd25:0, fob_ppto:4306, cajas_ppto:42, precio_ytd:109.0, precio_ppto:102.52, dif_ppto:3.5363, dif_25:0.0},
-  {linea:"Montes Alpha", mercado:"Puerto Rico", zona:"Caribe", manager:"Daniela Rojas", cc:"PR", fob_ytd:7725, cajas_ytd:75, fob_abr:0, cajas_abr:0, fob_ytd25:4120, fob_ppto:3783, cajas_ppto:37, precio_ytd:103.0, precio_ppto:103.08, dif_ppto:-0.4184, dif_25:-0.6568},
-  {linea:"Montes Alpha", mercado:"Islas Cayman", zona:"Caribe", manager:"Patricia Osenga", cc:"KY", fob_ytd:7800, cajas_ytd:75, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:0, cajas_ppto:0, precio_ytd:104.0, precio_ppto:0.0, dif_ppto:0.0, dif_25:0.0},
-  {linea:"Montes Alpha", mercado:"Nueva Zelanda", zona:"Oceania", manager:"Patricia Osenga", cc:"NZ", fob_ytd:7875, cajas_ytd:75, fob_abr:0, cajas_abr:0, fob_ytd25:10500, fob_ppto:4650, cajas_ppto:44, precio_ytd:105.0, precio_ppto:104.96, dif_ppto:0.3575, dif_25:0.0},
-  {linea:"Montes Alpha", mercado:"Eslovaquia", zona:"Europa", manager:"Juan Pablo Velasco", cc:"SK", fob_ytd:7265, cajas_ytd:72, fob_abr:0, cajas_abr:0, fob_ytd25:13158, fob_ppto:7034, cajas_ppto:78, precio_ytd:100.2, precio_ppto:89.6, dif_ppto:0.2642, dif_25:0.0698},
-  {linea:"Montes Alpha", mercado:"Rep Dominicana", zona:"Caribe", manager:"Patricia Osenga", cc:"DO", fob_ytd:7630, cajas_ytd:70, fob_abr:0, cajas_abr:0, fob_ytd25:9810, fob_ppto:5541, cajas_ppto:51, precio_ytd:109.0, precio_ppto:108.44, dif_ppto:0.4689, dif_25:-0.1542},
-  {linea:"Montes Alpha", mercado:"India", zona:"Asia", manager:"Sin Responsable", cc:"IN", fob_ytd:5892, cajas_ytd:60, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:10332, cajas_ppto:98, precio_ytd:97.6, precio_ppto:105.0, dif_ppto:-0.3872, dif_25:0.0},
-  {linea:"Montes Alpha", mercado:"Taiwan", zona:"Asia", manager:"Juan Yañez", cc:"TW", fob_ytd:7358, cajas_ytd:60, fob_abr:0, cajas_abr:0, fob_ytd25:16210, fob_ppto:31146, cajas_ppto:256, precio_ytd:122.6, precio_ppto:121.9, dif_ppto:0.1227, dif_25:-0.0609},
-  {linea:"Montes Alpha", mercado:"Finlandia", zona:"Europa", manager:"Isidora Rodriguez", cc:"FI", fob_ytd:4868, cajas_ytd:50, fob_abr:4868, cajas_abr:50, fob_ytd25:6640, fob_ppto:14370, cajas_ppto:150, precio_ytd:97.4, precio_ppto:95.87, dif_ppto:-0.1474, dif_25:-0.3632},
-  {linea:"Montes Alpha", mercado:"Cambodia", zona:"Asia", manager:"Juan Yañez", cc:"KH", fob_ytd:5383, cajas_ytd:50, fob_abr:0, cajas_abr:0, fob_ytd25:8741, fob_ppto:6195, cajas_ppto:54, precio_ytd:107.7, precio_ppto:115.79, dif_ppto:0.0965, dif_25:0.1548},
-  {linea:"Montes Alpha", mercado:"Hong Kong", zona:"Asia", manager:"Juan Yañez", cc:"HK", fob_ytd:7190, cajas_ytd:50, fob_abr:0, cajas_abr:0, fob_ytd25:35294, fob_ppto:34372, cajas_ppto:310, precio_ytd:143.8, precio_ppto:110.99, dif_ppto:-0.3135, dif_25:-0.4254},
-  {linea:"Montes Alpha", mercado:"Malasia", zona:"Asia", manager:"Juan Yañez", cc:"MY", fob_ytd:5032, cajas_ytd:50, fob_abr:5032, cajas_abr:50, fob_ytd25:0, fob_ppto:11466, cajas_ppto:100, precio_ytd:100.7, precio_ppto:114.77, dif_ppto:0.3121, dif_25:0.0},
-  {linea:"Montes Alpha", mercado:"Qatar", zona:"Medio Oriente", manager:"Juan Pablo Velasco", cc:"QA", fob_ytd:5095, cajas_ytd:50, fob_abr:0, cajas_abr:0, fob_ytd25:35443, fob_ppto:3844, cajas_ppto:38, precio_ytd:101.9, precio_ppto:101.96, dif_ppto:0.2063, dif_25:-0.5192},
-  {linea:"Montes Alpha", mercado:"Ucrania", zona:"Europa", manager:"Isidora Rodriguez", cc:"UA", fob_ytd:3658, cajas_ytd:43, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:2239, cajas_ppto:25, precio_ytd:85.1, precio_ppto:89.2, dif_ppto:0.1681, dif_25:0.0},
-  {linea:"Montes Alpha", mercado:"St. Maarten", zona:"Caribe", manager:"Patricia Osenga", cc:"SX", fob_ytd:3675, cajas_ytd:35, fob_abr:0, cajas_abr:0, fob_ytd25:7350, fob_ppto:2583, cajas_ppto:24, precio_ytd:105.0, precio_ppto:105.85, dif_ppto:1.3947, dif_25:-0.2},
-  {linea:"Montes Alpha", mercado:"Barbados", zona:"Caribe", manager:"Patricia Osenga", cc:"BB", fob_ytd:3419, cajas_ytd:32, fob_abr:3419, cajas_abr:32, fob_ytd25:0, fob_ppto:2755, cajas_ppto:26, precio_ytd:106.8, precio_ppto:103.98, dif_ppto:0.7974, dif_25:0.0},
-  {linea:"Montes Alpha", mercado:"Islas Virgen", zona:"Caribe", manager:"Patricia Osenga", cc:"VI", fob_ytd:3003, cajas_ytd:29, fob_abr:0, cajas_abr:0, fob_ytd25:714, fob_ppto:5052, cajas_ppto:49, precio_ytd:103.6, precio_ppto:103.3, dif_ppto:-0.241, dif_25:0.0668},
-  {linea:"Montes Alpha", mercado:"Jamaica", zona:"Caribe", manager:"Patricia Osenga", cc:"JM", fob_ytd:2940, cajas_ytd:28, fob_abr:2940, cajas_abr:28, fob_ytd25:0, fob_ppto:1034, cajas_ppto:10, precio_ytd:105.0, precio_ppto:103.36, dif_ppto:2.7454, dif_25:0.0},
-  {linea:"Montes Alpha", mercado:"Luxemburgo", zona:"Europa", manager:"Juan Pablo Velasco", cc:"LU", fob_ytd:2067, cajas_ytd:20, fob_abr:0, cajas_abr:0, fob_ytd25:4450, fob_ppto:3520, cajas_ppto:37, precio_ytd:103.4, precio_ppto:95.12, dif_ppto:0.2061, dif_25:1.7273},
-  {linea:"Montes Alpha", mercado:"Cruceros", zona:"Caribe", manager:"Patricia Osenga", cc:"", fob_ytd:1532, cajas_ytd:11, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:0, cajas_ppto:0, precio_ytd:139.3, precio_ppto:0.0, dif_ppto:0.0, dif_25:0.0},
-  {linea:"Montes Alpha", mercado:"Bermuda", zona:"Caribe", manager:"Patricia Osenga", cc:"BM", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:5380, cajas_ppto:51, precio_ytd:0.0, precio_ppto:104.67, dif_ppto:-1.0, dif_25:0.0},
-  {linea:"Montes Alpha", mercado:"Belize", zona:"Caribe", manager:"Patricia Osenga", cc:"BZ", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:6940, cajas_ppto:58, precio_ytd:0.0, precio_ppto:120.69, dif_ppto:-1.0, dif_25:0.0},
-  {linea:"Montes Alpha", mercado:"Granada", zona:"Caribe", manager:"Patricia Osenga", cc:"GD", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:964, cajas_ppto:9, precio_ytd:0.0, precio_ppto:104.8, dif_ppto:-0.0713, dif_25:0.0},
-  {linea:"Montes Alpha", mercado:"St. Lucia", zona:"Caribe", manager:"Patricia Osenga", cc:"LC", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:4030, cajas_ppto:38, precio_ytd:0.0, precio_ppto:104.67, dif_ppto:-1.0, dif_25:0.0},
-  {linea:"Montes Alpha", mercado:"Trinidad & Tobago", zona:"Caribe", manager:"Patricia Osenga", cc:"TT", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:10290, fob_ppto:3823, cajas_ppto:36, precio_ytd:0.0, precio_ppto:105.6, dif_ppto:-1.0, dif_25:-1.0},
-  {linea:"Montes Alpha", mercado:"Anguilla", zona:"Caribe", manager:"Patricia Osenga", cc:"AI", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:3675, fob_ppto:1309, cajas_ppto:13, precio_ytd:0.0, precio_ppto:103.86, dif_ppto:-1.0, dif_25:-1.0},
-  {linea:"Montes Alpha", mercado:"Islas Caicos", zona:"Caribe", manager:"Patricia Osenga", cc:"TC", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:5250, fob_ppto:2066, cajas_ppto:20, precio_ytd:0.0, precio_ppto:104.36, dif_ppto:-1.0, dif_25:-1.0},
-  {linea:"Montes Alpha", mercado:"St. Kitts And Nevis", zona:"Caribe", manager:"Patricia Osenga", cc:"KN", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:2067, cajas_ppto:20, precio_ytd:0.0, precio_ppto:102.32, dif_ppto:-1.0, dif_25:0.0},
-  {linea:"Montes Alpha", mercado:"Argentina", zona:"S. America", manager:"Daniela Rojas", cc:"AR", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:8561, cajas_ppto:83, precio_ytd:0.0, precio_ppto:103.39, dif_ppto:-1.0, dif_25:0.0},
-  {linea:"Montes Alpha", mercado:"Bolivia", zona:"S. America", manager:"Daniela Rojas", cc:"BO", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:6413, cajas_ppto:50, precio_ytd:0.0, precio_ppto:129.29, dif_ppto:-1.0, dif_25:0.0},
-  {linea:"Montes Alpha", mercado:"Brasil (JPV)", zona:"S. America", manager:"Juan Pablo Velasco", cc:"BR", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:4340, fob_ppto:21641, cajas_ppto:177, precio_ytd:0.0, precio_ppto:122.26, dif_ppto:-1.0, dif_25:-1.0},
-  {linea:"Montes Alpha", mercado:"Colombia", zona:"S. America", manager:"Daniela Rojas", cc:"CO", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:34644, fob_ppto:41000, cajas_ppto:350, precio_ytd:0.0, precio_ppto:117.01, dif_ppto:-1.0, dif_25:-1.0},
-  {linea:"Montes Alpha", mercado:"Ecuador", zona:"S. America", manager:"Daniela Rojas", cc:"EC", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:29321, fob_ppto:15422, cajas_ppto:137, precio_ytd:0.0, precio_ppto:112.24, dif_ppto:-1.0, dif_25:-1.0},
-  {linea:"Montes Alpha", mercado:"Guyana", zona:"S. America", manager:"Daniela Rojas", cc:"", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:2719, cajas_ppto:28, precio_ytd:0.0, precio_ppto:98.51, dif_ppto:-1.0, dif_25:0.0},
-  {linea:"Montes Alpha", mercado:"Paraguay", zona:"S. America", manager:"Daniela Rojas", cc:"", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:14590, fob_ppto:10001, cajas_ppto:87, precio_ytd:0.0, precio_ppto:114.56, dif_ppto:-1.0, dif_25:-1.0},
-  {linea:"Montes Alpha", mercado:"Venezuela", zona:"S. America", manager:"Daniela Rojas", cc:"", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:3197, cajas_ppto:36, precio_ytd:0.0, precio_ppto:89.05, dif_ppto:-1.0, dif_25:0.0},
-  {linea:"Montes Alpha", mercado:"Aruba", zona:"Caribe", manager:"Patricia Osenga", cc:"AW", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:2583, cajas_ppto:25, precio_ytd:0.0, precio_ppto:104.16, dif_ppto:-1.0, dif_25:-1.0},
-  {linea:"Montes Alpha", mercado:"Curacao", zona:"Caribe", manager:"Patricia Osenga", cc:"CW", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:1550, cajas_ppto:15, precio_ytd:0.0, precio_ppto:103.36, dif_ppto:0.0126, dif_25:0.0},
-  {linea:"Montes Alpha", mercado:"Bulgaria", zona:"Europa", manager:"Juan Pablo Velasco", cc:"", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:3391, cajas_ppto:39, precio_ytd:0.0, precio_ppto:86.06, dif_ppto:-1.0, dif_25:0.0},
-  {linea:"Montes Alpha", mercado:"Croacia", zona:"Europa", manager:"Juan Pablo Velasco", cc:"", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:10043, cajas_ppto:102, precio_ytd:0.0, precio_ppto:98.66, dif_ppto:-1.0, dif_25:0.0},
-  {linea:"Montes Alpha", mercado:"Islandia", zona:"Europa", manager:"Isidora Rodriguez", cc:"", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:5200, fob_ppto:3411, cajas_ppto:33, precio_ytd:0.0, precio_ppto:103.05, dif_ppto:-1.0, dif_25:-1.0},
-  {linea:"Montes Alpha", mercado:"Letonia", zona:"Europa", manager:"Isidora Rodriguez", cc:"", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:5888, cajas_ppto:63, precio_ytd:0.0, precio_ppto:93.6, dif_ppto:-1.0, dif_25:0.0},
-  {linea:"Montes Alpha", mercado:"Malta", zona:"Europa", manager:"Juan Pablo Velasco", cc:"", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:2371, fob_ppto:5599, cajas_ppto:61, precio_ytd:0.0, precio_ppto:91.64, dif_ppto:-1.0, dif_25:-1.0},
-  {linea:"Montes Alpha", mercado:"Suiza", zona:"Europa", manager:"Eduardo Stark", cc:"CH", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:141563, fob_ppto:17644, cajas_ppto:180, precio_ytd:0.0, precio_ppto:97.81, dif_ppto:-1.0, dif_25:-1.0},
-  {linea:"Montes Alpha", mercado:"Kenia", zona:"Africa", manager:"Juan Pablo Velasco", cc:"", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:5267, cajas_ppto:51, precio_ytd:0.0, precio_ppto:103.89, dif_ppto:-1.0, dif_25:0.0},
-  {linea:"Montes Alpha", mercado:"Filipinas", zona:"Asia", manager:"Juan Yañez", cc:"", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:61235, cajas_ppto:548, precio_ytd:0.0, precio_ppto:111.66, dif_ppto:-1.0, dif_25:0.0},
-  {linea:"Montes Alpha", mercado:"Indonesia", zona:"Asia", manager:"Juan Yañez", cc:"", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:11240, fob_ppto:23382, cajas_ppto:215, precio_ytd:0.0, precio_ppto:108.65, dif_ppto:-1.0, dif_25:-1.0},
-  {linea:"Montes Alpha", mercado:"Israel", zona:"Medio Oriente", manager:"Juan Pablo Velasco", cc:"", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:1701, cajas_ppto:16, precio_ytd:0.0, precio_ppto:103.7, dif_ppto:-1.0, dif_25:0.0},
-  {linea:"Montes Alpha", mercado:"Jordania", zona:"Medio Oriente", manager:"Juan Pablo Velasco", cc:"JO", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:1018, fob_ppto:341, cajas_ppto:3, precio_ytd:0.0, precio_ppto:100.18, dif_ppto:1.7431, dif_25:10.8125},
-  {linea:"Montes Alpha", mercado:"Laos", zona:"Asia", manager:"Juan Yañez", cc:"", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:17325, fob_ppto:3373, cajas_ppto:28, precio_ytd:0.0, precio_ppto:121.32, dif_ppto:-1.0, dif_25:-1.0},
-  {linea:"Montes Alpha", mercado:"Turquía", zona:"Europa", manager:"Juan Pablo Velasco", cc:"TR", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:3313, cajas_ppto:33, precio_ytd:0.0, precio_ppto:101.0, dif_ppto:0.4527, dif_25:0.0},
-  {linea:"Montes Alpha", mercado:"Islas Cook", zona:"Oceania", manager:"Patricia Osenga", cc:"", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:2328, cajas_ppto:22, precio_ytd:0.0, precio_ppto:104.39, dif_ppto:-1.0, dif_25:0.0},
-  {linea:"Otros", mercado:"China", zona:"Asia", manager:"Jason Li", cc:"CN", fob_ytd:2746269, cajas_ytd:51372, fob_abr:826926, cajas_abr:15600, fob_ytd25:3587733, fob_ppto:2282440, cajas_ppto:42598, precio_ytd:53.5, precio_ppto:53.58, dif_ppto:0.2309, dif_25:-0.2152},
-  {linea:"Otros", mercado:"Japón", zona:"Asia", manager:"Eduardo Stark", cc:"JP", fob_ytd:629386, cajas_ytd:12130, fob_abr:130931, cajas_abr:2520, fob_ytd25:839618, fob_ppto:729174, cajas_ppto:13923, precio_ytd:51.9, precio_ppto:52.37, dif_ppto:-0.1435, dif_25:-0.1626},
-  {linea:"Otros", mercado:"Alemania", zona:"Europa", manager:"Eduardo Stark", cc:"DE", fob_ytd:473030, cajas_ytd:9496, fob_abr:0, cajas_abr:0, fob_ytd25:668744, fob_ppto:734978, cajas_ppto:15012, precio_ytd:49.8, precio_ppto:48.96, dif_ppto:-0.346, dif_25:-0.3345},
-  {linea:"Otros", mercado:"Korea", zona:"Asia", manager:"Juan Pablo Velasco", cc:"KR", fob_ytd:421360, cajas_ytd:8660, fob_abr:46967, cajas_abr:970, fob_ytd25:563893, fob_ppto:534257, cajas_ppto:10922, precio_ytd:48.7, precio_ppto:48.92, dif_ppto:-0.1993, dif_25:-0.1471},
-  {linea:"Otros", mercado:"Canada", zona:"N. America", manager:"Isidora Rodriguez", cc:"CA", fob_ytd:159770, cajas_ytd:3378, fob_abr:12278, cajas_abr:243, fob_ytd25:155472, fob_ppto:146144, cajas_ppto:3179, precio_ytd:47.3, precio_ppto:45.97, dif_ppto:-0.1712, dif_25:0.0125},
-  {linea:"Otros", mercado:"Chile", zona:"Chile", manager:"Evelyn Ramirez", cc:"CL", fob_ytd:147893, cajas_ytd:3087, fob_abr:42465, cajas_abr:932, fob_ytd25:234609, fob_ppto:260839, cajas_ppto:6178, precio_ytd:47.9, precio_ppto:42.22, dif_ppto:-0.3516, dif_25:-0.2287},
-  {linea:"Otros", mercado:"Usa", zona:"N. America", manager:"Isidora Rodriguez", cc:"US", fob_ytd:158770, cajas_ytd:3015, fob_abr:31518, cajas_abr:575, fob_ytd25:252224, fob_ppto:173157, cajas_ppto:3141, precio_ytd:52.7, precio_ppto:55.12, dif_ppto:-0.1054, dif_25:-0.3442},
-  {linea:"Otros", mercado:"Holanda", zona:"Europa", manager:"Eduardo Stark", cc:"NL", fob_ytd:80612, cajas_ytd:1528, fob_abr:0, cajas_abr:0, fob_ytd25:103822, fob_ppto:116123, cajas_ppto:2329, precio_ytd:52.7, precio_ppto:49.86, dif_ppto:-0.4002, dif_25:-0.2171},
-  {linea:"Otros", mercado:"Taiwan", zona:"Asia", manager:"Juan Yañez", cc:"TW", fob_ytd:86778, cajas_ytd:1525, fob_abr:53787, cajas_abr:950, fob_ytd25:84616, fob_ppto:57250, cajas_ppto:1064, precio_ytd:56.9, precio_ppto:53.8, dif_ppto:0.1227, dif_25:-0.0609},
-  {linea:"Otros", mercado:"Inglaterra", zona:"Europa", manager:"Eduardo Stark", cc:"GB", fob_ytd:48581, cajas_ytd:1090, fob_abr:30358, cajas_abr:680, fob_ytd25:97122, fob_ppto:83177, cajas_ppto:1958, precio_ytd:44.6, precio_ppto:42.47, dif_ppto:-0.4609, dif_25:-0.5104},
-  {linea:"Otros", mercado:"Chipre", zona:"Europa", manager:"Juan Pablo Velasco", cc:"CY", fob_ytd:43957, cajas_ytd:1010, fob_abr:0, cajas_abr:0, fob_ytd25:40478, fob_ppto:32131, cajas_ppto:743, precio_ytd:43.5, precio_ppto:43.24, dif_ppto:0.2892, dif_25:-0.0575},
-  {linea:"Otros", mercado:"Tailandia", zona:"Asia", manager:"Juan Yañez", cc:"TH", fob_ytd:54580, cajas_ytd:1000, fob_abr:0, cajas_abr:0, fob_ytd25:84007, fob_ppto:106817, cajas_ppto:2042, precio_ytd:54.6, precio_ppto:52.3, dif_ppto:-0.548, dif_25:-0.4},
-  {linea:"Otros", mercado:"Malasia", zona:"Asia", manager:"Juan Yañez", cc:"MY", fob_ytd:44213, cajas_ytd:850, fob_abr:25927, cajas_abr:500, fob_ytd25:0, fob_ppto:36712, cajas_ppto:699, precio_ytd:52.0, precio_ppto:52.54, dif_ppto:0.3121, dif_25:0.0},
-  {linea:"Otros", mercado:"Emiratos Arabes", zona:"Medio Oriente", manager:"Juan Pablo Velasco", cc:"AE", fob_ytd:39596, cajas_ytd:795, fob_abr:0, cajas_abr:0, fob_ytd25:125004, fob_ppto:161592, cajas_ppto:3216, precio_ytd:49.8, precio_ppto:50.24, dif_ppto:-0.7023, dif_25:-0.5785},
-  {linea:"Otros", mercado:"Guatemala", zona:"C. America", manager:"Patricia Osenga", cc:"GT", fob_ytd:39600, cajas_ytd:725, fob_abr:9600, cajas_abr:175, fob_ytd25:63750, fob_ppto:64170, cajas_ppto:1163, precio_ytd:54.6, precio_ppto:55.17, dif_ppto:-0.4081, dif_25:-0.3536},
-  {linea:"Otros", mercado:"Serbia", zona:"Europa", manager:"Juan Pablo Velasco", cc:"RS", fob_ytd:42329, cajas_ytd:720, fob_abr:42329, cajas_abr:720, fob_ytd25:0, fob_ppto:24673, cajas_ppto:443, precio_ytd:58.8, precio_ppto:55.72, dif_ppto:0.4912, dif_25:0.0},
-  {linea:"Otros", mercado:"Malvinas", zona:"S. America", manager:"Daniela Rojas", cc:"FK", fob_ytd:35020, cajas_ytd:635, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:12622, cajas_ppto:230, precio_ytd:55.1, precio_ppto:54.97, dif_ppto:1.4362, dif_25:0.0},
-  {linea:"Otros", mercado:"Tahiti", zona:"Oceania", manager:"Patricia Osenga", cc:"PF", fob_ytd:35700, cajas_ytd:630, fob_abr:0, cajas_abr:0, fob_ytd25:26460, fob_ppto:21367, cajas_ppto:392, precio_ytd:56.7, precio_ppto:54.44, dif_ppto:0.7007, dif_25:0.4428},
-  {linea:"Otros", mercado:"Eslovaquia", zona:"Europa", manager:"Juan Pablo Velasco", cc:"SK", fob_ytd:28910, cajas_ytd:615, fob_abr:0, cajas_abr:0, fob_ytd25:18395, fob_ppto:21288, cajas_ppto:465, precio_ytd:47.0, precio_ppto:45.75, dif_ppto:0.2642, dif_25:0.0698},
-  {linea:"Otros", mercado:"Honduras", zona:"C. America", manager:"Patricia Osenga", cc:"HN", fob_ytd:32905, cajas_ytd:595, fob_abr:15245, cajas_abr:275, fob_ytd25:0, fob_ppto:5842, cajas_ppto:107, precio_ytd:55.3, precio_ppto:54.7, dif_ppto:3.5363, dif_25:0.0},
-  {linea:"Otros", mercado:"Bélgica", zona:"Europa", manager:"Juan Pablo Velasco", cc:"BE", fob_ytd:24295, cajas_ytd:560, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:16621, cajas_ppto:385, precio_ytd:43.4, precio_ppto:43.18, dif_ppto:0.2574, dif_25:0.0312},
-  {linea:"Otros", mercado:"Finlandia", zona:"Europa", manager:"Isidora Rodriguez", cc:"FI", fob_ytd:29120, cajas_ytd:550, fob_abr:29120, cajas_abr:550, fob_ytd25:43373, fob_ppto:27011, cajas_ppto:542, precio_ytd:52.9, precio_ppto:49.87, dif_ppto:-0.1474, dif_25:-0.3632},
-  {linea:"Otros", mercado:"Vietnam", zona:"Asia", manager:"Juan Yañez", cc:"VN", fob_ytd:28710, cajas_ytd:545, fob_abr:28710, cajas_abr:545, fob_ytd25:22866, fob_ppto:34430, cajas_ppto:649, precio_ytd:52.7, precio_ppto:53.04, dif_ppto:-0.0438, dif_25:0.1948},
-  {linea:"Otros", mercado:"Cambodia", zona:"Asia", manager:"Juan Yañez", cc:"KH", fob_ytd:27378, cajas_ytd:515, fob_abr:0, cajas_abr:0, fob_ytd25:22676, fob_ppto:24433, cajas_ppto:452, precio_ytd:53.2, precio_ppto:54.1, dif_ppto:0.0965, dif_25:0.1548},
-  {linea:"Otros", mercado:"Costa Rica", zona:"C. America", manager:"Patricia Osenga", cc:"CR", fob_ytd:26785, cajas_ytd:480, fob_abr:13990, cajas_abr:250, fob_ytd25:36150, fob_ppto:35658, cajas_ppto:625, precio_ytd:55.8, precio_ppto:57.08, dif_ppto:-0.1322, dif_25:0.026},
-  {linea:"Otros", mercado:"Polonia", zona:"Europa", manager:"Juan Pablo Velasco", cc:"PL", fob_ytd:19669, cajas_ytd:450, fob_abr:0, cajas_abr:0, fob_ytd25:18081, fob_ppto:24201, cajas_ppto:561, precio_ytd:43.7, precio_ppto:43.16, dif_ppto:0.7024, dif_25:1.5556},
-  {linea:"Otros", mercado:"Hong Kong", zona:"Asia", manager:"Juan Yañez", cc:"HK", fob_ytd:21361, cajas_ytd:420, fob_abr:0, cajas_abr:0, fob_ytd25:25567, fob_ppto:19670, cajas_ppto:384, precio_ytd:50.9, precio_ppto:51.26, dif_ppto:-0.3135, dif_25:-0.4254},
-  {linea:"Otros", mercado:"Brasil (JPV)", zona:"S. America", manager:"Juan Pablo Velasco", cc:"BR", fob_ytd:24681, cajas_ytd:416, fob_abr:0, cajas_abr:0, fob_ytd25:27956, fob_ppto:42430, cajas_ppto:706, precio_ytd:59.4, precio_ppto:60.07, dif_ppto:-0.4183, dif_25:-0.1172},
-  {linea:"Otros", mercado:"Hungria", zona:"Europa", manager:"Juan Pablo Velasco", cc:"HU", fob_ytd:18918, cajas_ytd:375, fob_abr:0, cajas_abr:0, fob_ytd25:56896, fob_ppto:30391, cajas_ppto:620, precio_ytd:50.4, precio_ppto:49.02, dif_ppto:-0.0371, dif_25:-0.5264},
-  {linea:"Otros", mercado:"Republic Of Maldives", zona:"Asia", manager:"Isidora Rodriguez", cc:"MV", fob_ytd:19278, cajas_ytd:357, fob_abr:0, cajas_abr:0, fob_ytd25:11880, fob_ppto:6317, cajas_ppto:117, precio_ytd:54.0, precio_ppto:54.13, dif_ppto:2.0615, dif_25:0.5382},
-  {linea:"Otros", mercado:"Perú", zona:"S. America", manager:"Daniela Rojas", cc:"PE", fob_ytd:17876, cajas_ytd:333, fob_abr:17876, cajas_abr:333, fob_ytd25:0, fob_ppto:25722, cajas_ppto:478, precio_ytd:53.7, precio_ppto:53.81, dif_ppto:-0.4357, dif_25:0.0},
-  {linea:"Otros", mercado:"Curacao", zona:"Caribe", manager:"Patricia Osenga", cc:"CW", fob_ytd:15660, cajas_ytd:290, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:14596, cajas_ppto:269, precio_ytd:54.0, precio_ppto:54.28, dif_ppto:0.0126, dif_25:0.0},
-  {linea:"Otros", mercado:"Islas Virgen", zona:"Caribe", manager:"Patricia Osenga", cc:"VI", fob_ytd:15918, cajas_ytd:280, fob_abr:0, cajas_abr:0, fob_ytd25:15624, fob_ppto:19834, cajas_ppto:355, precio_ytd:56.9, precio_ppto:55.92, dif_ppto:-0.241, dif_25:0.0668},
-  {linea:"Otros", mercado:"Brasil", zona:"S. America", manager:"Daniela Rojas", cc:"BR", fob_ytd:14119, cajas_ytd:237, fob_abr:14119, cajas_abr:237, fob_ytd25:32699, fob_ppto:125179, cajas_ppto:2342, precio_ytd:59.6, precio_ppto:53.46, dif_ppto:-0.5491, dif_25:-0.2116},
-  {linea:"Otros", mercado:"México", zona:"C. America", manager:"Daniela Rojas", cc:"MX", fob_ytd:13765, cajas_ytd:230, fob_abr:0, cajas_abr:0, fob_ytd25:20076, fob_ppto:29368, cajas_ppto:533, precio_ytd:59.8, precio_ppto:55.07, dif_ppto:-0.5549, dif_25:-0.3967},
-  {linea:"Otros", mercado:"Uruguay", zona:"S. America", manager:"Daniela Rojas", cc:"UY", fob_ytd:11700, cajas_ytd:225, fob_abr:0, cajas_abr:0, fob_ytd25:32050, fob_ppto:11749, cajas_ppto:207, precio_ytd:52.0, precio_ppto:56.87, dif_ppto:0.1896, dif_25:-0.4791},
-  {linea:"Otros", mercado:"Turquía", zona:"Europa", manager:"Juan Pablo Velasco", cc:"TR", fob_ytd:10986, cajas_ytd:215, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:5866, cajas_ppto:115, precio_ytd:51.1, precio_ppto:50.92, dif_ppto:0.4527, dif_25:0.0},
-  {linea:"Otros", mercado:"Singapur", zona:"Asia", manager:"Juan Yañez", cc:"SG", fob_ytd:12194, cajas_ytd:200, fob_abr:3004, cajas_abr:50, fob_ytd25:3181, fob_ppto:5114, cajas_ppto:83, precio_ytd:61.0, precio_ppto:61.54, dif_ppto:-0.1406, dif_25:-0.0167},
-  {linea:"Otros", mercado:"Barbados", zona:"Caribe", manager:"Patricia Osenga", cc:"BB", fob_ytd:10560, cajas_ytd:190, fob_abr:10560, cajas_abr:190, fob_ytd25:0, fob_ppto:5589, cajas_ppto:98, precio_ytd:55.6, precio_ppto:56.8, dif_ppto:0.7974, dif_25:0.0},
-  {linea:"Otros", mercado:"Islas Cayman", zona:"Caribe", manager:"Patricia Osenga", cc:"KY", fob_ytd:10540, cajas_ytd:190, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:0, cajas_ppto:0, precio_ytd:55.5, precio_ppto:0.0, dif_ppto:0.0, dif_25:0.0},
-  {linea:"Otros", mercado:"Jordania", zona:"Medio Oriente", manager:"Juan Pablo Velasco", cc:"JO", fob_ytd:8775, cajas_ytd:188, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:2936, cajas_ppto:63, precio_ytd:46.8, precio_ppto:46.67, dif_ppto:1.7431, dif_25:10.8125},
-  {linea:"Otros", mercado:"Ucrania", zona:"Europa", manager:"Isidora Rodriguez", cc:"UA", fob_ytd:7856, cajas_ytd:180, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:6982, cajas_ppto:158, precio_ytd:43.6, precio_ppto:44.33, dif_ppto:0.1681, dif_25:0.0},
-  {linea:"Otros", mercado:"Qatar", zona:"Medio Oriente", manager:"Juan Pablo Velasco", cc:"QA", fob_ytd:8698, cajas_ytd:150, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:7065, cajas_ppto:128, precio_ytd:58.0, precio_ppto:55.15, dif_ppto:0.2063, dif_25:-0.5192},
-  {linea:"Otros", mercado:"St. Maarten", zona:"Caribe", manager:"Patricia Osenga", cc:"SX", fob_ytd:7560, cajas_ytd:140, fob_abr:0, cajas_abr:0, fob_ytd25:7560, fob_ppto:2480, cajas_ppto:46, precio_ytd:54.0, precio_ppto:54.14, dif_ppto:1.3947, dif_25:-0.2},
-  {linea:"Otros", mercado:"Luxemburgo", zona:"Europa", manager:"Juan Pablo Velasco", cc:"LU", fob_ytd:6200, cajas_ytd:140, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:4012, cajas_ppto:92, precio_ytd:44.3, precio_ppto:43.7, dif_ppto:0.2061, dif_25:1.7273},
-  {linea:"Otros", mercado:"Panamá", zona:"C. America", manager:"Patricia Osenga", cc:"PA", fob_ytd:7000, cajas_ytd:125, fob_abr:0, cajas_abr:0, fob_ytd25:7000, fob_ppto:4054, cajas_ppto:74, precio_ytd:56.0, precio_ppto:55.08, dif_ppto:0.2136, dif_25:0.0},
-  {linea:"Otros", mercado:"Nueva Zelanda", zona:"Oceania", manager:"Patricia Osenga", cc:"NZ", fob_ytd:4050, cajas_ytd:75, fob_abr:0, cajas_abr:0, fob_ytd25:2700, fob_ppto:3473, cajas_ppto:64, precio_ytd:54.0, precio_ppto:54.19, dif_ppto:0.3575, dif_25:0.0},
-  {linea:"Otros", mercado:"Jamaica", zona:"Caribe", manager:"Patricia Osenga", cc:"JM", fob_ytd:3780, cajas_ytd:70, fob_abr:3780, cajas_abr:70, fob_ytd25:0, fob_ppto:797, cajas_ppto:15, precio_ytd:54.0, precio_ppto:53.86, dif_ppto:2.7454, dif_25:0.0},
-  {linea:"Otros", mercado:"Puerto Rico", zona:"Caribe", manager:"Daniela Rojas", cc:"PR", fob_ytd:3640, cajas_ytd:70, fob_abr:0, cajas_abr:0, fob_ytd25:16900, fob_ppto:9719, cajas_ppto:182, precio_ytd:52.0, precio_ppto:53.32, dif_ppto:-0.4184, dif_25:-0.6568},
-  {linea:"Otros", mercado:"Granada", zona:"Caribe", manager:"Patricia Osenga", cc:"GD", fob_ytd:3234, cajas_ytd:56, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:2828, cajas_ppto:51, precio_ytd:57.8, precio_ppto:55.34, dif_ppto:-0.0713, dif_25:0.0},
-  {linea:"Otros", mercado:"India", zona:"Asia", manager:"Sin Responsable", cc:"IN", fob_ytd:1940, cajas_ytd:40, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:3542, cajas_ppto:66, precio_ytd:48.3, precio_ppto:54.0, dif_ppto:-0.3872, dif_25:0.0},
-  {linea:"Otros", mercado:"Rep Dominicana", zona:"Caribe", manager:"Patricia Osenga", cc:"DO", fob_ytd:1144, cajas_ytd:22, fob_abr:0, cajas_abr:0, fob_ytd25:1040, fob_ppto:620, cajas_ppto:12, precio_ytd:52.0, precio_ppto:53.9, dif_ppto:0.4689, dif_25:-0.1542},
-  {linea:"Otros", mercado:"Cruceros", zona:"Caribe", manager:"Patricia Osenga", cc:"", fob_ytd:1200, cajas_ytd:20, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:0, cajas_ppto:0, precio_ytd:60.0, precio_ppto:0.0, dif_ppto:0.0, dif_25:0.0},
-  {linea:"Otros", mercado:"Bermuda", zona:"Caribe", manager:"Patricia Osenga", cc:"BM", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:9836, cajas_ppto:173, precio_ytd:0.0, precio_ppto:56.92, dif_ppto:-1.0, dif_25:0.0},
-  {linea:"Otros", mercado:"Belize", zona:"Caribe", manager:"Patricia Osenga", cc:"BZ", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:4762, cajas_ppto:82, precio_ytd:0.0, precio_ppto:57.87, dif_ppto:-1.0, dif_25:0.0},
-  {linea:"Otros", mercado:"St. Lucia", zona:"Caribe", manager:"Patricia Osenga", cc:"LC", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:5648, cajas_ppto:100, precio_ytd:0.0, precio_ppto:56.48, dif_ppto:-1.0, dif_25:0.0},
-  {linea:"Otros", mercado:"Trinidad & Tobago", zona:"Caribe", manager:"Patricia Osenga", cc:"TT", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:22008, fob_ppto:11696, cajas_ppto:210, precio_ytd:0.0, precio_ppto:55.56, dif_ppto:-1.0, dif_25:-1.0},
-  {linea:"Otros", mercado:"Anguilla", zona:"Caribe", manager:"Patricia Osenga", cc:"AI", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:3402, fob_ppto:1175, cajas_ppto:20, precio_ytd:0.0, precio_ppto:60.26, dif_ppto:-1.0, dif_25:-1.0},
-  {linea:"Otros", mercado:"Islas Caicos", zona:"Caribe", manager:"Patricia Osenga", cc:"TC", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:4200, fob_ppto:2893, cajas_ppto:51, precio_ytd:0.0, precio_ppto:56.61, dif_ppto:-1.0, dif_25:-1.0},
-  {linea:"Otros", mercado:"St. Kitts And Nevis", zona:"Caribe", manager:"Patricia Osenga", cc:"KN", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:4074, cajas_ppto:75, precio_ytd:0.0, precio_ppto:54.18, dif_ppto:-1.0, dif_25:0.0},
-  {linea:"Otros", mercado:"Bolivia", zona:"S. America", manager:"Daniela Rojas", cc:"BO", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:5832, cajas_ppto:92, precio_ytd:0.0, precio_ppto:63.67, dif_ppto:-1.0, dif_25:0.0},
-  {linea:"Otros", mercado:"Colombia", zona:"S. America", manager:"Daniela Rojas", cc:"CO", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:56100, fob_ppto:41200, cajas_ppto:757, precio_ytd:0.0, precio_ppto:54.42, dif_ppto:-1.0, dif_25:-1.0},
-  {linea:"Otros", mercado:"Ecuador", zona:"S. America", manager:"Daniela Rojas", cc:"EC", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:8967, cajas_ppto:166, precio_ytd:0.0, precio_ppto:54.05, dif_ppto:-1.0, dif_25:-1.0},
-  {linea:"Otros", mercado:"Guyana", zona:"S. America", manager:"Daniela Rojas", cc:"", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:3296, cajas_ppto:61, precio_ytd:0.0, precio_ppto:54.04, dif_ppto:-1.0, dif_25:0.0},
-  {linea:"Otros", mercado:"Paraguay", zona:"S. America", manager:"Daniela Rojas", cc:"", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:29200, fob_ppto:15528, cajas_ppto:270, precio_ytd:0.0, precio_ppto:57.47, dif_ppto:-1.0, dif_25:-1.0},
-  {linea:"Otros", mercado:"Venezuela", zona:"S. America", manager:"Daniela Rojas", cc:"", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:3070, cajas_ppto:59, precio_ytd:0.0, precio_ppto:51.95, dif_ppto:-1.0, dif_25:0.0},
-  {linea:"Otros", mercado:"Aruba", zona:"Caribe", manager:"Patricia Osenga", cc:"AW", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:3780, fob_ppto:2421, cajas_ppto:45, precio_ytd:0.0, precio_ppto:54.15, dif_ppto:-1.0, dif_25:-1.0},
-  {linea:"Otros", mercado:"Bulgaria", zona:"Europa", manager:"Juan Pablo Velasco", cc:"", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:12048, cajas_ppto:298, precio_ytd:0.0, precio_ppto:40.44, dif_ppto:-1.0, dif_25:0.0},
-  {linea:"Otros", mercado:"Croacia", zona:"Europa", manager:"Juan Pablo Velasco", cc:"", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:22409, cajas_ppto:492, precio_ytd:0.0, precio_ppto:45.55, dif_ppto:-1.0, dif_25:0.0},
-  {linea:"Otros", mercado:"Islandia", zona:"Europa", manager:"Isidora Rodriguez", cc:"", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:52521, fob_ppto:86828, cajas_ppto:1630, precio_ytd:0.0, precio_ppto:53.28, dif_ppto:-1.0, dif_25:-1.0},
-  {linea:"Otros", mercado:"Letonia", zona:"Europa", manager:"Isidora Rodriguez", cc:"", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:2378, cajas_ppto:53, precio_ytd:0.0, precio_ppto:45.21, dif_ppto:-1.0, dif_25:0.0},
-  {linea:"Otros", mercado:"Malta", zona:"Europa", manager:"Juan Pablo Velasco", cc:"", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:23363, fob_ppto:21129, cajas_ppto:520, precio_ytd:0.0, precio_ppto:40.61, dif_ppto:-1.0, dif_25:-1.0},
-  {linea:"Otros", mercado:"Suecia", zona:"Europa", manager:"Isidora Rodriguez", cc:"SE", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:6919, fob_ppto:6126, cajas_ppto:128, precio_ytd:0.0, precio_ppto:47.94, dif_ppto:-1.0, dif_25:-1.0},
-  {linea:"Otros", mercado:"Kenia", zona:"Africa", manager:"Juan Pablo Velasco", cc:"", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:4518, cajas_ppto:76, precio_ytd:0.0, precio_ppto:59.21, dif_ppto:-1.0, dif_25:0.0},
-  {linea:"Otros", mercado:"Filipinas", zona:"Asia", manager:"Juan Yañez", cc:"", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:43516, cajas_ppto:830, precio_ytd:0.0, precio_ppto:52.44, dif_ppto:-1.0, dif_25:0.0},
-  {linea:"Otros", mercado:"Indonesia", zona:"Asia", manager:"Juan Yañez", cc:"", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:39780, fob_ppto:25598, cajas_ppto:478, precio_ytd:0.0, precio_ppto:53.56, dif_ppto:-1.0, dif_25:-1.0},
-  {linea:"Otros", mercado:"Israel", zona:"Medio Oriente", manager:"Juan Pablo Velasco", cc:"", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:4214, cajas_ppto:82, precio_ytd:0.0, precio_ppto:51.4, dif_ppto:-1.0, dif_25:0.0},
-  {linea:"Otros", mercado:"Laos", zona:"Asia", manager:"Juan Yañez", cc:"", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:27128, fob_ppto:6813, cajas_ppto:124, precio_ytd:0.0, precio_ppto:55.12, dif_ppto:-1.0, dif_25:-1.0},
-  {linea:"Otros", mercado:"Myanmar", zona:"Asia", manager:"Juan Yañez", cc:"", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:14263, fob_ppto:4010, cajas_ppto:79, precio_ytd:0.0, precio_ppto:50.64, dif_ppto:-1.0, dif_25:-1.0},
-  {linea:"Otros", mercado:"Islas Cook", zona:"Oceania", manager:"Patricia Osenga", cc:"", fob_ytd:0, cajas_ytd:0, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:863, cajas_ppto:15, precio_ytd:0.0, precio_ppto:58.69, dif_ppto:-1.0, dif_25:0.0},
+{linea:"Iconos", mercado:"China", zona:"Asia", manager:"Jason Li", cc:"10811", fob_ytd:983652, cajas_ytd:1808, fob_abr:40054, cajas_abr:0, fob_ytd25:1369635, fob_ppto:915556, cajas_ppto:1674, precio_ytd:544.2, precio_ppto:546.93, dif_ppto:0.0744, dif_25:-0.2818}, 
+{linea:"Iconos", mercado:"Korea", zona:"Asia", manager:"Juan Pablo Velasco", cc:"10814", fob_ytd:269674, cajas_ytd:607, fob_abr:69915, cajas_abr:0, fob_ytd25:97864, fob_ppto:126834, cajas_ppto:281, precio_ytd:444.3, precio_ppto:450.73, dif_ppto:1.1262, dif_25:1.7556}, 
+{linea:"Iconos", mercado:"Canada", zona:"N. America", manager:"Isidora Rodriguez", cc:"10302", fob_ytd:217730, cajas_ytd:499, fob_abr:0, cajas_abr:0, fob_ytd25:109606, fob_ppto:168080, cajas_ppto:395, precio_ytd:436.3, precio_ppto:425.3, dif_ppto:0.2954, dif_25:0.9865}, 
+{linea:"Iconos", mercado:"Usa", zona:"N. America", manager:"Isidora Rodriguez", cc:"10303", fob_ytd:114281, cajas_ytd:379, fob_abr:39225, cajas_abr:0, fob_ytd25:365896, fob_ppto:231901, cajas_ppto:514, precio_ytd:301.5, precio_ppto:450.99, dif_ppto:-0.5072, dif_25:-0.6877}, 
+{linea:"Iconos", mercado:"Chile", zona:"Chile", manager:"Evelyn Ramirez", cc:"10505", fob_ytd:229837, cajas_ytd:337, fob_abr:61223, cajas_abr:0, fob_ytd25:228458, fob_ppto:302983, cajas_ppto:493, precio_ytd:682.5, precio_ppto:614.57, dif_ppto:-0.2414, dif_25:0.006}, 
+{linea:"Iconos", mercado:"Malasia", zona:"Asia", manager:"Juan Yañez", cc:"10833", fob_ytd:167850, cajas_ytd:305, fob_abr:50998, cajas_abr:0, fob_ytd25:0, fob_ppto:68536, cajas_ppto:119, precio_ytd:551.2, precio_ppto:574.01, dif_ppto:1.4491, dif_25:0}, 
+{linea:"Iconos", mercado:"Japón", zona:"Asia", manager:"Eduardo Stark", cc:"10825", fob_ytd:84773, cajas_ytd:166, fob_abr:16992, cajas_abr:0, fob_ytd25:22274, fob_ppto:49453, cajas_ppto:108, precio_ytd:511.5, precio_ppto:457.05, dif_ppto:0.7142, dif_25:2.8058}, 
+{linea:"Iconos", mercado:"Tailandia", zona:"Asia", manager:"Juan Yañez", cc:"10845", fob_ytd:59910, cajas_ytd:110, fob_abr:0, cajas_abr:0, fob_ytd25:18187, fob_ppto:47886, cajas_ppto:107, precio_ytd:544.6, precio_ppto:448.37, dif_ppto:0.2511, dif_25:2.2941}, 
+{linea:"Iconos", mercado:"Costa Rica", zona:"C. America", manager:"Patricia Osenga", cc:"10406", fob_ytd:37370, cajas_ytd:82, fob_abr:9320, cajas_abr:0, fob_ytd25:6299, fob_ppto:25724, cajas_ppto:53, precio_ytd:455.7, precio_ppto:484.45, dif_ppto:0.4527, dif_25:4.9327}, 
+{linea:"Iconos", mercado:"Alemania", zona:"Europa", manager:"Eduardo Stark", cc:"10603", fob_ytd:30823, cajas_ytd:66, fob_abr:0, cajas_abr:0, fob_ytd25:93029, fob_ppto:70558, cajas_ppto:153, precio_ytd:463.5, precio_ppto:462.37, dif_ppto:-0.5631, dif_25:-0.6687}, 
+{linea:"Iconos", mercado:"Vietnam", zona:"Asia", manager:"Juan Yañez", cc:"10850", fob_ytd:34497, cajas_ytd:62, fob_abr:27817, cajas_abr:0, fob_ytd25:86032, fob_ppto:71215, cajas_ppto:135, precio_ytd:551.9, precio_ppto:527.13, dif_ppto:-0.5156, dif_25:-0.599}, 
+{linea:"Iconos", mercado:"Taiwan", zona:"Asia", manager:"Juan Yañez", cc:"10846", fob_ytd:14625, cajas_ytd:58, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:69021, cajas_ppto:144, precio_ytd:250, precio_ppto:478.65, dif_ppto:-0.7881, dif_25:0}, 
+{linea:"Iconos", mercado:"Inglaterra", zona:"Europa", manager:"Eduardo Stark", cc:"10624", fob_ytd:25708, cajas_ytd:55, fob_abr:0, cajas_abr:0, fob_ytd25:43829, fob_ppto:66373, cajas_ppto:144, precio_ytd:467.4, precio_ppto:460.28, dif_ppto:-0.6127, dif_25:-0.4134}, 
+{linea:"Iconos", mercado:"Hong Kong", zona:"Asia", manager:"Juan Yañez", cc:"10819", fob_ytd:26483, cajas_ytd:50, fob_abr:0, cajas_abr:0, fob_ytd25:44873, fob_ppto:31593, cajas_ppto:64, precio_ytd:529.7, precio_ppto:492.87, dif_ppto:-0.1617, dif_25:-0.4098}, 
+{linea:"Iconos", mercado:"Emiratos Arabes", zona:"Medio Oriente", manager:"Juan Pablo Velasco", cc:"10815", fob_ytd:24061, cajas_ytd:48, fob_abr:0, cajas_abr:0, fob_ytd25:18585, fob_ppto:27702, cajas_ppto:55, precio_ytd:506.6, precio_ppto:500.94, dif_ppto:-0.1314, dif_25:0.2947}, 
+{linea:"Iconos", mercado:"Holanda", zona:"Europa", manager:"Eduardo Stark", cc:"10622", fob_ytd:26085, cajas_ytd:46, fob_abr:0, cajas_abr:0, fob_ytd25:42268, fob_ppto:82817, cajas_ppto:166, precio_ytd:567.1, precio_ppto:498.9, dif_ppto:-0.685, dif_25:-0.3829}, 
+{linea:"Iconos", mercado:"Singapur", zona:"Asia", manager:"Juan Yañez", cc:"10842", fob_ytd:21203, cajas_ytd:45, fob_abr:7844, cajas_abr:0, fob_ytd25:8839, fob_ppto:21569, cajas_ppto:47, precio_ytd:471.2, precio_ppto:462.86, dif_ppto:-0.017, dif_25:1.3987}, 
+{linea:"Iconos", mercado:"México", zona:"C. America", manager:"Daniela Rojas", cc:"10304", fob_ytd:18690, cajas_ytd:35, fob_abr:0, cajas_abr:0, fob_ytd25:18690, fob_ppto:33638, cajas_ppto:63, precio_ytd:534, precio_ppto:533.93, dif_ppto:-0.4444, dif_25:0.0}, 
+{linea:"Iconos", mercado:"Malvinas", zona:"S. America", manager:"Daniela Rojas", cc:"10518", fob_ytd:13312, cajas_ytd:31, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:14073, cajas_ppto:26, precio_ytd:429.4, precio_ppto:533.06, dif_ppto:-0.0541, dif_25:0}, 
+{linea:"Iconos", mercado:"Hungria", zona:"Europa", manager:"Juan Pablo Velasco", cc:"10623", fob_ytd:14924, cajas_ytd:30, fob_abr:0, cajas_abr:0, fob_ytd25:7370, fob_ppto:3947, cajas_ppto:9, precio_ytd:497.5, precio_ppto:433.75, dif_ppto:2.7811, dif_25:1.025}, 
+{linea:"Iconos", mercado:"Cambodia", zona:"Asia", manager:"Juan Yañez", cc:"10810", fob_ytd:10315, cajas_ytd:19, fob_abr:0, cajas_abr:0, fob_ytd25:4645, fob_ppto:14695, cajas_ppto:28, precio_ytd:533.5, precio_ppto:528.59, dif_ppto:-0.298, dif_25:1.2207}, 
+{linea:"Iconos", mercado:"Cruceros", zona:"Caribe", manager:"Patricia Osenga", cc:"10303", fob_ytd:12877, cajas_ytd:18, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:0, cajas_ppto:0, precio_ytd:715.4, precio_ppto:0, dif_ppto:0, dif_25:0}, 
+{linea:"Iconos", mercado:"Perú", zona:"S. America", manager:"Daniela Rojas", cc:"10511", fob_ytd:11465, cajas_ytd:17, fob_abr:11465, cajas_abr:0, fob_ytd25:0, fob_ppto:33124, cajas_ppto:54, precio_ytd:674.4, precio_ppto:619.14, dif_ppto:-0.6539, dif_25:0}, 
+{linea:"Iconos", mercado:"Rep Dominicana", zona:"Caribe", manager:"Patricia Osenga", cc:"10417", fob_ytd:5073, cajas_ytd:10, fob_abr:0, cajas_abr:0, fob_ytd25:5340, fob_ppto:3503, cajas_ppto:6, precio_ytd:534, precio_ppto:538.94, dif_ppto:0.4481, dif_25:-0.05}, 
+{linea:"Iconos", mercado:"Uruguay", zona:"S. America", manager:"Daniela Rojas", cc:"10513", fob_ytd:7554, cajas_ytd:8, fob_abr:0, cajas_abr:0, fob_ytd25:14113, fob_ppto:13176, cajas_ppto:23, precio_ytd:888.7, precio_ppto:565.49, dif_ppto:-0.4267, dif_25:-0.4647}, 
+{linea:"Iconos", mercado:"St. Maarten", zona:"Caribe", manager:"Patricia Osenga", cc:"10422", fob_ytd:3734, cajas_ytd:7, fob_abr:0, cajas_abr:0, fob_ytd25:9334, fob_ppto:3150, cajas_ppto:6, precio_ytd:533.4, precio_ppto:543.1, dif_ppto:0.1853, dif_25:-0.6}, 
+{linea:"Iconos", mercado:"Honduras", zona:"C. America", manager:"Patricia Osenga", cc:"10412", fob_ytd:2667, cajas_ytd:5, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:0, cajas_ppto:0, precio_ytd:533.4, precio_ppto:0, dif_ppto:0, dif_25:0}, 
+{linea:"Iconos", mercado:"Islas Cayman", zona:"Caribe", manager:"Patricia Osenga", cc:"10424", fob_ytd:2670, cajas_ytd:5, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:0, cajas_ppto:0, precio_ytd:534, precio_ppto:0, dif_ppto:0, dif_25:0}, 
+{linea:"Iconos", mercado:"Finlandia", zona:"Europa", manager:"Isidora Rodriguez", cc:"10617", fob_ytd:2601, cajas_ytd:5, fob_abr:2601, cajas_abr:0, fob_ytd25:0, fob_ppto:8935, cajas_ppto:18, precio_ytd:520.2, precio_ppto:493.64, dif_ppto:-0.7089, dif_25:0}, 
+{linea:"Iconos", mercado:"Luxemburgo", zona:"Europa", manager:"Juan Pablo Velasco", cc:"10636", fob_ytd:2311, cajas_ytd:5, fob_abr:0, cajas_abr:0, fob_ytd25:3889, fob_ppto:3341, cajas_ppto:8, precio_ytd:462.3, precio_ppto:417.62, dif_ppto:-0.3082, dif_25:-0.4057}, 
+{linea:"Iconos", mercado:"Jamaica", zona:"Caribe", manager:"Patricia Osenga", cc:"10413", fob_ytd:1867, cajas_ytd:4, fob_abr:1867, cajas_abr:0, fob_ytd25:0, fob_ppto:1226, cajas_ppto:2, precio_ytd:533.4, precio_ppto:533.13, dif_ppto:0.5225, dif_25:0}, 
+{linea:"Iconos", mercado:"Ucrania", zona:"Europa", manager:"Isidora Rodriguez", cc:"10650", fob_ytd:3274, cajas_ytd:4, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:6237, cajas_ppto:11, precio_ytd:935.5, precio_ppto:551.91, dif_ppto:-0.475, dif_25:0}, 
+{linea:"Iconos", mercado:"Barbados", zona:"Caribe", manager:"Patricia Osenga", cc:"10404", fob_ytd:1335, cajas_ytd:2, fob_abr:1335, cajas_abr:0, fob_ytd25:0, fob_ppto:0, cajas_ppto:0, precio_ytd:534, precio_ppto:0, dif_ppto:0, dif_25:0}, 
+{linea:"Iconos", mercado:"Islas Virgen", zona:"Caribe", manager:"Patricia Osenga", cc:"10426", fob_ytd:1334, cajas_ytd:2, fob_abr:0, cajas_abr:0, fob_ytd25:2604, fob_ppto:3417, cajas_ppto:7, precio_ytd:533.4, precio_ppto:502.54, dif_ppto:-0.6098, dif_25:-0.4878}, 
+{linea:"Iconos", mercado:"Eslovaquia", zona:"Europa", manager:"Juan Pablo Velasco", cc:"10613", fob_ytd:1088, cajas_ytd:2, fob_abr:0, cajas_abr:0, fob_ytd25:2406, fob_ppto:843, cajas_ppto:2, precio_ytd:543.8, precio_ppto:526.81, dif_ppto:0.2902, dif_25:-0.548}, 
+{linea:"Iconos", mercado:"Jordania", zona:"Medio Oriente", manager:"Juan Pablo Velasco", cc:"10826", fob_ytd:786, cajas_ytd:2, fob_abr:0, cajas_abr:0, fob_ytd25:3145, fob_ppto:1315, cajas_ppto:3, precio_ytd:524.2, precio_ppto:505.92, dif_ppto:-0.4022, dif_25:-0.75}, 
+{linea:"Iconos", mercado:"Guatemala", zona:"C. America", manager:"Patricia Osenga", cc:"10410", fob_ytd:533, cajas_ytd:1, fob_abr:533, cajas_abr:0, fob_ytd25:4239, fob_ppto:9309, cajas_ppto:19, precio_ytd:533.4, precio_ppto:500.46, dif_ppto:-0.9427, dif_25:-0.8742}, 
+{linea:"Iconos", mercado:"Republic Of Maldives", zona:"Asia", manager:"Isidora Rodriguez", cc:"10834", fob_ytd:533, cajas_ytd:1, fob_abr:0, cajas_abr:0, fob_ytd25:4000, fob_ppto:175, cajas_ppto:0, precio_ytd:533.4, precio_ppto:437.5, dif_ppto:2.048, dif_25:-0.8667}, 
+{linea:"Montes Alpha", mercado:"Chile", zona:"Chile", manager:"Evelyn Ramirez", cc:"10505", fob_ytd:680812, cajas_ytd:8263, fob_abr:202239, cajas_abr:0, fob_ytd25:639483, fob_ppto:819492, cajas_ppto:10686, precio_ytd:82.4, precio_ppto:76.69, dif_ppto:-0.1692, dif_25:0.0646}, 
+{linea:"Montes Alpha", mercado:"Korea", zona:"Asia", manager:"Juan Pablo Velasco", cc:"10814", fob_ytd:718002, cajas_ytd:7898, fob_abr:186998, cajas_abr:0, fob_ytd25:755156, fob_ppto:939992, cajas_ppto:10183, precio_ytd:90.9, precio_ppto:92.31, dif_ppto:-0.2362, dif_25:-0.0492}, 
+{linea:"Montes Alpha", mercado:"China", zona:"Asia", manager:"Jason Li", cc:"10811", fob_ytd:579004, cajas_ytd:5315, fob_abr:160995, cajas_abr:0, fob_ytd25:510580, fob_ppto:367300, cajas_ppto:3250, precio_ytd:108.9, precio_ppto:113.03, dif_ppto:0.5764, dif_25:0.134}, 
+{linea:"Montes Alpha", mercado:"Japón", zona:"Asia", manager:"Eduardo Stark", cc:"10825", fob_ytd:544511, cajas_ytd:5122, fob_abr:96531, cajas_abr:0, fob_ytd25:518645, fob_ppto:698868, cajas_ppto:6304, precio_ytd:106.3, precio_ppto:110.86, dif_ppto:-0.2209, dif_25:0.0499}, 
+{linea:"Montes Alpha", mercado:"Alemania", zona:"Europa", manager:"Eduardo Stark", cc:"10603", fob_ytd:223518, cajas_ytd:2410, fob_abr:0, cajas_abr:0, fob_ytd25:192938, fob_ppto:290588, cajas_ppto:3143, precio_ytd:92.7, precio_ppto:92.45, dif_ppto:-0.2308, dif_25:0.1585}, 
+{linea:"Montes Alpha", mercado:"Canada", zona:"N. America", manager:"Isidora Rodriguez", cc:"10302", fob_ytd:139564, cajas_ytd:1841, fob_abr:66712, cajas_abr:0, fob_ytd25:152422, fob_ppto:258227, cajas_ppto:3325, precio_ytd:75.8, precio_ppto:77.67, dif_ppto:-0.4595, dif_25:-0.0844}, 
+{linea:"Montes Alpha", mercado:"Usa", zona:"N. America", manager:"Isidora Rodriguez", cc:"10303", fob_ytd:128612, cajas_ytd:1657, fob_abr:46058, cajas_abr:0, fob_ytd25:266893, fob_ppto:177975, cajas_ppto:1991, precio_ytd:77.6, precio_ppto:89.39, dif_ppto:-0.2774, dif_25:-0.5181}, 
+{linea:"Montes Alpha", mercado:"Inglaterra", zona:"Europa", manager:"Eduardo Stark", cc:"10624", fob_ytd:65589, cajas_ytd:800, fob_abr:26664, cajas_abr:0, fob_ytd25:122041, fob_ppto:120155, cajas_ppto:1505, precio_ytd:82.0, precio_ppto:79.82, dif_ppto:-0.4541, dif_25:-0.4626}, 
+{linea:"Montes Alpha", mercado:"Polonia", zona:"Europa", manager:"Juan Pablo Velasco", cc:"10642", fob_ytd:64158, cajas_ytd:700, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:9446, cajas_ppto:105, precio_ytd:91.7, precio_ppto:90.05, dif_ppto:5.7918, dif_25:0}, 
+{linea:"Montes Alpha", mercado:"Vietnam", zona:"Asia", manager:"Juan Yañez", cc:"10850", fob_ytd:76182, cajas_ytd:665, fob_abr:64612, cajas_abr:0, fob_ytd25:59511, fob_ppto:60640, cajas_ppto:547, precio_ytd:114.6, precio_ppto:110.94, dif_ppto:0.2563, dif_25:0.2801}, 
+{linea:"Montes Alpha", mercado:"Holanda", zona:"Europa", manager:"Eduardo Stark", cc:"10622", fob_ytd:60490, cajas_ytd:587, fob_abr:0, cajas_abr:0, fob_ytd25:40168, fob_ppto:113891, cajas_ppto:1109, precio_ytd:103.0, precio_ppto:102.72, dif_ppto:-0.4689, dif_25:0.5059}, 
+{linea:"Montes Alpha", mercado:"Uruguay", zona:"S. America", manager:"Daniela Rojas", cc:"10513", fob_ytd:40052, cajas_ytd:370, fob_abr:0, cajas_abr:0, fob_ytd25:63814, fob_ppto:30432, cajas_ppto:277, precio_ytd:108.2, precio_ppto:109.7, dif_ppto:0.3161, dif_25:-0.3724}, 
+{linea:"Montes Alpha", mercado:"Emiratos Arabes", zona:"Medio Oriente", manager:"Juan Pablo Velasco", cc:"10815", fob_ytd:33642, cajas_ytd:341, fob_abr:0, cajas_abr:0, fob_ytd25:27104, fob_ppto:69762, cajas_ppto:704, precio_ytd:98.7, precio_ppto:99.04, dif_ppto:-0.5178, dif_25:0.2412}, 
+{linea:"Montes Alpha", mercado:"Tailandia", zona:"Asia", manager:"Juan Yañez", cc:"10845", fob_ytd:29799, cajas_ytd:300, fob_abr:0, cajas_abr:0, fob_ytd25:71299, fob_ppto:100532, cajas_ppto:970, precio_ytd:99.3, precio_ppto:103.6, dif_ppto:-0.7036, dif_25:-0.5821}, 
+{linea:"Montes Alpha", mercado:"Perú", zona:"S. America", manager:"Daniela Rojas", cc:"10511", fob_ytd:33060, cajas_ytd:298, fob_abr:33060, cajas_abr:0, fob_ytd25:0, fob_ppto:67908, cajas_ppto:616, precio_ytd:111.1, precio_ppto:110.26, dif_ppto:-0.5132, dif_25:0}, 
+{linea:"Montes Alpha", mercado:"Hungria", zona:"Europa", manager:"Juan Pablo Velasco", cc:"10623", fob_ytd:28179, cajas_ytd:290, fob_abr:0, cajas_abr:0, fob_ytd25:14980, fob_ppto:8462, cajas_ppto:93, precio_ytd:97.2, precio_ppto:91.28, dif_ppto:2.3301, dif_25:0.8811}, 
+{linea:"Montes Alpha", mercado:"Malvinas", zona:"S. America", manager:"Daniela Rojas", cc:"10518", fob_ytd:29390, cajas_ytd:270, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:14212, cajas_ppto:128, precio_ytd:108.9, precio_ppto:110.86, dif_ppto:1.0679, dif_25:0}, 
+{linea:"Montes Alpha", mercado:"Chipre", zona:"Europa", manager:"Juan Pablo Velasco", cc:"10812", fob_ytd:25140, cajas_ytd:260, fob_abr:0, cajas_abr:0, fob_ytd25:22071, fob_ppto:18668, cajas_ppto:203, precio_ytd:96.7, precio_ppto:92.05, dif_ppto:0.3467, dif_25:0.1391}, 
+{linea:"Montes Alpha", mercado:"Costa Rica", zona:"C. America", manager:"Patricia Osenga", cc:"10406", fob_ytd:16241, cajas_ytd:149, fob_abr:8829, cajas_abr:0, fob_ytd25:4469, fob_ppto:15447, cajas_ppto:142, precio_ytd:109, precio_ppto:109.17, dif_ppto:0.0514, dif_25:2.6341}, 
+{linea:"Montes Alpha", mercado:"Panamá", zona:"C. America", manager:"Patricia Osenga", cc:"10415", fob_ytd:13000, cajas_ytd:125, fob_abr:0, cajas_abr:0, fob_ytd25:10400, fob_ppto:12316, cajas_ppto:116, precio_ytd:104, precio_ppto:105.9, dif_ppto:0.0555, dif_25:0.25}, 
+{linea:"Montes Alpha", mercado:"Republic Of Maldives", zona:"Asia", manager:"Isidora Rodriguez", cc:"10834", fob_ytd:12075, cajas_ytd:115, fob_abr:0, cajas_abr:0, fob_ytd25:8925, fob_ppto:3960, cajas_ppto:37, precio_ytd:105, precio_ppto:105.89, dif_ppto:2.0489, dif_25:0.3529}, 
+{linea:"Montes Alpha", mercado:"Singapur", zona:"Asia", manager:"Juan Yañez", cc:"10842", fob_ytd:12390, cajas_ytd:109, fob_abr:6394, cajas_abr:0, fob_ytd25:30253, fob_ppto:30519, cajas_ppto:282, precio_ytd:113.7, precio_ppto:108.15, dif_ppto:-0.594, dif_25:-0.5905}, 
+{linea:"Montes Alpha", mercado:"México", zona:"C. America", manager:"Daniela Rojas", cc:"10304", fob_ytd:10600, cajas_ytd:100, fob_abr:0, cajas_abr:0, fob_ytd25:20479, fob_ppto:24413, cajas_ppto:224, precio_ytd:106, precio_ppto:109.08, dif_ppto:-0.5658, dif_25:-0.4824}, 
+{linea:"Montes Alpha", mercado:"Bélgica", zona:"Europa", manager:"Juan Pablo Velasco", cc:"10606", fob_ytd:8389, cajas_ytd:100, fob_abr:0, cajas_abr:0, fob_ytd25:47882, fob_ppto:11419, cajas_ppto:140, precio_ytd:83.9, precio_ppto:81.57, dif_ppto:-0.2653, dif_25:-0.8248}, 
+{linea:"Montes Alpha", mercado:"Tahiti", zona:"Oceania", manager:"Patricia Osenga", cc:"10305", fob_ytd:9975, cajas_ytd:95, fob_abr:0, cajas_abr:0, fob_ytd25:1440, fob_ppto:3008, cajas_ppto:29, precio_ytd:105, precio_ppto:103.74, dif_ppto:2.3157, dif_25:5.9271}, 
+{linea:"Montes Alpha", mercado:"Guatemala", zona:"C. America", manager:"Patricia Osenga", cc:"10410", fob_ytd:8720, cajas_ytd:80, fob_abr:2725, cajas_abr:0, fob_ytd25:8720, fob_ppto:19778, cajas_ppto:180, precio_ytd:109, precio_ppto:109.88, dif_ppto:-0.5591, dif_25:0.0}, 
+{linea:"Montes Alpha", mercado:"Honduras", zona:"C. America", manager:"Patricia Osenga", cc:"10412", fob_ytd:8175, cajas_ytd:75, fob_abr:8175, cajas_abr:0, fob_ytd25:0, fob_ppto:4306, cajas_ppto:42, precio_ytd:109, precio_ppto:102.52, dif_ppto:0.8985, dif_25:0}, 
+{linea:"Montes Alpha", mercado:"Puerto Rico", zona:"Caribe", manager:"Daniela Rojas", cc:"10416", fob_ytd:7725, cajas_ytd:75, fob_abr:0, cajas_abr:0, fob_ytd25:4120, fob_ppto:3783, cajas_ppto:37, precio_ytd:103, precio_ppto:103.08, dif_ppto:1.042, dif_25:0.875}, 
+{linea:"Montes Alpha", mercado:"Islas Cayman", zona:"Caribe", manager:"Patricia Osenga", cc:"10424", fob_ytd:7800, cajas_ytd:75, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:0, cajas_ppto:0, precio_ytd:104, precio_ppto:0, dif_ppto:0, dif_25:0}, 
+{linea:"Montes Alpha", mercado:"Nueva Zelanda", zona:"Oceania", manager:"Patricia Osenga", cc:"10908", fob_ytd:7875, cajas_ytd:75, fob_abr:0, cajas_abr:0, fob_ytd25:10500, fob_ppto:4650, cajas_ppto:44, precio_ytd:105, precio_ppto:104.96, dif_ppto:0.6937, dif_25:-0.25}, 
+{linea:"Montes Alpha", mercado:"Eslovaquia", zona:"Europa", manager:"Juan Pablo Velasco", cc:"10613", fob_ytd:7265, cajas_ytd:72, fob_abr:0, cajas_abr:0, fob_ytd25:13158, fob_ppto:7034, cajas_ppto:78, precio_ytd:100.2, precio_ppto:89.6, dif_ppto:0.0329, dif_25:-0.4479}, 
+{linea:"Montes Alpha", mercado:"Rep Dominicana", zona:"Caribe", manager:"Patricia Osenga", cc:"10417", fob_ytd:7630, cajas_ytd:70, fob_abr:0, cajas_abr:0, fob_ytd25:9810, fob_ppto:5541, cajas_ppto:51, precio_ytd:109, precio_ppto:108.44, dif_ppto:0.3769, dif_25:-0.2222}, 
+{linea:"Montes Alpha", mercado:"India", zona:"Asia", manager:"Sin Responsable", cc:"10820", fob_ytd:5892, cajas_ytd:60, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:10332, cajas_ppto:98, precio_ytd:97.6, precio_ppto:105, dif_ppto:-0.4298, dif_25:0}, 
+{linea:"Montes Alpha", mercado:"Taiwan", zona:"Asia", manager:"Juan Yañez", cc:"10846", fob_ytd:7358, cajas_ytd:60, fob_abr:0, cajas_abr:0, fob_ytd25:16210, fob_ppto:31146, cajas_ppto:256, precio_ytd:122.6, precio_ppto:121.9, dif_ppto:-0.7638, dif_25:-0.5461}, 
+{linea:"Montes Alpha", mercado:"Finlandia", zona:"Europa", manager:"Isidora Rodriguez", cc:"10617", fob_ytd:4868, cajas_ytd:50, fob_abr:4868, cajas_abr:0, fob_ytd25:6640, fob_ppto:14370, cajas_ppto:150, precio_ytd:97.4, precio_ppto:95.87, dif_ppto:-0.6613, dif_25:-0.2669}, 
+{linea:"Montes Alpha", mercado:"Cambodia", zona:"Asia", manager:"Juan Yañez", cc:"10810", fob_ytd:5383, cajas_ytd:50, fob_abr:0, cajas_abr:0, fob_ytd25:8741, fob_ppto:6195, cajas_ppto:54, precio_ytd:107.7, precio_ppto:115.79, dif_ppto:-0.1311, dif_25:-0.3842}, 
+{linea:"Montes Alpha", mercado:"Hong Kong", zona:"Asia", manager:"Juan Yañez", cc:"10819", fob_ytd:7190, cajas_ytd:50, fob_abr:0, cajas_abr:0, fob_ytd25:35294, fob_ppto:34372, cajas_ppto:310, precio_ytd:143.8, precio_ppto:110.99, dif_ppto:-0.7908, dif_25:-0.7963}, 
+{linea:"Montes Alpha", mercado:"Malasia", zona:"Asia", manager:"Juan Yañez", cc:"10833", fob_ytd:5032, cajas_ytd:50, fob_abr:5032, cajas_abr:0, fob_ytd25:0, fob_ppto:11466, cajas_ppto:100, precio_ytd:100.7, precio_ppto:114.77, dif_ppto:-0.5611, dif_25:0}, 
+{linea:"Montes Alpha", mercado:"Qatar", zona:"Medio Oriente", manager:"Juan Pablo Velasco", cc:"10840", fob_ytd:5095, cajas_ytd:50, fob_abr:0, cajas_abr:0, fob_ytd25:35443, fob_ppto:3844, cajas_ppto:38, precio_ytd:101.9, precio_ppto:101.96, dif_ppto:0.3255, dif_25:-0.8562}, 
+{linea:"Montes Alpha", mercado:"Ucrania", zona:"Europa", manager:"Isidora Rodriguez", cc:"10650", fob_ytd:3658, cajas_ytd:43, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:2239, cajas_ppto:25, precio_ytd:85.1, precio_ppto:89.2, dif_ppto:0.6338, dif_25:0}, 
+{linea:"Montes Alpha", mercado:"Brasil", zona:"S. America", manager:"Daniela Rojas", cc:"10504", fob_ytd:5654, cajas_ytd:40, fob_abr:5654, cajas_abr:0, fob_ytd25:228909, fob_ppto:402000, cajas_ppto:3818, precio_ytd:141.4, precio_ppto:105.29, dif_ppto:-0.9859, dif_25:-0.9753}, 
+{linea:"Montes Alpha", mercado:"St. Maarten", zona:"Caribe", manager:"Patricia Osenga", cc:"10422", fob_ytd:3675, cajas_ytd:35, fob_abr:0, cajas_abr:0, fob_ytd25:7350, fob_ppto:2583, cajas_ppto:24, precio_ytd:105, precio_ppto:105.85, dif_ppto:0.4229, dif_25:-0.5}, 
+{linea:"Montes Alpha", mercado:"Barbados", zona:"Caribe", manager:"Patricia Osenga", cc:"10404", fob_ytd:3419, cajas_ytd:32, fob_abr:3419, cajas_abr:0, fob_ytd25:0, fob_ppto:2755, cajas_ppto:26, precio_ytd:106.8, precio_ppto:103.98, dif_ppto:0.2408, dif_25:0}, 
+{linea:"Montes Alpha", mercado:"Islas Virgen", zona:"Caribe", manager:"Patricia Osenga", cc:"10426", fob_ytd:3003, cajas_ytd:29, fob_abr:0, cajas_abr:0, fob_ytd25:714, fob_ppto:5052, cajas_ppto:49, precio_ytd:103.6, precio_ppto:103.3, dif_ppto:-0.4055, dif_25:3.2059}, 
+{linea:"Montes Alpha", mercado:"Jamaica", zona:"Caribe", manager:"Patricia Osenga", cc:"10413", fob_ytd:2940, cajas_ytd:28, fob_abr:2940, cajas_abr:0, fob_ytd25:0, fob_ppto:1034, cajas_ppto:10, precio_ytd:105, precio_ppto:103.36, dif_ppto:1.8444, dif_25:0}, 
+{linea:"Montes Alpha", mercado:"Luxemburgo", zona:"Europa", manager:"Juan Pablo Velasco", cc:"10636", fob_ytd:2067, cajas_ytd:20, fob_abr:0, cajas_abr:0, fob_ytd25:4450, fob_ppto:3520, cajas_ppto:37, precio_ytd:103.4, precio_ppto:95.12, dif_ppto:-0.4127, dif_25:-0.5355}, 
+{linea:"Montes Alpha", mercado:"Cruceros", zona:"Caribe", manager:"Patricia Osenga", cc:"10303", fob_ytd:1532, cajas_ytd:11, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:0, cajas_ppto:0, precio_ytd:139.3, precio_ppto:0, dif_ppto:0, dif_25:0}, 
+{linea:"Limited Selection", mercado:"China", zona:"Asia", manager:"Jason Li", cc:"10811", fob_ytd:432277, cajas_ytd:6822, fob_abr:90176, cajas_abr:0, fob_ytd25:396366, fob_ppto:233346, cajas_ppto:3710, precio_ytd:63.4, precio_ppto:62.9, dif_ppto:0.8525, dif_25:0.0906}, 
+{linea:"Limited Selection", mercado:"Alemania", zona:"Europa", manager:"Eduardo Stark", cc:"10603", fob_ytd:259963, cajas_ytd:4696, fob_abr:0, cajas_abr:0, fob_ytd25:257633, fob_ppto:394090, cajas_ppto:7377, precio_ytd:55.4, precio_ppto:53.42, dif_ppto:-0.3403, dif_25:0.009}, 
+{linea:"Limited Selection", mercado:"Canada", zona:"N. America", manager:"Isidora Rodriguez", cc:"10302", fob_ytd:105945, cajas_ytd:2071, fob_abr:12278, cajas_abr:0, fob_ytd25:81244, fob_ppto:75948, cajas_ppto:1502, precio_ytd:51.2, precio_ppto:50.56, dif_ppto:0.395, dif_25:0.304}, 
+{linea:"Limited Selection", mercado:"Chile", zona:"Chile", manager:"Evelyn Ramirez", cc:"10505", fob_ytd:80915, cajas_ytd:1730, fob_abr:23291, cajas_abr:0, fob_ytd25:102536, fob_ppto:106433, cajas_ppto:2653, precio_ytd:46.8, precio_ppto:40.12, dif_ppto:-0.2398, dif_25:-0.2109}, 
+{linea:"Limited Selection", mercado:"Usa", zona:"N. America", manager:"Isidora Rodriguez", cc:"10303", fob_ytd:79422, cajas_ytd:1455, fob_abr:23684, cajas_abr:0, fob_ytd25:159213, fob_ppto:99356, cajas_ppto:1709, precio_ytd:54.6, precio_ppto:58.15, dif_ppto:-0.2006, dif_25:-0.5012}, 
+{linea:"Limited Selection", mercado:"Taiwan", zona:"Asia", manager:"Juan Yañez", cc:"10846", fob_ytd:72925, cajas_ytd:1250, fob_abr:43755, cajas_abr:0, fob_ytd25:29170, fob_ppto:23620, cajas_ppto:399, precio_ytd:58.3, precio_ppto:59.14, dif_ppto:2.0875, dif_25:1.5}, 
+{linea:"Limited Selection", mercado:"Japón", zona:"Asia", manager:"Eduardo Stark", cc:"10825", fob_ytd:68536, cajas_ytd:1120, fob_abr:16825, cajas_abr:0, fob_ytd25:137155, fob_ppto:103780, cajas_ppto:1694, precio_ytd:61.2, precio_ppto:61.27, dif_ppto:-0.3396, dif_25:-0.5003}, 
+{linea:"Limited Selection", mercado:"Holanda", zona:"Europa", manager:"Eduardo Stark", cc:"10622", fob_ytd:36024, cajas_ytd:600, fob_abr:0, cajas_abr:0, fob_ytd25:30328, fob_ppto:43992, cajas_ppto:771, precio_ytd:60.0, precio_ppto:57.07, dif_ppto:-0.1811, dif_25:0.1878}, 
+{linea:"Limited Selection", mercado:"Inglaterra", zona:"Europa", manager:"Eduardo Stark", cc:"10624", fob_ytd:27511, cajas_ytd:530, fob_abr:17261, cajas_abr:0, fob_ytd25:48951, fob_ppto:40536, cajas_ppto:797, precio_ytd:51.9, precio_ppto:50.84, dif_ppto:-0.3213, dif_25:-0.438}, 
+{linea:"Limited Selection", mercado:"Finlandia", zona:"Europa", manager:"Isidora Rodriguez", cc:"10617", fob_ytd:26955, cajas_ytd:500, fob_abr:26955, cajas_abr:0, fob_ytd25:43373, fob_ppto:19874, cajas_ppto:378, precio_ytd:53.9, precio_ppto:52.63, dif_ppto:0.3563, dif_25:-0.3785}, 
+{linea:"Limited Selection", mercado:"Korea", zona:"Asia", manager:"Juan Pablo Velasco", cc:"10814", fob_ytd:26890, cajas_ytd:500, fob_abr:0, cajas_abr:0, fob_ytd25:10598, fob_ppto:36811, cajas_ppto:685, precio_ytd:53.8, precio_ppto:53.75, dif_ppto:-0.2695, dif_25:1.5373}, 
+{linea:"Limited Selection", mercado:"Tailandia", zona:"Asia", manager:"Juan Yañez", cc:"10845", fob_ytd:28930, cajas_ytd:500, fob_abr:0, cajas_abr:0, fob_ytd25:20452, fob_ppto:26164, cajas_ppto:453, precio_ytd:57.9, precio_ppto:57.77, dif_ppto:0.1057, dif_25:0.4146}, 
+{linea:"Limited Selection", mercado:"Malvinas", zona:"S. America", manager:"Daniela Rojas", cc:"10518", fob_ytd:14220, cajas_ytd:235, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:4946, cajas_ppto:82, precio_ytd:60.5, precio_ppto:60.32, dif_ppto:1.8749, dif_25:0}, 
+{linea:"Limited Selection", mercado:"Tahiti", zona:"Oceania", manager:"Patricia Osenga", cc:"10305", fob_ytd:13020, cajas_ytd:210, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:1618, cajas_ppto:27, precio_ytd:62, precio_ppto:59.7, dif_ppto:7.0475, dif_25:0}, 
+{linea:"Limited Selection", mercado:"Singapur", zona:"Asia", manager:"Juan Yañez", cc:"10842", fob_ytd:12194, cajas_ytd:200, fob_abr:3004, cajas_abr:0, fob_ytd25:3181, fob_ppto:5114, cajas_ppto:83, precio_ytd:61.0, precio_ppto:61.54, dif_ppto:1.3846, dif_25:2.8335}, 
+{linea:"Limited Selection", mercado:"México", zona:"C. America", manager:"Daniela Rojas", cc:"10304", fob_ytd:10905, cajas_ytd:175, fob_abr:0, cajas_abr:0, fob_ytd25:10716, fob_ppto:11286, cajas_ppto:185, precio_ytd:62.3, precio_ppto:60.87, dif_ppto:-0.0337, dif_25:0.0176}, 
+{linea:"Limited Selection", mercado:"Emiratos Arabes", zona:"Medio Oriente", manager:"Juan Pablo Velasco", cc:"10815", fob_ytd:9584, cajas_ytd:170, fob_abr:0, cajas_abr:0, fob_ytd25:20282, fob_ppto:25828, cajas_ppto:455, precio_ytd:56.4, precio_ppto:56.81, dif_ppto:-0.6289, dif_25:-0.5275}, 
+{linea:"Limited Selection", mercado:"Costa Rica", zona:"C. America", manager:"Patricia Osenga", cc:"10406", fob_ytd:8155, cajas_ytd:135, fob_abr:4540, cajas_abr:0, fob_ytd25:19680, fob_ppto:16789, cajas_ppto:275, precio_ytd:60.4, precio_ppto:60.98, dif_ppto:-0.5143, dif_25:-0.5856}, 
+{linea:"Limited Selection", mercado:"Cambodia", zona:"Asia", manager:"Juan Yañez", cc:"10810", fob_ytd:7511, cajas_ytd:125, fob_abr:0, cajas_abr:0, fob_ytd25:8413, fob_ppto:9362, cajas_ppto:156, precio_ytd:60.1, precio_ppto:60.01, dif_ppto:-0.1977, dif_25:-0.1071}, 
+{linea:"Limited Selection", mercado:"Eslovaquia", zona:"Europa", manager:"Juan Pablo Velasco", cc:"10613", fob_ytd:6556, cajas_ytd:115, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:6465, cajas_ppto:115, precio_ytd:57.0, precio_ppto:56.32, dif_ppto:0.0141, dif_25:0}, 
+{linea:"Limited Selection", mercado:"Islas Virgen", zona:"Caribe", manager:"Patricia Osenga", cc:"10426", fob_ytd:6846, cajas_ytd:112, fob_abr:0, cajas_abr:0, fob_ytd25:3528, fob_ppto:5793, cajas_ppto:95, precio_ytd:61.1, precio_ppto:61.23, dif_ppto:0.1819, dif_25:0.9405}, 
+{linea:"Limited Selection", mercado:"Honduras", zona:"C. America", manager:"Patricia Osenga", cc:"10412", fob_ytd:6175, cajas_ytd:100, fob_abr:2825, cajas_abr:0, fob_ytd25:0, fob_ppto:705, cajas_ppto:12, precio_ytd:61.8, precio_ppto:59.76, dif_ppto:7.7564, dif_25:0}, 
+{linea:"Limited Selection", mercado:"Malasia", zona:"Asia", manager:"Juan Yañez", cc:"10833", fob_ytd:6008, cajas_ytd:100, fob_abr:3004, cajas_abr:0, fob_ytd25:0, fob_ppto:7489, cajas_ppto:125, precio_ytd:60.1, precio_ppto:60.05, dif_ppto:-0.1977, dif_25:0}, 
+{linea:"Limited Selection", mercado:"Qatar", zona:"Medio Oriente", manager:"Juan Pablo Velasco", cc:"10840", fob_ytd:6198, cajas_ytd:100, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:3621, cajas_ppto:59, precio_ytd:62.0, precio_ppto:61.27, dif_ppto:0.7115, dif_25:0}, 
+{linea:"Limited Selection", mercado:"Vietnam", zona:"Asia", manager:"Juan Yañez", cc:"10850", fob_ytd:5278, cajas_ytd:85, fob_abr:5278, cajas_abr:0, fob_ytd25:5914, fob_ppto:7630, cajas_ppto:125, precio_ytd:62.1, precio_ppto:60.84, dif_ppto:-0.3083, dif_25:-0.1076}, 
+{linea:"Limited Selection", mercado:"Guatemala", zona:"C. America", manager:"Patricia Osenga", cc:"10410", fob_ytd:4500, cajas_ytd:75, fob_abr:1500, cajas_abr:0, fob_ytd25:11100, fob_ppto:12662, cajas_ppto:209, precio_ytd:60, precio_ppto:60.55, dif_ppto:-0.6446, dif_25:-0.5946}, 
+{linea:"Limited Selection", mercado:"Hungria", zona:"Europa", manager:"Juan Pablo Velasco", cc:"10623", fob_ytd:4376, cajas_ytd:75, fob_abr:0, cajas_abr:0, fob_ytd25:18852, fob_ppto:15046, cajas_ppto:278, precio_ytd:58.4, precio_ppto:54.04, dif_ppto:-0.7091, dif_25:-0.7679}, 
+{linea:"Limited Selection", mercado:"Perú", zona:"S. America", manager:"Daniela Rojas", cc:"10511", fob_ytd:4200, cajas_ytd:70, fob_abr:4200, cajas_abr:0, fob_ytd25:0, fob_ppto:5916, cajas_ppto:97, precio_ytd:60, precio_ppto:61.06, dif_ppto:-0.2901, dif_25:0}, 
+{linea:"Limited Selection", mercado:"Chipre", zona:"Europa", manager:"Juan Pablo Velasco", cc:"10812", fob_ytd:2176, cajas_ytd:35, fob_abr:0, cajas_abr:0, fob_ytd25:7465, fob_ppto:8106, cajas_ppto:149, precio_ytd:62.2, precio_ppto:54.47, dif_ppto:-0.7316, dif_25:-0.7085}, 
+{linea:"Limited Selection", mercado:"Barbados", zona:"Caribe", manager:"Patricia Osenga", cc:"10404", fob_ytd:1920, cajas_ytd:30, fob_abr:1920, cajas_abr:0, fob_ytd25:0, fob_ppto:2224, cajas_ppto:36, precio_ytd:64, precio_ppto:61.43, dif_ppto:-0.1367, dif_25:0}, 
+{linea:"Limited Selection", mercado:"Granada", zona:"Caribe", manager:"Patricia Osenga", cc:"10409", fob_ytd:1722, cajas_ytd:28, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:702, cajas_ppto:12, precio_ytd:61.5, precio_ppto:61.09, dif_ppto:1.4512, dif_25:0}, 
+{linea:"Limited Selection", mercado:"Islas Cayman", zona:"Caribe", manager:"Patricia Osenga", cc:"10424", fob_ytd:1792, cajas_ytd:28, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:0, cajas_ppto:0, precio_ytd:64, precio_ppto:0, dif_ppto:0, dif_25:0}, 
+{linea:"Limited Selection", mercado:"Cruceros", zona:"Caribe", manager:"Patricia Osenga", cc:"10303", fob_ytd:1200, cajas_ytd:20, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:0, cajas_ppto:0, precio_ytd:60, precio_ppto:0, dif_ppto:0, dif_25:0}, 
+{linea:"Limited Selection", mercado:"Luxemburgo", zona:"Europa", manager:"Juan Pablo Velasco", cc:"10636", fob_ytd:1066, cajas_ytd:20, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:560, cajas_ppto:11, precio_ytd:53.3, precio_ppto:52.78, dif_ppto:0.905, dif_25:0}, 
+{linea:"Otros", mercado:"China", zona:"Asia", manager:"Jason Li", cc:"10811", fob_ytd:2313992, cajas_ytd:44550, fob_abr:736750, cajas_abr:0, fob_ytd25:3191367, fob_ppto:2049094, cajas_ppto:38888, precio_ytd:51.9, precio_ppto:52.69, dif_ppto:0.1293, dif_25:-0.2749}, 
+{linea:"Otros", mercado:"Japón", zona:"Asia", manager:"Eduardo Stark", cc:"10825", fob_ytd:560849, cajas_ytd:11010, fob_abr:114106, cajas_abr:0, fob_ytd25:702463, fob_ppto:625394, cajas_ppto:12229, precio_ytd:50.9, precio_ppto:51.14, dif_ppto:-0.1032, dif_25:-0.2016}, 
+{linea:"Otros", mercado:"Korea", zona:"Asia", manager:"Juan Pablo Velasco", cc:"10814", fob_ytd:393170, cajas_ytd:8120, fob_abr:46967, cajas_abr:0, fob_ytd25:553295, fob_ppto:497446, cajas_ppto:10237, precio_ytd:48.4, precio_ppto:48.59, dif_ppto:-0.2096, dif_25:-0.2894}, 
+{linea:"Otros", mercado:"Alemania", zona:"Europa", manager:"Eduardo Stark", cc:"10603", fob_ytd:213067, cajas_ytd:4800, fob_abr:0, cajas_abr:0, fob_ytd25:411111, fob_ppto:340888, cajas_ppto:7636, precio_ytd:44.4, precio_ppto:44.64, dif_ppto:-0.375, dif_25:-0.4817}, 
+{linea:"Otros", mercado:"Usa", zona:"N. America", manager:"Isidora Rodriguez", cc:"10303", fob_ytd:79348, cajas_ytd:1560, fob_abr:7834, cajas_abr:0, fob_ytd25:93011, fob_ppto:73801, cajas_ppto:1433, precio_ytd:50.9, precio_ppto:51.52, dif_ppto:0.0752, dif_25:-0.1469}, 
+{linea:"Otros", mercado:"Canada", zona:"N. America", manager:"Isidora Rodriguez", cc:"10302", fob_ytd:53826, cajas_ytd:1307, fob_abr:0, cajas_abr:0, fob_ytd25:74229, fob_ppto:70196, cajas_ppto:1677, precio_ytd:41.2, precio_ppto:41.86, dif_ppto:-0.2332, dif_25:-0.2749}, 
+{linea:"Otros", mercado:"Chile", zona:"Chile", manager:"Evelyn Ramirez", cc:"10505", fob_ytd:48252, cajas_ytd:1221, fob_abr:18825, cajas_abr:0, fob_ytd25:97361, fob_ppto:103048, cajas_ppto:2897, precio_ytd:39.5, precio_ppto:35.57, dif_ppto:-0.5318, dif_25:-0.5044}, 
+{linea:"Otros", mercado:"Chipre", zona:"Europa", manager:"Juan Pablo Velasco", cc:"10812", fob_ytd:41781, cajas_ytd:975, fob_abr:0, cajas_abr:0, fob_ytd25:33014, fob_ppto:24025, cajas_ppto:594, precio_ytd:42.9, precio_ppto:40.43, dif_ppto:0.7391, dif_25:0.2656}, 
+{linea:"Otros", mercado:"Holanda", zona:"Europa", manager:"Eduardo Stark", cc:"10622", fob_ytd:44589, cajas_ytd:928, fob_abr:0, cajas_abr:0, fob_ytd25:73494, fob_ppto:72131, cajas_ppto:1558, precio_ytd:48.0, precio_ppto:46.3, dif_ppto:-0.3818, dif_25:-0.3933}, 
+{linea:"Otros", mercado:"Malasia", zona:"Asia", manager:"Juan Yañez", cc:"10833", fob_ytd:38205, cajas_ytd:750, fob_abr:22923, cajas_abr:0, fob_ytd25:0, fob_ppto:29223, cajas_ppto:574, precio_ytd:50.9, precio_ppto:50.91, dif_ppto:0.3074, dif_25:0}, 
+{linea:"Otros", mercado:"Guatemala", zona:"C. America", manager:"Patricia Osenga", cc:"10410", fob_ytd:35100, cajas_ytd:650, fob_abr:8100, cajas_abr:0, fob_ytd25:52650, fob_ppto:51508, cajas_ppto:954, precio_ytd:54, precio_ppto:53.99, dif_ppto:-0.3186, dif_25:-0.3333}, 
+{linea:"Otros", mercado:"Emiratos Arabes", zona:"Medio Oriente", manager:"Juan Pablo Velasco", cc:"10815", fob_ytd:30012, cajas_ytd:625, fob_abr:0, cajas_abr:0, fob_ytd25:104722, fob_ppto:135764, cajas_ppto:2762, precio_ytd:48.0, precio_ppto:49.16, dif_ppto:-0.7789, dif_25:-0.7134}, 
+{linea:"Otros", mercado:"Bélgica", zona:"Europa", manager:"Juan Pablo Velasco", cc:"10606", fob_ytd:24295, cajas_ytd:560, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:16621, cajas_ppto:385, precio_ytd:43.4, precio_ppto:43.18, dif_ppto:0.4617, dif_25:0}, 
+{linea:"Otros", mercado:"Inglaterra", zona:"Europa", manager:"Eduardo Stark", cc:"10624", fob_ytd:21070, cajas_ytd:560, fob_abr:13098, cajas_abr:0, fob_ytd25:48171, fob_ppto:42640, cajas_ppto:1161, precio_ytd:37.6, precio_ppto:36.73, dif_ppto:-0.5059, dif_25:-0.5626}, 
+{linea:"Otros", mercado:"Eslovaquia", zona:"Europa", manager:"Juan Pablo Velasco", cc:"10613", fob_ytd:22353, cajas_ytd:500, fob_abr:0, cajas_abr:0, fob_ytd25:18395, fob_ppto:14823, cajas_ppto:350, precio_ytd:44.7, precio_ppto:42.29, dif_ppto:0.508, dif_25:0.2152}, 
+{linea:"Otros", mercado:"Tailandia", zona:"Asia", manager:"Juan Yañez", cc:"10845", fob_ytd:25650, cajas_ytd:500, fob_abr:0, cajas_abr:0, fob_ytd25:63556, fob_ppto:80653, cajas_ppto:1590, precio_ytd:51.3, precio_ppto:50.74, dif_ppto:-0.682, dif_25:-0.5964}, 
+{linea:"Otros", mercado:"Honduras", zona:"C. America", manager:"Patricia Osenga", cc:"10412", fob_ytd:26730, cajas_ytd:495, fob_abr:12420, cajas_abr:0, fob_ytd25:0, fob_ppto:5137, cajas_ppto:95, precio_ytd:54, precio_ppto:54.07, dif_ppto:4.2038, dif_25:0}, 
+{linea:"Otros", mercado:"Vietnam", zona:"Asia", manager:"Juan Yañez", cc:"10850", fob_ytd:23432, cajas_ytd:460, fob_abr:23432, cajas_abr:0, fob_ytd25:16952, fob_ppto:26800, cajas_ppto:524, precio_ytd:50.9, precio_ppto:51.17, dif_ppto:-0.1257, dif_25:0.3823}, 
+{linea:"Otros", mercado:"Polonia", zona:"Europa", manager:"Juan Pablo Velasco", cc:"10642", fob_ytd:19669, cajas_ytd:450, fob_abr:0, cajas_abr:0, fob_ytd25:18081, fob_ppto:24201, cajas_ppto:561, precio_ytd:43.7, precio_ppto:43.16, dif_ppto:-0.1873, dif_25:0.0878}, 
+{linea:"Otros", mercado:"Tahiti", zona:"Oceania", manager:"Patricia Osenga", cc:"10305", fob_ytd:22680, cajas_ytd:420, fob_abr:0, cajas_abr:0, fob_ytd25:26460, fob_ppto:19749, cajas_ppto:365, precio_ytd:54, precio_ppto:54.05, dif_ppto:0.1484, dif_25:-0.1429}, 
+{linea:"Otros", mercado:"Hong Kong", zona:"Asia", manager:"Juan Yañez", cc:"10819", fob_ytd:21361, cajas_ytd:420, fob_abr:0, cajas_abr:0, fob_ytd25:21361, fob_ppto:18684, cajas_ppto:367, precio_ytd:50.9, precio_ppto:50.87, dif_ppto:0.1433, dif_25:0.0}, 
+{linea:"Otros", mercado:"Brasil", zona:"S. America", manager:"Juan Pablo Velasco", cc:"10504", fob_ytd:24681, cajas_ytd:416, fob_abr:0, cajas_abr:0, fob_ytd25:7737, fob_ppto:18036, cajas_ppto:313, precio_ytd:59.4, precio_ppto:57.66, dif_ppto:0.3684, dif_25:2.19}, 
+{linea:"Otros", mercado:"Malvinas", zona:"S. America", manager:"Daniela Rojas", cc:"10518", fob_ytd:20800, cajas_ytd:400, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:7675, cajas_ppto:148, precio_ytd:52, precio_ppto:52, dif_ppto:1.71, dif_25:0}, 
+{linea:"Otros", mercado:"Cambodia", zona:"Asia", manager:"Juan Yañez", cc:"10810", fob_ytd:19867, cajas_ytd:390, fob_abr:0, cajas_abr:0, fob_ytd25:14263, fob_ppto:15071, cajas_ppto:296, precio_ytd:50.9, precio_ppto:50.98, dif_ppto:0.3182, dif_25:0.3929}, 
+{linea:"Otros", mercado:"Republic Of Maldives", zona:"Asia", manager:"Isidora Rodriguez", cc:"10834", fob_ytd:19278, cajas_ytd:357, fob_abr:0, cajas_abr:0, fob_ytd25:9990, fob_ppto:6317, cajas_ppto:117, precio_ytd:54, precio_ppto:54.13, dif_ppto:2.0516, dif_25:0.9297}, 
+{linea:"Otros", mercado:"Costa Rica", zona:"C. America", manager:"Patricia Osenga", cc:"10406", fob_ytd:18630, cajas_ytd:345, fob_abr:9450, cajas_abr:0, fob_ytd25:16470, fob_ppto:18869, cajas_ppto:349, precio_ytd:54, precio_ppto:54.0, dif_ppto:-0.0127, dif_25:0.1311}, 
+{linea:"Otros", mercado:"Hungria", zona:"Europa", manager:"Juan Pablo Velasco", cc:"10623", fob_ytd:14541, cajas_ytd:300, fob_abr:0, cajas_abr:0, fob_ytd25:38044, fob_ppto:15345, cajas_ppto:342, precio_ytd:48.5, precio_ppto:44.92, dif_ppto:-0.0524, dif_25:-0.6178}, 
+{linea:"Otros", mercado:"Curacao", zona:"Caribe", manager:"Patricia Osenga", cc:"10516", fob_ytd:15660, cajas_ytd:290, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:13993, cajas_ppto:259, precio_ytd:54, precio_ppto:54.03, dif_ppto:0.1192, dif_25:0}, 
+{linea:"Otros", mercado:"Taiwan", zona:"Asia", manager:"Juan Yañez", cc:"10846", fob_ytd:13852, cajas_ytd:275, fob_abr:10032, cajas_abr:0, fob_ytd25:55446, fob_ppto:33630, cajas_ppto:665, precio_ytd:50.4, precio_ppto:50.59, dif_ppto:-0.5881, dif_25:-0.7502}, 
+{linea:"Otros", mercado:"Perú", zona:"S. America", manager:"Daniela Rojas", cc:"10511", fob_ytd:13676, cajas_ytd:263, fob_abr:13676, cajas_abr:0, fob_ytd25:0, fob_ppto:19805, cajas_ppto:381, precio_ytd:52, precio_ppto:51.97, dif_ppto:-0.3095, dif_25:0}, 
+{linea:"Otros", mercado:"Uruguay", zona:"S. America", manager:"Daniela Rojas", cc:"10513", fob_ytd:11700, cajas_ytd:225, fob_abr:0, cajas_abr:0, fob_ytd25:11700, fob_ppto:5756, cajas_ppto:111, precio_ytd:52, precio_ppto:52, dif_ppto:1.0325, dif_25:0.0}, 
+{linea:"Otros", mercado:"Turquía", zona:"Europa", manager:"Juan Pablo Velasco", cc:"10848", fob_ytd:10986, cajas_ytd:215, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:5866, cajas_ppto:115, precio_ytd:51.1, precio_ppto:50.92, dif_ppto:0.8728, dif_25:0}, 
+{linea:"Otros", mercado:"Jordania", zona:"Medio Oriente", manager:"Juan Pablo Velasco", cc:"10826", fob_ytd:8775, cajas_ytd:188, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:2936, cajas_ppto:63, precio_ytd:46.8, precio_ppto:46.67, dif_ppto:1.9891, dif_25:0}, 
+{linea:"Otros", mercado:"Ucrania", zona:"Europa", manager:"Isidora Rodriguez", cc:"10650", fob_ytd:7856, cajas_ytd:180, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:5598, cajas_ppto:131, precio_ytd:43.6, precio_ppto:42.67, dif_ppto:0.4034, dif_25:0}, 
+{linea:"Otros", mercado:"Islas Virgen", zona:"Caribe", manager:"Patricia Osenga", cc:"10426", fob_ytd:9072, cajas_ytd:168, fob_abr:0, cajas_abr:0, fob_ytd25:12096, fob_ppto:14041, cajas_ppto:260, precio_ytd:54, precio_ppto:53.98, dif_ppto:-0.3539, dif_25:-0.25}, 
+{linea:"Otros", mercado:"Islas Cayman", zona:"Caribe", manager:"Patricia Osenga", cc:"10424", fob_ytd:8748, cajas_ytd:162, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:0, cajas_ppto:0, precio_ytd:54, precio_ppto:0, dif_ppto:0, dif_25:0}, 
+{linea:"Otros", mercado:"Barbados", zona:"Caribe", manager:"Patricia Osenga", cc:"10404", fob_ytd:8640, cajas_ytd:160, fob_abr:8640, cajas_abr:0, fob_ytd25:0, fob_ppto:3365, cajas_ppto:62, precio_ytd:54, precio_ppto:54.11, dif_ppto:1.5673, dif_25:0}, 
+{linea:"Otros", mercado:"St. Maarten", zona:"Caribe", manager:"Patricia Osenga", cc:"10422", fob_ytd:7560, cajas_ytd:140, fob_abr:0, cajas_abr:0, fob_ytd25:7560, fob_ppto:2480, cajas_ppto:46, precio_ytd:54, precio_ppto:54.14, dif_ppto:2.0486, dif_25:0.0}, 
+{linea:"Otros", mercado:"Panamá", zona:"C. America", manager:"Patricia Osenga", cc:"10415", fob_ytd:7000, cajas_ytd:125, fob_abr:0, cajas_abr:0, fob_ytd25:7000, fob_ppto:3365, cajas_ppto:62, precio_ytd:56, precio_ppto:54.11, dif_ppto:1.08, dif_25:0.0}, 
+{linea:"Otros", mercado:"Luxemburgo", zona:"Europa", manager:"Juan Pablo Velasco", cc:"10636", fob_ytd:5134, cajas_ytd:120, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:3452, cajas_ppto:81, precio_ytd:42.8, precio_ppto:42.51, dif_ppto:0.4874, dif_25:0}, 
+{linea:"Otros", mercado:"Nueva Zelanda", zona:"Oceania", manager:"Patricia Osenga", cc:"10908", fob_ytd:4050, cajas_ytd:75, fob_abr:0, cajas_abr:0, fob_ytd25:2700, fob_ppto:3277, cajas_ppto:61, precio_ytd:54, precio_ppto:53.98, dif_ppto:0.236, dif_25:0.5}, 
+{linea:"Otros", mercado:"Jamaica", zona:"Caribe", manager:"Patricia Osenga", cc:"10413", fob_ytd:3780, cajas_ytd:70, fob_abr:3780, cajas_abr:0, fob_ytd25:0, fob_ppto:797, cajas_ppto:15, precio_ytd:54, precio_ppto:53.86, dif_ppto:3.7422, dif_25:0}, 
+{linea:"Otros", mercado:"Puerto Rico", zona:"Caribe", manager:"Daniela Rojas", cc:"10416", fob_ytd:3640, cajas_ytd:70, fob_abr:0, cajas_abr:0, fob_ytd25:15600, fob_ppto:8526, cajas_ppto:164, precio_ytd:52, precio_ppto:51.99, dif_ppto:-0.5731, dif_25:-0.7667}, 
+{linea:"Otros", mercado:"México", zona:"C. America", manager:"Daniela Rojas", cc:"10304", fob_ytd:2860, cajas_ytd:55, fob_abr:0, cajas_abr:0, fob_ytd25:9360, fob_ppto:18083, cajas_ppto:348, precio_ytd:52, precio_ppto:51.98, dif_ppto:-0.8418, dif_25:-0.6944}, 
+{linea:"Otros", mercado:"Brasil", zona:"S. America", manager:"Daniela Rojas", cc:"10504", fob_ytd:3815, cajas_ytd:55, fob_abr:3815, cajas_abr:0, fob_ytd25:16988, fob_ppto:100208, cajas_ppto:1941, precio_ytd:69.4, precio_ppto:51.63, dif_ppto:-0.9619, dif_25:-0.7754}, 
+{linea:"Otros", mercado:"Finlandia", zona:"Europa", manager:"Isidora Rodriguez", cc:"10617", fob_ytd:2165, cajas_ytd:50, fob_abr:2165, cajas_abr:0, fob_ytd25:0, fob_ppto:7137, cajas_ppto:164, precio_ytd:43.3, precio_ppto:43.52, dif_ppto:-0.6966, dif_25:0}, 
+{linea:"Otros", mercado:"Qatar", zona:"Medio Oriente", manager:"Juan Pablo Velasco", cc:"10840", fob_ytd:2500, cajas_ytd:50, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:3444, cajas_ppto:69, precio_ytd:50, precio_ppto:49.91, dif_ppto:-0.2741, dif_25:0}, 
+{linea:"Otros", mercado:"India", zona:"Asia", manager:"Sin Responsable", cc:"10820", fob_ytd:1940, cajas_ytd:40, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:3542, cajas_ppto:66, precio_ytd:48.3, precio_ppto:54, dif_ppto:-0.4523, dif_25:0}, 
+{linea:"Otros", mercado:"Granada", zona:"Caribe", manager:"Patricia Osenga", cc:"10409", fob_ytd:1512, cajas_ytd:28, fob_abr:0, cajas_abr:0, fob_ytd25:0, fob_ppto:2125, cajas_ppto:40, precio_ytd:54, precio_ppto:53.67, dif_ppto:-0.2885, dif_25:0}, 
+{linea:"Otros", mercado:"Rep Dominicana", zona:"Caribe", manager:"Patricia Osenga", cc:"10417", fob_ytd:1144, cajas_ytd:22, fob_abr:0, cajas_abr:0, fob_ytd25:1040, fob_ppto:620, cajas_ppto:12, precio_ytd:52, precio_ppto:53.9, dif_ppto:0.8458, dif_25:0.1},
 ];
 
-const MONTHLY_BY_LINE = {
-  "Iconos":          {fob_ytd:2550946, cajas_ytd:5039, fob_abr:404631, cajas_abr:765,   fob_ytd25:2933803, precio_ytd:506.21},
-  "Montes Alpha":    {fob_ytd:3701265, cajas_ytd:39051, fob_abr:948519, cajas_abr:10073, fob_ytd25:4217129, precio_ytd:94.78},
-  "Classic Series":  {fob_ytd:5787851, cajas_ytd:111190, fob_abr:1389492, cajas_abr:26364, fob_ytd25:7632887, precio_ytd:52.05},
-};
+
 
 const EM_MONTHLY = {
   "Jason Li": {fob:[688119,1125704,1467126,1027976,155223], cj:[5690,16338,19342,17125,667]},
@@ -1185,15 +1116,80 @@ const EM_DATA = [
   {name:"Sin Responsable", cajas_abr:0, cajas_ytd:101, fob_ytd:7832, fob_ppto:147719, fob_ytd25:0, dif_ppto:-0.9470, dif_25:null, precio:77.5},
 ];
 
+// TOTALES GLOBALES SEMANA 17 (Consolidados - NO por línea)
+const TOTALS_GLOBAL = {
+  abril: {
+    cajas: 36279,
+    cajas_ppto: 48981,
+    precio: 71.93,
+    fob: 2609607,
+    cajas_dif: -12702,
+    cajas_pct: -0.259,
+    precio_dif: -6.69,  // Calculado como FOB/Cajas vs Ppto
+    precio_pct: -0.085
+  },
+  ytd: {
+    cajas: 154356,
+    cajas_ppto: 186811,
+    precio: 77.14,
+    fob: 11907027,
+    fob_ppto: 14687889,
+    cajas_dif: -32454,
+    cajas_pct: -0.174,
+    precio_dif: -1.48,
+    precio_pct: -0.019,
+    fob_dif: -2780862,
+    fob_pct: -0.189
+  }
+};
+
+// TOTALES SIN CHINA (Restando China de los totales)
+const TOTALS_SIN_CHINA = {
+  abril: {
+    cajas: 19154,
+    cajas_ppto: 31856,
+    precio: 82.57,
+    fob: 1581631,
+    cajas_dif: -12702,
+    cajas_pct: -0.399,
+    precio_dif: 3.95,
+    precio_pct: 0.050
+  },
+  ytd: {
+    cajas: 95862,
+    cajas_ppto: 139290,
+    precio: 79.26,
+    fob: 7598102,
+    fob_ppto: 11122594,
+    fob_ytd25: 9315871,
+    cajas_dif: -43428,
+    cajas_pct: -0.312,
+    precio_dif: -0.59,
+    precio_pct: -0.007,
+    fob_dif: -3524492,
+    fob_pct: -0.317,
+    fob_dif_25: -1717769,
+    fob_pct_25: -0.184
+  }
+};
+
+// TOTALES POR LÍNEA - YTD 2026
+const RANGE_TOTALS_YTD = {
+  "Iconos": { cajas: 4936, cajas_ppto: 5886, fob: 2487505, fob_ppto: 3072889 },
+  "Montes Alpha": { cajas: 39310, cajas_ppto: 54315, fob: 3704331, fob_ppto: 5148070 },
+  "Limited Selection": { cajas: 24017, cajas_ppto: 27245, fob: 1381896, fob_ppto: 1510474 },
+  "Otros": { cajas: 86093, cajas_ppto: 99365, fob: 4333295, fob_ppto: 4956457 }
+};
+
 const MONTHLY = {
   labels: ['Enero','Febrero','Marzo','Abril','Mayo'],
-  fob26:   [2543923, 3287251, 3466246, 2742642, 2097548],
+  fob26:   [2543923, 3287251, 3466246, 2609607, 2097548],
   fob25:   [2569031, 3063169, 4440479, 3526199, 4343374],
-  cajas26: [29609,   46375,   42093,   37202,   24406],
+  cajas26: [29609,   46375,   42093,   36279,   24406],
   cajas25: [39933,   51402,   58235,   51128,   43384],
-  px_ytd:  [85.92,   76.74,   78.74,   77.54,   78.68],
-  fob_acum26: [2543923, 5831174, 9297420, 12040062, 14137610],
-  fob_acum25: [2569031, 6332392,10772672,14783819, 18129392],
+  px_ytd:  [85.92,   76.74,   78.74,   77.14,   78.68],
+  fob_acum26: [2543923, 5831174, 9297420, 11907027, 14004575],
+  fob_acum25: [2569031, 6332392,10772672,14298871, 18642245],
   fob_ppto_acum: [3134611, 6985704, 10836796, 14687889, 18538982],
 };
 
@@ -1322,17 +1318,39 @@ function dotHtml(p) {
 
 // ══════════ KPIs ══════════
 function renderKPIs(fd) {
-  // YTD aggregates
-  const fob      = fd.reduce((s,d)=>s+d.fob_ytd,0);
-  const fob25    = fd.reduce((s,d)=>s+(d.fob_ytd25||0),0);
-  const fobPpto   = fd.reduce((s,d)=>s+(d.fob_ppto||0),0);
-  const cajasPpto = fd.reduce((s,d)=>s+(d.cajas_ppto||0),0);
-  const cajas    = fd.reduce((s,d)=>s+d.cajas_ytd,0);
-  const cajas25  = fd.reduce((s,d)=>s+(d.fob_ytd25||0),0) / 73.66;
-  // Semana (mes activo = Abril)
-  const fobAbr   = fd.reduce((s,d)=>s+(d.fob_abr||0),0);
-  const cajasAbr = fd.reduce((s,d)=>s+(d.cajas_abr||0),0);
-  const ptoMkt   = fd.filter(d=>d.fob_abr>0).length;
+  // Cuando NO hay filtros (ALL) - usar totales globales consolidados
+  const isFiltered = activeEM !== 'ALL' || activeZona !== 'ALL' || activeLinea !== 'ALL';
+  const useSinChina = excludeChina && !isFiltered;
+  
+  let fob, fob25, fobPpto, cajasPpto, cajas, cajas25, fobAbr, cajasAbr, ptoMkt;
+  
+  if (!isFiltered) {
+    // Sin filtros: usar valores globales correctos
+    const totals = useSinChina ? TOTALS_SIN_CHINA : TOTALS_GLOBAL;
+    
+    fob      = totals.ytd.fob;
+    cajasPpto = totals.ytd.cajas_ppto;  // Usar presupuesto del escenario (con o sin China)
+    cajas    = totals.ytd.cajas;
+    fob25    = useSinChina ? 9202617 : 14783819;  // Estimado 2025 sin China
+    cajas25  = fob25 / 73.66;
+    fobAbr   = totals.abril.fob;
+    cajasAbr = totals.abril.cajas;
+    ptoMkt   = fd.filter(d=>d.fob_abr>0 && (!excludeChina || d.manager !== 'Jason Li')).length;
+    
+    // FOB Ppto: usar según escenario
+    fobPpto = useSinChina ? TOTALS_SIN_CHINA.ytd.fob_ppto : TOTALS_GLOBAL.ytd.fob_ppto;
+  } else {
+    // Con filtros: calcular desde datos filtrados
+    fob      = fd.reduce((s,d)=>s+d.fob_ytd,0);
+    fob25    = fd.reduce((s,d)=>s+(d.fob_ytd25||0),0);
+    fobPpto  = fd.reduce((s,d)=>s+(d.fob_ppto||0),0);
+    cajasPpto = fd.reduce((s,d)=>s+(d.cajas_ppto||0),0);
+    cajas    = fd.reduce((s,d)=>s+d.cajas_ytd,0);
+    cajas25  = fob25 > 0 ? fob25 / 73.66 : 0;
+    fobAbr   = fd.reduce((s,d)=>s+(d.fob_abr||0),0);
+    cajasAbr = fd.reduce((s,d)=>s+(d.cajas_abr||0),0);
+    ptoMkt   = fd.filter(d=>d.fob_abr>0).length;
+  }
 
   // Derived %
   const p25_ytd  = fob25    > 0 ? (fob-fob25)/fob25       : null;
@@ -1365,24 +1383,10 @@ function renderKPIs(fd) {
   const fobPptoAbr = ppAbr ? ppAbr.fob_mes[3] : 0;
   const pMesPP    = fobPptoAbr > 0 ? (fobAbr - fobPptoAbr) / fobPptoAbr : null;
   const cjPptoAbr = ppAbr ? ppAbr.cj_mes[3] : 0;
-  setB('k-mes-25',   p25_abr,  'vs Abr 2025');
-  setB('k-mes-pp',   pMesPP,   'vs Ppto');
-  { const dAbs = Math.round(cajasAbr - cjPptoAbr);
-    const dPct  = cjPptoAbr > 0 ? (cajasAbr - cjPptoAbr) / cjPptoAbr : null;
-    const eAbs  = document.getElementById('k-cjsem-abs');
-    const ePct  = document.getElementById('k-cjsem-pp');
-    if (eAbs) {
-      const sign = dAbs >= 0 ? '+' : '';
-      eAbs.textContent = (dAbs>=0?'▲':'▼')+' '+sign+Math.abs(dAbs).toLocaleString('es-CL')+' cj vs Ppto';
-      eAbs.className   = 'badge '+(dAbs>=0?'green':'red');
-    }
-    if (ePct && dPct !== null) {
-      const pSign = dPct >= 0 ? '+' : '';
-      ePct.textContent = (dPct>=0?'▲':'▼')+' '+pSign+(Math.abs(dPct)*100).toFixed(1)+'% vs Ppto';
-      ePct.className   = 'badge '+(dPct>=0?'green':'red');
-    }
-  }
-  setB('k-pxsem-pp', ppPx_abr, 'vs Ppto $' + pptoPx);
+  // setB("k-mes-25", p25_abr, "vs Abr 2025"); // Removido;
+  // setB("k-mes-pp", pMesPP, "vs Ppto"); // Removido;
+  { const dAbs = Math.round(cajasAbr - cjPptoAbr); const dPct = cjPptoAbr > 0 ? (cajasAbr - cjPptoAbr) / cjPptoAbr : null; /* Badges de cajas y variación removidos */ }
+  setB("k-pxsem-pp", ppPx_abr, 'vs Ppto $' + pptoPx);
 
   // — YTD KPIs —
   document.getElementById('k-fob').textContent   = '$' + Math.round(fob).toLocaleString('es-CL');
@@ -1445,20 +1449,43 @@ function renderTop10(fd) {
     </tr>`;
   }).join('');
 }
-
 // ══════════ RANGE CARDS ══════════
 function renderRangeCards(fd) {
-  const lines = ['Iconos','Montes Alpha','Otros'];
-  const ids   = ['iconos','alpha','classic'];
+  const isFiltered = activeEM !== 'ALL' || activeZona !== 'ALL' || activeLinea !== 'ALL';
+  const useSinChina = excludeChina && !isFiltered;
+  const lines = ['Iconos','Montes Alpha','Limited Selection','Otros'];
+  const ids   = ['iconos','alpha','limited','classic'];
+  
   lines.forEach((linea, i) => {
-    const rows  = MARKETS_BY_LINE.filter(d => d.linea === linea &&
-      (activeEM   === 'ALL' || d.manager === activeEM) &&
-      (activeZona === 'ALL' || d.zona    === activeZona) &&
-      !(excludeChina && d.manager === 'Jason Li'));
-    const cj    = rows.reduce((s,d)=>s+d.cajas_ytd,0);
-    const cjPp  = rows.reduce((s,d)=>s+(d.cajas_ppto||0),0);
+    let cj, cjPp;
+    
+    if (!isFiltered) {
+      // Sin filtros: usar totales pre-calculados
+      if (useSinChina) {
+        // Calcular rangos sin China usando proporción
+        const cajasChina = TOTALS_GLOBAL.ytd.cajas - TOTALS_SIN_CHINA.ytd.cajas;
+        const pctChina = cajasChina / TOTALS_GLOBAL.ytd.cajas;
+        const cajasChinaEnRange = RANGE_TOTALS_YTD[linea].cajas * pctChina;
+        
+        cj = Math.round(RANGE_TOTALS_YTD[linea].cajas - cajasChinaEnRange);
+        cjPp = RANGE_TOTALS_YTD[linea].cajas_ppto;
+      } else {
+        cj = RANGE_TOTALS_YTD[linea].cajas;
+        cjPp = RANGE_TOTALS_YTD[linea].cajas_ppto;
+      }
+    } else {
+      // Con filtros: calcular desde datos filtrados
+      const rows  = MARKETS_BY_LINE.filter(d => d.linea === linea &&
+        (activeEM   === 'ALL' || d.manager === activeEM) &&
+        (activeZona === 'ALL' || d.zona    === activeZona) &&
+        !(excludeChina && d.manager === 'Jason Li'));
+      cj    = rows.reduce((s,d)=>s+d.cajas_ytd,0);
+      cjPp  = rows.reduce((s,d)=>s+(d.cajas_ppto||0),0);
+    }
+    
     const dAbs  = cj - cjPp;
     const dPct  = cjPp > 0 ? dAbs/cjPp : null;
+
     const cls   = dAbs >= 0 ? 'green' : 'red';
     const arrow = dAbs >= 0 ? '▲' : '▼';
     const id    = ids[i];
@@ -1519,7 +1546,7 @@ function getFilteredEvolData() {
 }
 
 function getLineBreakdown(emName, filtered) {
-  const lines = ['Iconos','Montes Alpha','Otros'];
+  const lines = ['Iconos','Montes Alpha','Limited Selection','Otros'];
   return lines.map(l => {
     const rows = MARKETS_BY_LINE.filter(m =>
       (emName === 'ALL' || m.manager === emName) &&
@@ -1532,6 +1559,7 @@ function getLineBreakdown(emName, filtered) {
     return {linea:l, fob, ppto, cajas, dif: ppto>0?(fob-ppto)/ppto:null};
   });
 }
+
 
 function renderEM(emData) {
   const data = emData || getFilteredEM();
@@ -1552,8 +1580,8 @@ function renderEM(emData) {
   set('lc-total-fob', fmtM(totalFob));
   const ds = document.getElementById('lc-total-sub');
   if(ds){ ds.textContent=totalDif!=null?(totalDif>=0?'▲ ':'▼ ')+pctStr(totalDif,true)+' vs Ppto':'—'; ds.style.color=totalDif>=0?'var(--green)':'var(--red)'; }
-  ['Iconos','Montes Alpha','Otros'].forEach((l,i)=>{
-    const pfx = l==='Montes Alpha'?'alpha':l.toLowerCase();
+  ['Iconos','Montes Alpha','Limited Selection','Otros'].forEach((l,i)=>{
+    const pfx = l==='Montes Alpha'?'alpha':l==='Limited Selection'?'limited':l.toLowerCase();
     const ld = allLines[i];
     set('lc-'+pfx+'-fob', fmtM(ld.fob));
     const sub = document.getElementById('lc-'+pfx+'-sub');
@@ -1572,21 +1600,22 @@ function renderEM(emData) {
     };
     const mkRow = (label,bd,bold) => {
       const t=bd.reduce((s,l)=>s+l.cajas,0)||1;
-      const pI=Math.round(bd[0].cajas/t*100),pA=Math.round(bd[1].cajas/t*100),pO=Math.max(0,100-pI-pA);
+      const pI=Math.round(bd[0].cajas/t*100),pA=Math.round(bd[1].cajas/t*100),pLS=Math.round(bd[2].cajas/t*100),pCS=Math.max(0,100-pI-pA-pLS);
       const fw = bold?'700':'500'; const clr = bold?'var(--purple)':'var(--text-main)';
       const lbl = (pct,c) => `<span style="font-size:9px;color:${c};margin-right:6px">${pct}%</span>`;
       return `<div style="padding:5px 0;border-bottom:.5px solid var(--border)${bold?';margin-bottom:2px':''}">
         <div style="display:flex;align-items:center;gap:10px">
           <div style="width:120px;font-size:12px;font-weight:${fw};color:${clr};flex-shrink:0">${label}</div>
           <div style="flex:1;height:16px;border-radius:3px;overflow:hidden;display:flex">
-            ${mkSeg(pI,'#534AB7',bd[0].cajas,'Íconos',true)}${mkSeg(pA,'#0F6E56',bd[1].cajas,'Montes Alpha',false)}${mkSeg(pO,'#888780',bd[2].cajas,'Classic Series',false)}
+            ${mkSeg(pI,'#534AB7',bd[0].cajas,'Íconos',true)}${mkSeg(pA,'#0F6E56',bd[1].cajas,'Montes Alpha',false)}${mkSeg(pLS,'#C49A6C',bd[2].cajas,'Limited Selection',false)}${mkSeg(pCS,'#888780',bd[3].cajas,'Classic Series',false)}
           </div>
           <div style="width:65px;text-align:right;font-size:11px;font-weight:${fw};color:${clr}">${fmtN(t)} cj</div>
         </div>
-        <div style="display:flex;padding-left:130px;margin-top:1px">
-          <span style="font-size:9px;color:#534AB7;margin-right:8px">Íconos ${pI}%</span>
-          <span style="font-size:9px;color:#0F6E56;margin-right:8px">Alpha ${pA}%</span>
-          <span style="font-size:9px;color:#888780">Classic ${pO}%</span>
+        <div style="display:flex;padding-left:130px;margin-top:1px;gap:6px;flex-wrap:wrap">
+          <span style="font-size:9px;color:#534AB7;margin-right:4px">Íconos ${pI}%</span>
+          <span style="font-size:9px;color:#0F6E56;margin-right:4px">Alpha ${pA}%</span>
+          <span style="font-size:9px;color:#C49A6C;margin-right:4px">Limited ${pLS}%</span>
+          <span style="font-size:9px;color:#888780">Classic ${pCS}%</span>
         </div>
       </div>`;
     };
