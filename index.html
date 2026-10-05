@@ -458,7 +458,7 @@ select:focus { outline: none; border-color: var(--purple-mid); }
   <div class="header-meta">
     <div class="header-meta-item">
       <span class="header-meta-label">Período</span>
-      <span class="header-meta-value">YTD al 28 de Septiembre 2026</span>
+      <span class="header-meta-value">YTD al 05 de Octubre 2026</span>
     </div>
   </div>
 </div>
@@ -523,14 +523,14 @@ select:focus { outline: none; border-color: var(--purple-mid); }
 <!-- ═══════════ PAGE: RESUMEN ═══════════ -->
 <div class="page active" id="page-resumen">
 
-  <div class="section-label" style="margin-bottom:10px;font-size:12px;font-weight:700;color:var(--text-main);letter-spacing:0.12em">SEMANA 40</div>
+  <div class="section-label" style="margin-bottom:10px;font-size:12px;font-weight:700;color:var(--text-main);letter-spacing:0.12em">SEMANA 41</div>
   <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:20px">
 
     <!-- GRUPO CAJAS 9L -->
     <div style="border:1.5px solid var(--border);border-radius:10px;padding:14px 16px 12px;background:var(--white)">
       <div style="font-size:9px;font-weight:700;letter-spacing:.12em;color:var(--text-light);margin-bottom:12px;text-transform:uppercase">Cajas 9L</div>
       <div>
-        <div style="font-size:9px;color:var(--text-light);margin-bottom:3px;text-transform:uppercase;letter-spacing:.08em" id="k-cajas-sem-label">Septiembre 2026</div>
+        <div style="font-size:9px;color:var(--text-light);margin-bottom:3px;text-transform:uppercase;letter-spacing:.08em" id="k-cajas-sem-label">Octubre 2026</div>
         <div class="kpi-value" style="font-size:24px" id="k-cajas-sem">37,709</div>
         <div class="kpi-badges" style="margin-top:4px;margin-bottom:12px">
           <span class="badge neutral" id="k-cjsem-abs">— vs Ppto</span>
@@ -551,7 +551,7 @@ select:focus { outline: none; border-color: var(--purple-mid); }
     <div style="border:1.5px solid var(--border);border-radius:10px;padding:14px 16px 12px;background:var(--white)">
       <div style="font-size:9px;font-weight:700;letter-spacing:.12em;color:var(--text-light);margin-bottom:12px;text-transform:uppercase">Precio Promedio</div>
       <div>
-        <div style="font-size:9px;color:var(--text-light);margin-bottom:3px;text-transform:uppercase;letter-spacing:.08em" id="k-precio-sem-label">Septiembre 2026</div>
+        <div style="font-size:9px;color:var(--text-light);margin-bottom:3px;text-transform:uppercase;letter-spacing:.08em" id="k-precio-sem-label">Octubre 2026</div>
         <div class="kpi-value" style="font-size:24px" id="k-precio-sem">$73.1</div>
         <div class="kpi-badges" style="margin-top:4px;margin-bottom:12px">
           <span class="badge neutral" id="k-pxsem-abs">— vs Ppto</span>
@@ -572,7 +572,7 @@ select:focus { outline: none; border-color: var(--purple-mid); }
     <div style="border:1.5px solid var(--border);border-radius:10px;padding:14px 16px 12px;background:var(--white)">
       <div style="font-size:9px;font-weight:700;letter-spacing:.12em;color:var(--text-light);margin-bottom:12px;text-transform:uppercase">FOB Total US$</div>
       <div>
-        <div style="font-size:9px;color:var(--text-light);margin-bottom:3px;text-transform:uppercase;letter-spacing:.08em" id="k-fob-mes-label">Septiembre 2026</div>
+        <div style="font-size:9px;color:var(--text-light);margin-bottom:3px;text-transform:uppercase;letter-spacing:.08em" id="k-fob-mes-label">Octubre 2026</div>
         <div class="kpi-value" style="font-size:24px" id="k-fob-mes">$2,097,548</div>
         <div class="kpi-badges" style="margin-top:4px;margin-bottom:12px">
           <span class="badge neutral" id="k-fobsem-abs">— vs Ppto</span>
@@ -708,7 +708,7 @@ select:focus { outline: none; border-color: var(--purple-mid); }
 
 <!-- ═══════════ PAGE: EVOLUCIÓN ═══════════ -->
 <div class="page" id="page-evolucion">
-  <div class="kpi-row" style="grid-template-columns:repeat(10,1fr)">
+  <div class="kpi-row" style="grid-template-columns:repeat(11,1fr)">
     <div class="kpi-card">
       <div class="kpi-label">Enero · FOB</div>
       <div class="kpi-value" style="font-size:18px" id="ev-fob-0">$2,543,923</div>
@@ -759,6 +759,11 @@ select:focus { outline: none; border-color: var(--purple-mid); }
       <div class="kpi-value" style="font-size:18px" id="ev-fob-9">—</div>
       <div class="kpi-badges"><span class="badge neutral" id="ev-badge-9">—</span></div>
     </div>
+    <div class="kpi-card">
+      <div class="kpi-label">Noviembre · FOB</div>
+      <div class="kpi-value" style="font-size:18px" id="ev-fob-10">—</div>
+      <div class="kpi-badges"><span class="badge neutral" id="ev-badge-10">—</span></div>
+    </div>
   </div>
 
   <div class="grid-2">
@@ -785,73 +790,73 @@ select:focus { outline: none; border-color: var(--purple-mid); }
 <div class="page" id="page-insights">
 
   <div class="callout" style="border-left:4px solid var(--copper)">
-    <strong>Resumen ejecutivo · Semana 40</strong><br>
-    Las exportaciones acumulan <strong>$30,074,079 USD</strong> al inicio de la Semana 40, un <strong>11.4% bajo el presupuesto</strong> y 4.2% bajo el nivel del año anterior. El precio promedio YTD alcanza <strong>$80.45 USD/caja</strong>, sobre el presupuesto ($78.62). Agosto cerró con $3.65M FOB. Septiembre está en curso con $3.76M acumulado (parcial al 28 de Septiembre). Octubre ya suma <strong>$3.16M en despachos confirmados</strong> con 8 zonas activas. Sin China, la brecha FOB YTD es −14.6%.
+    <strong>Resumen ejecutivo · Semana 41</strong><br>
+    Las exportaciones acumulan <strong>$34,140,684 USD</strong> al inicio de la Semana 41, un <strong>9.7% bajo el presupuesto</strong> y 2.9% bajo el nivel del año anterior. El precio promedio YTD alcanza <strong>$80.90 USD/caja</strong>, sobre el presupuesto ($78.62). Septiembre cerró con <strong>$3.48M FOB y 38,580 cajas</strong>. Octubre está en curso con $4.35M acumulado (parcial al 05 de Octubre) — ya supera el presupuesto mensual en +2.5%. Noviembre suma <strong>$552K en despachos confirmados</strong> con 5 zonas activas. Sin China, la brecha FOB YTD es −13.0%.
   </div>
 
   <div class="section-label" style="margin-top:20px">Lo que está funcionando</div>
   <div class="insights-grid">
     <div class="insight-card positive">
-      <div class="insight-type">✓ Octubre con $3.16M — Q4 arranca fuerte</div>
-      <div class="insight-headline">Octubre suma $3.16M con 8 zonas activas — el mejor pipeline de Q4</div>
-      <div class="insight-metric">$3,157,604 FOB · 35,433 cajas · Europa $762K · Asia $1,168K · S. América $763K</div>
-      <div class="insight-text">Octubre ya registra $3,157,604 FOB con 35,433 cajas al 28 de Septiembre — superando el total de Septiembre a estas alturas. Asia ($1,168K), Europa ($762K) y Sudamérica ($763K) lideran, con N. América ($298K), Medio Oriente ($87K) y C. América ($24K) también activos. <strong>Con 8 zonas activas y un mes completo por delante, Octubre proyecta ser el mejor mes del Q4 y el segundo mejor del año.</strong></div>
+      <div class="insight-type">✓ Octubre sobre presupuesto en la primera semana</div>
+      <div class="insight-headline">Octubre lleva $4.35M en 5 días — +2.5% sobre presupuesto mensual</div>
+      <div class="insight-metric">$4,347,404 FOB · 50,208 cajas · Asia $2,421K · Europa $599K · S. América $805K</div>
+      <div class="insight-text">Octubre registra $4,347,404 FOB con 50,208 cajas al 05 de Octubre, superando el presupuesto mensual (+2.5%) en solo 5 días. Asia ($2,421K), Europa ($599K) y Sudamérica ($805K) lideran. Asia aporta su mayor volumen mensual desde Marzo. <strong>Con el mes completo por delante y el presupuesto ya cumplido, Octubre puede cerrar como el mejor mes del año si el ritmo se mantiene.</strong></div>
     </div>
     <div class="insight-card positive">
-      <div class="insight-type">✓ Precio YTD sobre presupuesto</div>
-      <div class="insight-headline">Precio YTD $80.45/cj — decimotercera semana sobre el presupuesto</div>
-      <div class="insight-metric">$80.45 USD/caja YTD · Ppto $78.62 · Septiembre $92.57/cj (en curso)</div>
-      <div class="insight-text">El precio YTD mantiene $80.45/cj, sobre el presupuesto por decimotercera semana consecutiva. Septiembre muestra $92.57/cj — el segundo precio mensual más alto del año — impulsado por el mix Premium de Íconos y líneas de alto valor. <strong>La ventaja de precio es el activo más consistente del portafolio y se proyecta sobre $81/cj con el mix de Octubre confirmado.</strong></div>
+      <div class="insight-type">✓ Brecha YTD en mínimo anual</div>
+      <div class="insight-headline">Brecha FOB YTD en −9.7% — el nivel más bajo del año</div>
+      <div class="insight-metric">$34,140,684 FOB YTD · Ppto $37,794,447 · −$3,653,763</div>
+      <div class="insight-text">La brecha FOB vs presupuesto YTD llega a −9.7% — el nivel más bajo del año. Octubre sobre presupuesto y el cierre de Septiembre ($3.48M) contribuyen a la recuperación. <strong>Con la brecha en mínimo anual y Octubre ya sobre presupuesto, el portafolio entra al Q4 con la mejor posición relativa del año.</strong></div>
     </div>
     <div class="insight-card positive">
-      <div class="insight-type">✓ N. América sobre presupuesto YTD</div>
-      <div class="insight-headline">N. América · +9.8% sobre presupuesto YTD · Octubre activo</div>
-      <div class="insight-metric">$5,947,690 FOB YTD · +9.8% vs presupuesto · $318K Sep · $298K Oct</div>
-      <div class="insight-text">Norte América acumula $5,947,690 FOB YTD — +9.8% sobre su presupuesto, la mayor ventaja relativa del portafolio. Septiembre lleva $318K y Octubre suma $298K confirmados. <strong>Norte América es la única zona con ventaja sostenida vs presupuesto y mantiene actividad en Octubre, asegurando continuidad en el Q4.</strong></div>
+      <div class="insight-type">✓ Asia supera presupuesto YTD por primera vez</div>
+      <div class="insight-headline">Asia · +0.7% sobre presupuesto YTD — primera zona en cruzar el objetivo</div>
+      <div class="insight-metric">$9,242,598 FOB YTD · +0.7% vs presupuesto · Octubre $1,446K en 5 días</div>
+      <div class="insight-text">Asia acumula $9,242,598 FOB YTD al cierre de Septiembre — supera su presupuesto acumulado (+0.7%) por primera vez en 2026. Octubre ya aporta $1,446K en la primera semana. <strong>Asia es la primera zona en superar su presupuesto YTD. El momentum de China y Korea en Octubre refuerza esta posición para el cierre anual.</strong></div>
     </div>
   </div>
 
-  <div class="section-label" style="margin-top:24px">Mercados que requieren decisión urgente</div>
+  <div class="section-label" style="margin-top:24px">Mercados que requieren atención</div>
   <div class="insights-grid">
-    <div class="insight-card warning">
-      <div class="insight-type">⚠ Septiembre por debajo del presupuesto</div>
-      <div class="insight-headline">Septiembre cierra al 28/09 con $3.76M — −17% vs presupuesto mensual</div>
-      <div class="insight-metric">40,645 cajas · $3,762,477 FOB · −17.0% vs presupuesto mensual · 3 días restantes</div>
-      <div class="insight-text">Septiembre registra $3,762,477 FOB con 40,645 cajas al 28 de Septiembre — sin alcanzar el presupuesto mensual (−17.0%). Con solo 3 días restantes en el mes, el cierre definitivo se conocerá la próxima semana. El precio de $92.57/cj es el segundo más alto del año. <strong>Septiembre cierra por debajo del presupuesto pero con el segundo mejor precio del año. El resultado final del mes definirá si la brecha YTD se sostiene en −11% o amplía.</strong></div>
-    </div>
     <div class="insight-card negative">
       <div class="insight-type">✗ Irrecuperable</div>
-      <div class="insight-headline">Emiratos Árabes · Sin actividad en Septiembre ni Octubre</div>
+      <div class="insight-headline">Emiratos Árabes · Sin actividad en Octubre ni Noviembre</div>
       <div class="insight-metric">984 cajas YTD · Sin despachos desde Abril · Sin pipeline en Q4</div>
-      <div class="insight-text">Emiratos Árabes no registra actividad en Septiembre (en curso) ni en Octubre confirmado. Con Q4 en curso y el año casi tres cuartos transcurrido, el ajuste formal de meta es impostergable. <strong>Sin el ajuste, Classic Series termina Q3 y entra a Q4 con una brecha artificial que distorsiona la comparabilidad del resultado anual.</strong></div>
+      <div class="insight-text">Emiratos Árabes no registra actividad en Octubre (en curso) ni en Noviembre confirmado. Con Q4 en marcha y el año casi tres cuartos transcurrido, el ajuste formal de meta sigue pendiente. <strong>Cada semana sin ajuste distorsiona la lectura de Classic Series y hace incomparable el cierre anual.</strong></div>
+    </div>
+    <div class="insight-card negative">
+      <div class="insight-type">✗ Colapso en Octubre</div>
+      <div class="insight-headline">Chile · 7 cajas en Octubre — sin pipeline en Noviembre</div>
+      <div class="insight-metric">31,442 cajas YTD · −26.2% vs presupuesto · Octubre casi sin actividad</div>
+      <div class="insight-text">Chile registra solo 7 cajas en Octubre al 05 de Octubre — desplome respecto a los 3,958 cj de Septiembre. YTD acumula 31,442 cajas. Noviembre sin confirmaciones. <strong>El patrón de Chile se repite: mes fuerte seguido de colapso. Activar despachos para la segunda semana de Octubre y confirmar Noviembre antes del cierre del mes.</strong></div>
     </div>
     <div class="insight-card warning">
-      <div class="insight-type">⚠ Irregularidad persistente</div>
-      <div class="insight-headline">Chile · 3,958 cajas en Septiembre — sin Octubre confirmado</div>
-      <div class="insight-metric">31,248 cajas YTD · −26.2% vs presupuesto · Sin pipeline en Octubre</div>
-      <div class="insight-text">Chile registra 3,958 cajas en Septiembre (en curso) — uno de sus mejores meses del año. Sin embargo, Octubre no registra confirmaciones. La brecha de −26% persiste. <strong>Septiembre puede ser el mejor mes de Chile en el año si el cierre confirma el ritmo. El reto es replicarlo en Octubre y activar despachos antes de fin de mes.</strong></div>
+      <div class="insight-type">⚠ Brecha mayor del portafolio</div>
+      <div class="insight-headline">Classic Series · −21.6% en volumen — brecha persistente</div>
+      <div class="insight-metric">208,865 cajas YTD · 255,683 presupuestadas · −18.1% en FOB</div>
+      <div class="insight-text">Classic Series acumula $10,449,455 FOB YTD con 208,865 cajas al cierre de Septiembre — brecha de −18.1% en FOB. Emiratos Árabes y Chile concentran el déficit. <strong>Con Sudamérica activa en Octubre ($805K), la línea tiene su primera oportunidad real de reducir la brecha en Q4.</strong></div>
     </div>
   </div>
 
-  <div class="section-label" style="margin-top:24px">Mercados en ruta, con brecha manejable</div>
+  <div class="section-label" style="margin-top:24px">Mercados en ruta</div>
   <div class="insights-grid">
-    <div class="insight-card warning">
-      <div class="insight-type">⚠ Momentum activo</div>
-      <div class="insight-headline">Europa · $457K en Septiembre y $762K en Octubre</div>
-      <div class="insight-metric">$457K Sep · $762K Octubre confirmado · Alemania y UK lideran</div>
-      <div class="insight-text">Europa registra $457K en Septiembre y $762K confirmados en Octubre — duodécimo mes consecutivo con actividad. El pipeline de Octubre supera cualquier mes del H1. <strong>Europa confirma que su recuperación es estructural: doce meses activos y el mejor pipeline de Octubre en el año. La zona entra al Q4 con el mayor impulso relativo.</strong></div>
+    <div class="insight-card positive">
+      <div class="insight-type">✓ Sobre presupuesto YTD</div>
+      <div class="insight-headline">N. América · +7.3% sobre presupuesto YTD · Octubre y Noviembre activos</div>
+      <div class="insight-metric">$6,468,283 FOB YTD · +7.3% vs presupuesto · $564K Oct · $66K Nov</div>
+      <div class="insight-text">Norte América acumula $6,468,283 FOB YTD — +7.3% sobre su presupuesto. Octubre lleva $564K y Noviembre suma $66K confirmados. <strong>Norte América mantiene la mayor ventaja relativa del portafolio con pipeline activo en Noviembre. La zona consolida su liderazgo para el cierre anual.</strong></div>
     </div>
     <div class="insight-card warning">
-      <div class="insight-type">⚠ Q4 liderado por Sudamérica</div>
-      <div class="insight-headline">Sudamérica · $763K en Octubre — el mayor mes del año para la zona</div>
-      <div class="insight-metric">$169K Sep · $763K Octubre confirmado · Brasil lidera</div>
-      <div class="insight-text">Sudamérica registra $763K confirmados en Octubre — el mayor mes de la zona en 2026, y el mayor anticipado de cualquier zona en Q4. Brasil lidera. <strong>Sudamérica es la sorpresa positiva del Q4. Con $763K ya confirmados en Octubre, la zona puede cerrar el año con una recuperación equivalente al H1 completo.</strong></div>
+      <div class="insight-type">⚠ Recuperación sostenida</div>
+      <div class="insight-headline">Europa · $599K en Octubre — décimo primer mes activo consecutivo</div>
+      <div class="insight-metric">$599K Oct (en curso) · $6K Noviembre parcial · Once meses activos</div>
+      <div class="insight-text">Europa registra $599K en Octubre (en curso) al 05 de Octubre — undécimo mes consecutivo con actividad. Noviembre ya registra $6K parciales. <strong>Once meses activos confirma que la recuperación de Europa es estructural. El Q4 europeo arranca sin interrupción en el ciclo de despachos.</strong></div>
     </div>
-    <div class="insight-card warning">
-      <div class="insight-type">⚠ Asia activa en Octubre</div>
-      <div class="insight-headline">Asia · $1,168K en Octubre confirmado — China y Korea lideran</div>
-      <div class="insight-metric">$2,296K Sep · $1,168K Octubre confirmado · China activa</div>
-      <div class="insight-text">Asia registra $2,296K en Septiembre (en curso) y $1,168K confirmados en Octubre. China y Korea activos en ambos meses. <strong>Asia mantiene actividad sostenida en Sep y Oct. Con China bajo presupuesto acumulado (−1.3% YTD), el Q4 es la oportunidad de cerrar sobre el objetivo anual.</strong></div>
+    <div class="insight-card positive">
+      <div class="insight-type">✓ Mejor mes de Sudamérica</div>
+      <div class="insight-headline">Sudamérica · $805K en Octubre — su mayor mes del año</div>
+      <div class="insight-metric">$805K Oct (en curso) · Octubre como mejor mes de la zona en 2026</div>
+      <div class="insight-text">Sudamérica registra $804,664 en Octubre al 05 de Octubre — su mayor mes del año, superando cualquier mes del H1. Brasil lidera. <strong>Sudamérica confirma en Octubre el momentum anticipado en S38–S40. La zona es la sorpresa positiva del Q4 y puede cerrar el año con una recuperación significativa respecto al H1.</strong></div>
     </div>
   </div>
 
@@ -859,385 +864,389 @@ select:focus { outline: none; border-color: var(--purple-mid); }
   <div class="insights-grid">
     <div class="insight-card warning">
       <div class="insight-type">⚠ Recuperando terreno</div>
-      <div class="insight-headline">Iconos · $6.2M FOB YTD · −12.2% vs presupuesto</div>
-      <div class="insight-metric">12,450 cajas YTD · 13,602 presupuestadas · Datos al cierre de Agosto</div>
-      <div class="insight-text">Íconos acumula $6,237,243 FOB YTD con 12,450 cajas al cierre de Agosto — brecha de −12.2%. El precio de Septiembre ($92.57/cj) refleja una alta proporción de esta línea activa. <strong>Con el mix Premium de Septiembre y el pipeline de Octubre en Asia, Íconos puede cerrar Q3 bajo −8%.</strong></div>
+      <div class="insight-headline">Iconos · $7.3M FOB YTD · −7.5% vs presupuesto</div>
+      <div class="insight-metric">14,517 cajas YTD · 15,146 presupuestadas · Datos al cierre de Septiembre</div>
+      <div class="insight-text">Íconos acumula $7,310,516 FOB YTD con 14,517 cajas al cierre de Septiembre — brecha de −7.5%, reduciéndose desde −20% en Junio. Asia activa en Octubre con alto mix Premium. <strong>La brecha de Íconos se reduce de forma consistente. Con el momentum de Asia en Octubre, puede llegar a −5% al cierre del trimestre.</strong></div>
     </div>
     <div class="insight-card positive">
       <div class="insight-type">✓ Brecha mínima del portafolio</div>
-      <div class="insight-headline">Montes Alpha · $11.6M FOB YTD · −2.6% vs presupuesto</div>
-      <div class="insight-metric">123,338 cajas YTD · 125,520 presupuestadas · A $309K del objetivo</div>
-      <div class="insight-text">Montes Alpha acumula $11,587,866 FOB YTD con 123,338 cajas al cierre de Agosto — brecha de −2.6%, la mejor del portafolio. Korea, Alemania y Japón activos en Octubre. <strong>Montes Alpha está a $309K de superar su presupuesto YTD. Con el pipeline de Asia en Octubre, puede cruzar el objetivo antes de fin de mes.</strong></div>
+      <div class="insight-headline">Montes Alpha · $12.9M FOB YTD · −2.4% vs presupuesto</div>
+      <div class="insight-metric">137,051 cajas YTD · 139,761 presupuestadas · A $315K del objetivo</div>
+      <div class="insight-text">Montes Alpha acumula $12,932,303 FOB YTD con 137,051 cajas al cierre de Septiembre — brecha de −2.4%, la menor del portafolio. Korea, Alemania y Japón activos en Octubre. <strong>Montes Alpha está a $315K de superar su presupuesto YTD. Con el pipeline de Asia en Octubre y Noviembre, puede cruzar el objetivo antes de fin de mes.</strong></div>
     </div>
     <div class="insight-card warning">
-      <div class="insight-type">⚠ Brecha estable</div>
-      <div class="insight-headline">Limited Selection · $3.2M FOB YTD · −7.8% vs presupuesto</div>
-      <div class="insight-metric">57,558 cajas YTD · 62,963 presupuestadas · Datos al cierre de Agosto</div>
-      <div class="insight-text">Limited Selection acumula $3,217,985 FOB YTD con 57,558 cajas al cierre de Agosto — brecha de −7.8%. China lidera con $651K (sobre ppto). <strong>La brecha se mantiene manejable. Con actividad en Asia y Europa en Octubre, puede cerrar Q3 bajo −5%.</strong></div>
+      <div class="insight-type">⚠ Brecha manejable</div>
+      <div class="insight-headline">Limited Selection · $3.4M FOB YTD · −11.3% vs presupuesto</div>
+      <div class="insight-metric">61,595 cajas YTD · 70,107 presupuestadas · Datos al cierre de Septiembre</div>
+      <div class="insight-text">Limited Selection acumula $3,448,410 FOB YTD con 61,595 cajas al cierre de Septiembre — brecha de −11.3%. China lidera con $725K (sobre ppto). <strong>La brecha de Limited Selection amplió respecto a S40, pero con actividad en Asia y Europa en Octubre puede estabilizarse bajo −10% al cierre del trimestre.</strong></div>
     </div>
   </div>
 
-  <div class="section-label" style="margin-top:24px">Prioridades para el inicio de Octubre</div>
+  <div class="section-label" style="margin-top:24px">Prioridades para Octubre</div>
   <div class="reco-card">
     <div class="reco-num"><span>1</span></div>
     <div>
-      <div class="reco-title">Confirmar el cierre de Septiembre — 3 días restantes</div>
-      <div class="reco-text">Septiembre lleva $3.76M al 28 de Septiembre. Con los últimos 3 días del mes, confirmar despachos pendientes de Asia (Korea, Japón) y Chile (3,958 cj, con posibilidad de sumar más). Un cierre sólido de Septiembre sobre $4M puede llevar la brecha YTD bajo −10% al iniciar Octubre.</div>
+      <div class="reco-title">Sostener el impulso de Octubre — $4.35M en 5 días</div>
+      <div class="reco-text">Octubre lleva $4.35M en la primera semana — ya sobre el presupuesto mensual. Para cerrar el mes sobre $5M FOB (lo que llevaría la brecha YTD a −7% o menos), confirmar despachos adicionales de Asia (segunda y tercera semana), Chile (solo 7 cajas — activar órdenes urgentes) y Europa (que puede sumar más despachos en la segunda quincena). Cada $500K adicional en Octubre reduce la brecha YTD en ~0.4pp.</div>
       <span class="reco-tag">Prioridad: Alta</span>
     </div>
   </div>
   <div class="reco-card">
     <div class="reco-num"><span>2</span></div>
     <div>
-      <div class="reco-title">Capitalizar Octubre — $3.16M confirmados, objetivo $5M+</div>
-      <div class="reco-text">Octubre arranca con $3.16M — el mejor pipeline inicial del año. Asia ($1,168K), Europa ($762K) y Sudamérica ($763K) lideran. Para alcanzar $5M FOB en Octubre, confirmar órdenes adicionales de Chile (sin actividad en Octubre), China (puede sumar más en la segunda y tercera semana) y mercados con órdenes pendientes de Q4. Cada $500K adicional en Octubre reduce la brecha YTD en ~0.5pp.</div>
-      <span class="reco-tag">Prioridad: Oportunidad</span>
+      <div class="reco-title">Construir Noviembre — $552K confirmados, objetivo $3M+</div>
+      <div class="reco-text">Noviembre arranca con $552K en 5 zonas activas — un buen inicio pero lejos del objetivo. Para llegar a $3M+ en Noviembre, confirmar órdenes de Asia (China, Korea, Japón), Europa (Alemania, UK) y Chile (sin confirmaciones aún). Noviembre es el penúltimo mes del año — su resultado define si la brecha anual cierra bajo −8% o sobre −10%.</div>
+      <span class="reco-tag">Prioridad: Alta</span>
     </div>
   </div>
   <div class="reco-card">
     <div class="reco-num"><span>3</span></div>
     <div>
-      <div class="reco-title">Ajuste formal de metas — inicio de Q4 es el límite definitivo</div>
-      <div class="reco-text">Emiratos Árabes (984 cj de 4,529 ppto — sin actividad desde Abril), Oceanía (sin ventas regulares) y Africa (solo $25K en Octubre) no muestran pipeline sostenido. Con Q4 iniciando en Octubre, el ajuste de metas es el último momento antes de que distorsionen el resultado de cierre anual. Ejecutar el ajuste esta semana.</div>
+      <div class="reco-title">Ajuste definitivo de metas irrecuperables</div>
+      <div class="reco-text">Emiratos Árabes (984 cj de 4,529 ppto — sin actividad desde Abril), sin pipeline en Q4. Oceanía (sin ventas en Octubre ni Noviembre hasta ahora). Con solo 2 meses restantes en el año, el ajuste de estas metas es el último momento antes del cierre anual. Ejecutar esta semana para que Noviembre y Diciembre arranquen con presupuestos reales.</div>
       <span class="reco-tag">Prioridad: Urgente</span>
     </div>
   </div>
 
 </div>
+
 <script>
 // ══════════════ MASTER DATA (validated against Excel TOTAL row) ══════════════
 const MARKETS_BY_LINE = [
-  {linea:"Iconos", zona:"Asia", mercado:"China", cc:"10811", manager:"Jason Li", cajas_ytd:4299, fob_ytd:2159327, cajas_ppto:3868, fob_ppto:2115827, fob_ytd25:2484589, cajas_abr:569, fob_abr:310032},
-  {linea:"Iconos", zona:"N. America", mercado:"Canada", cc:"10302", manager:"Danilo Buvinic", cajas_ytd:1272, fob_ytd:537079, cajas_ppto:913, fob_ppto:388430, fob_ytd25:404759, cajas_abr:306, fob_abr:132587},
-  {linea:"Iconos", zona:"Chile", mercado:"Chile", cc:"10505", manager:"Evelyn Ramirez", cajas_ytd:1146, fob_ytd:748272, cajas_ppto:1140, fob_ppto:700186, fob_ytd25:678514, cajas_abr:209, fob_abr:101190},
-  {linea:"Iconos", zona:"Asia", mercado:"Korea", cc:"10814", manager:"Juan Pablo Velasco", cajas_ytd:923, fob_ytd:367059, cajas_ppto:650, fob_ppto:293111, fob_ytd25:146514, cajas_abr:0, fob_abr:0},
-  {linea:"Iconos", zona:"Asia", mercado:"Malasia", cc:"10833", manager:"Juan Yañez", cajas_ytd:811, fob_ytd:420592, cajas_ppto:276, fob_ppto:158386, fob_ytd25:190275, cajas_abr:0, fob_abr:0},
-  {linea:"Iconos", zona:"Europa", mercado:"Alemania", cc:"10603", manager:"Eduardo Stark", cajas_ytd:678, fob_ytd:323547, cajas_ppto:353, fob_ppto:163057, fob_ytd25:135209, cajas_abr:375, fob_abr:182761},
-  {linea:"Iconos", zona:"Asia", mercado:"Japón", cc:"10825", manager:"Eduardo Stark", cajas_ytd:471, fob_ytd:235500, cajas_ppto:250, fob_ppto:114285, fob_ytd25:48064, cajas_abr:118, fob_abr:55480},
-  {linea:"Iconos", zona:"N. America", mercado:"Usa", cc:"10303", manager:"Danilo Buvinic", cajas_ytd:404, fob_ytd:120931, cajas_ppto:1188, fob_ppto:535918, fob_ytd25:651780, cajas_abr:0, fob_abr:0},
-  {linea:"Iconos", zona:"S. America", mercado:"Brasil", cc:"10504", manager:"Daniela Rojas", cajas_ytd:258, fob_ytd:160894, cajas_ppto:557, fob_ppto:332530, fob_ytd25:322758, cajas_abr:72, fob_abr:45154},
-  {linea:"Iconos", zona:"Asia", mercado:"Tailandia", cc:"10845", manager:"Juan Yañez", cajas_ytd:255, fob_ytd:184853, cajas_ppto:247, fob_ppto:110664, fob_ytd25:72836, cajas_abr:110, fob_abr:109084},
-  {linea:"Iconos", zona:"Europa", mercado:"Inglaterra", cc:"10624", manager:"Eduardo Stark", cajas_ytd:202, fob_ytd:92033, cajas_ppto:333, fob_ppto:153386, fob_ytd25:107392, cajas_abr:14, fob_abr:6183},
-  {linea:"Iconos", zona:"Medio Oriente", mercado:"Emiratos Arabes", cc:"10815", manager:"Juan Pablo Velasco", cajas_ytd:172, fob_ytd:87313, cajas_ppto:128, fob_ppto:64018, fob_ytd25:27518, cajas_abr:0, fob_abr:0},
-  {linea:"Iconos", zona:"Asia", mercado:"Singapur", cc:"10842", manager:"Juan Yañez", cajas_ytd:170, fob_ytd:86807, cajas_ppto:108, fob_ppto:49846, fob_ytd25:54584, cajas_abr:35, fob_abr:19646},
-  {linea:"Iconos", zona:"Asia", mercado:"Taiwan", cc:"10846", manager:"Juan Yañez", cajas_ytd:158, fob_ytd:68063, cajas_ppto:333, fob_ppto:159506, fob_ytd25:213693, cajas_abr:100, fob_abr:53438},
-  {linea:"Iconos", zona:"Asia", mercado:"Hong Kong", cc:"10819", manager:"Juan Yañez", cajas_ytd:131, fob_ytd:66369, cajas_ppto:148, fob_ppto:73011, fob_ytd25:63159, cajas_abr:0, fob_abr:0},
-  {linea:"Iconos", zona:"C. America", mercado:"Costa Rica", cc:"10406", manager:"Patricia Osenga", cajas_ytd:120, fob_ytd:56302, cajas_ppto:123, fob_ppto:59448, fob_ytd25:58562, cajas_abr:24, fob_abr:12549},
-  {linea:"Iconos", zona:"Asia", mercado:"Vietnam", cc:"10850", manager:"Juan Yañez", cajas_ytd:112, fob_ytd:57332, cajas_ppto:312, fob_ppto:164577, fob_ytd25:156522, cajas_abr:50, fob_abr:22835},
-  {linea:"Iconos", zona:"Europa", mercado:"Holanda", cc:"10622", manager:"Eduardo Stark", cajas_ytd:100, fob_ytd:45589, cajas_ppto:384, fob_ppto:191389, fob_ytd25:184333, cajas_abr:0, fob_abr:0},
-  {linea:"Iconos", zona:"S. America", mercado:"Perú", cc:"10511", manager:"Daniela Rojas", cajas_ytd:74, fob_ytd:44614, cajas_ppto:124, fob_ppto:76549, fob_ytd25:34344, cajas_abr:0, fob_abr:0},
-  {linea:"Iconos", zona:"S. America", mercado:"Guyana", cc:"10508", manager:"Daniela Rojas", cajas_ytd:58, fob_ytd:30600, cajas_ppto:41, fob_ppto:21297, fob_ytd25:0, cajas_abr:0, fob_abr:0},
-  {linea:"Iconos", zona:"Europa", mercado:"Hungria", cc:"10623", manager:"Juan Pablo Velasco", cajas_ytd:57, fob_ytd:25969, cajas_ppto:21, fob_ppto:9122, fob_ytd25:7370, cajas_abr:0, fob_abr:0},
-  {linea:"Iconos", zona:"Asia", mercado:"Cambodia", cc:"10810", manager:"Juan Yañez", cajas_ytd:50, fob_ytd:26820, cajas_ppto:64, fob_ppto:33959, fob_ytd25:11734, cajas_abr:0, fob_abr:0},
-  {linea:"Iconos", zona:"Caribe", mercado:"Bermuda", cc:"10306", manager:"Patricia Osenga", cajas_ytd:50, fob_ytd:26118, cajas_ppto:14, fob_ppto:5844, fob_ytd25:0, cajas_abr:0, fob_abr:0},
-  {linea:"Iconos", zona:"S. America", mercado:"Argentina", cc:"10502", manager:"Daniela Rojas", cajas_ytd:50, fob_ytd:22000, cajas_ppto:58, fob_ppto:25223, fob_ytd25:18368, cajas_abr:0, fob_abr:0},
-  {linea:"Iconos", zona:"Asia", mercado:"Indonesia", cc:"10821", manager:"Juan Yañez", cajas_ytd:48, fob_ytd:24175, cajas_ppto:86, fob_ppto:43592, fob_ytd25:0, cajas_abr:40, fob_abr:20358},
-  {linea:"Iconos", zona:"S. America", mercado:"Venezuela", cc:"10514", manager:"Daniela Rojas", cajas_ytd:39, fob_ytd:23472, cajas_ppto:22, fob_ppto:11261, fob_ytd25:33375, cajas_abr:39, fob_abr:23472},
-  {linea:"Iconos", zona:"C. America", mercado:"México", cc:"10304", manager:"Daniela Rojas", cajas_ytd:35, fob_ytd:18690, cajas_ppto:146, fob_ppto:77736, fob_ytd25:26060, cajas_abr:0, fob_abr:0},
-  {linea:"Iconos", zona:"S. America", mercado:"Malvinas", cc:"10518", manager:"Daniela Rojas", cajas_ytd:31, fob_ytd:13312, cajas_ppto:61, fob_ppto:32522, fob_ytd25:0, cajas_abr:0, fob_abr:0},
-  {linea:"Iconos", zona:"Europa", mercado:"Chipre", cc:"10812", manager:"Juan Pablo Velasco", cajas_ytd:29, fob_ytd:18661, cajas_ppto:91, fob_ppto:39156, fob_ytd25:69819, cajas_abr:0, fob_abr:0},
-  {linea:"Iconos", zona:"Europa", mercado:"Serbia", cc:"10647", manager:"Juan Pablo Velasco", cajas_ytd:29, fob_ytd:19640, cajas_ppto:57, fob_ppto:27414, fob_ytd25:6332, cajas_abr:0, fob_abr:0},
-  {linea:"Iconos", zona:"Asia", mercado:"Filipinas", cc:"10816", manager:"Juan Yañez", cajas_ytd:29, fob_ytd:17812, cajas_ppto:190, fob_ppto:75233, fob_ytd25:18750, cajas_abr:0, fob_abr:0},
-  {linea:"Iconos", zona:"Caribe", mercado:"Islas Virgen", cc:"10426", manager:"Patricia Osenga", cajas_ytd:26, fob_ytd:14135, cajas_ppto:16, fob_ppto:7897, fob_ytd25:2604, cajas_abr:10, fob_abr:5334},
+  {linea:"Iconos", zona:"Asia", mercado:"China", cc:"10811", manager:"Jason Li", cajas_ytd:4849, fob_ytd:2453483, cajas_ppto:4307, fob_ppto:2355881, fob_ytd25:2527240, cajas_abr:1019, fob_abr:550782},
+  {linea:"Iconos", zona:"N. America", mercado:"Canada", cc:"10302", manager:"Danilo Buvinic", cajas_ytd:1272, fob_ytd:537079, cajas_ppto:1017, fob_ppto:432500, fob_ytd25:443537, cajas_abr:56, fob_abr:22536},
+  {linea:"Iconos", zona:"Chile", mercado:"Chile", cc:"10505", manager:"Evelyn Ramirez", cajas_ytd:1209, fob_ytd:766342, cajas_ppto:1269, fob_ppto:779626, fob_ytd25:790249, cajas_abr:0, fob_abr:121},
+  {linea:"Iconos", zona:"Asia", mercado:"Korea", cc:"10814", manager:"Juan Pablo Velasco", cajas_ytd:1161, fob_ytd:477298, cajas_ppto:724, fob_ppto:326367, fob_ytd25:180269, cajas_abr:238, fob_abr:110239},
+  {linea:"Iconos", zona:"Asia", mercado:"Malasia", cc:"10833", manager:"Juan Yañez", cajas_ytd:811, fob_ytd:420592, cajas_ppto:307, fob_ppto:176356, fob_ytd25:190275, cajas_abr:0, fob_abr:0},
+  {linea:"Iconos", zona:"Europa", mercado:"Alemania", cc:"10603", manager:"Eduardo Stark", cajas_ytd:696, fob_ytd:333813, cajas_ppto:393, fob_ppto:181557, fob_ytd25:198059, cajas_abr:18, fob_abr:10266},
+  {linea:"Iconos", zona:"N. America", mercado:"Usa", cc:"10303", manager:"Danilo Buvinic", cajas_ytd:563, fob_ytd:189708, cajas_ppto:1323, fob_ppto:596722, fob_ytd25:656970, cajas_abr:159, fob_abr:68777},
+  {linea:"Iconos", zona:"Asia", mercado:"Japón", cc:"10825", manager:"Eduardo Stark", cajas_ytd:471, fob_ytd:235500, cajas_ppto:279, fob_ppto:127252, fob_ytd25:52036, cajas_abr:0, fob_abr:0},
+  {linea:"Iconos", zona:"S. America", mercado:"Brasil", cc:"10504", manager:"Daniela Rojas", cajas_ytd:468, fob_ytd:287615, cajas_ppto:620, fob_ppto:370258, fob_ytd25:344828, cajas_abr:210, fob_abr:126721},
+  {linea:"Iconos", zona:"Asia", mercado:"Tailandia", cc:"10845", manager:"Juan Yañez", cajas_ytd:350, fob_ytd:235618, cajas_ppto:275, fob_ppto:123219, fob_ytd25:117493, cajas_abr:95, fob_abr:50765},
+  {linea:"Iconos", zona:"Europa", mercado:"Inglaterra", cc:"10624", manager:"Eduardo Stark", cajas_ytd:272, fob_ytd:124567, cajas_ppto:371, fob_ppto:170788, fob_ytd25:138774, cajas_abr:50, fob_abr:23258},
+  {linea:"Iconos", zona:"Asia", mercado:"Vietnam", cc:"10850", manager:"Juan Yañez", cajas_ytd:250, fob_ytd:136897, cajas_ppto:348, fob_ppto:183249, fob_ytd25:156522, cajas_abr:138, fob_abr:79564},
+  {linea:"Iconos", zona:"Asia", mercado:"Hong Kong", cc:"10819", manager:"Juan Yañez", cajas_ytd:212, fob_ytd:102794, cajas_ppto:165, fob_ppto:81295, fob_ytd25:71709, cajas_abr:81, fob_abr:36425},
+  {linea:"Iconos", zona:"Asia", mercado:"Singapur", cc:"10842", manager:"Juan Yañez", cajas_ytd:195, fob_ytd:100167, cajas_ppto:120, fob_ppto:55501, fob_ytd25:57084, cajas_abr:25, fob_abr:13360},
+  {linea:"Iconos", zona:"Europa", mercado:"Holanda", cc:"10622", manager:"Eduardo Stark", cajas_ytd:177, fob_ytd:82187, cajas_ppto:427, fob_ppto:213103, fob_ytd25:184333, cajas_abr:28, fob_abr:9905},
+  {linea:"Iconos", zona:"Medio Oriente", mercado:"Emiratos Arabes", cc:"10815", manager:"Juan Pablo Velasco", cajas_ytd:172, fob_ytd:87313, cajas_ppto:142, fob_ppto:71282, fob_ytd25:27518, cajas_abr:0, fob_abr:0},
+  {linea:"Iconos", zona:"Asia", mercado:"Taiwan", cc:"10846", manager:"Juan Yañez", cajas_ytd:158, fob_ytd:68063, cajas_ppto:371, fob_ppto:177603, fob_ytd25:213693, cajas_abr:0, fob_abr:0},
+  {linea:"Iconos", zona:"C. America", mercado:"Costa Rica", cc:"10406", manager:"Patricia Osenga", cajas_ytd:144, fob_ytd:69118, cajas_ppto:136, fob_ppto:66192, fob_ytd25:58562, cajas_abr:24, fob_abr:12816},
+  {linea:"Iconos", zona:"S. America", mercado:"Argentina", cc:"10502", manager:"Daniela Rojas", cajas_ytd:125, fob_ytd:55000, cajas_ppto:65, fob_ppto:28085, fob_ytd25:18368, cajas_abr:75, fob_abr:33000},
+  {linea:"Iconos", zona:"S. America", mercado:"Perú", cc:"10511", manager:"Daniela Rojas", cajas_ytd:102, fob_ytd:63122, cajas_ppto:138, fob_ppto:85234, fob_ytd25:42718, cajas_abr:27, fob_abr:18508},
+  {linea:"Iconos", zona:"S. America", mercado:"Paraguay", cc:"10510", manager:"Daniela Rojas", cajas_ytd:70, fob_ytd:37490, cajas_ppto:58, fob_ppto:30275, fob_ytd25:76179, cajas_abr:70, fob_abr:37490},
+  {linea:"Iconos", zona:"Europa", mercado:"Suiza", cc:"10649", manager:"Eduardo Stark", cajas_ytd:63, fob_ytd:36892, cajas_ppto:127, fob_ppto:68226, fob_ytd25:96402, cajas_abr:63, fob_abr:36892},
+  {linea:"Iconos", zona:"S. America", mercado:"Guyana", cc:"10508", manager:"Daniela Rojas", cajas_ytd:58, fob_ytd:30600, cajas_ppto:46, fob_ppto:23713, fob_ytd25:0, cajas_abr:0, fob_abr:0},
+  {linea:"Iconos", zona:"Europa", mercado:"Hungria", cc:"10623", manager:"Juan Pablo Velasco", cajas_ytd:57, fob_ytd:25969, cajas_ppto:24, fob_ppto:10156, fob_ytd25:7370, cajas_abr:0, fob_abr:0},
+  {linea:"Iconos", zona:"Asia", mercado:"Laos", cc:"10830", manager:"Juan Yañez", cajas_ytd:51, fob_ytd:38795, cajas_ppto:44, fob_ppto:25549, fob_ytd25:32950, cajas_abr:51, fob_abr:38795},
+  {linea:"Iconos", zona:"Asia", mercado:"Cambodia", cc:"10810", manager:"Juan Yañez", cajas_ytd:50, fob_ytd:26820, cajas_ppto:72, fob_ppto:37812, fob_ytd25:11734, cajas_abr:0, fob_abr:0},
+  {linea:"Iconos", zona:"Caribe", mercado:"Bermuda", cc:"10306", manager:"Patricia Osenga", cajas_ytd:50, fob_ytd:26118, cajas_ppto:16, fob_ppto:6507, fob_ytd25:0, cajas_abr:0, fob_abr:0},
+  {linea:"Iconos", zona:"Asia", mercado:"Indonesia", cc:"10821", manager:"Juan Yañez", cajas_ytd:48, fob_ytd:24175, cajas_ppto:95, fob_ppto:48538, fob_ytd25:0, cajas_abr:0, fob_abr:0},
+  {linea:"Iconos", zona:"S. America", mercado:"Venezuela", cc:"10514", manager:"Daniela Rojas", cajas_ytd:39, fob_ytd:23472, cajas_ppto:25, fob_ppto:12538, fob_ytd25:33375, cajas_abr:0, fob_abr:0},
+  {linea:"Iconos", zona:"C. America", mercado:"México", cc:"10304", manager:"Daniela Rojas", cajas_ytd:35, fob_ytd:18690, cajas_ppto:162, fob_ppto:86555, fob_ytd25:39410, cajas_abr:0, fob_abr:0},
+  {linea:"Iconos", zona:"S. America", mercado:"Malvinas", cc:"10518", manager:"Daniela Rojas", cajas_ytd:31, fob_ytd:13312, cajas_ppto:68, fob_ppto:36212, fob_ytd25:0, cajas_abr:0, fob_abr:0},
+  {linea:"Iconos", zona:"Europa", mercado:"Chipre", cc:"10812", manager:"Juan Pablo Velasco", cajas_ytd:29, fob_ytd:18661, cajas_ppto:101, fob_ppto:43599, fob_ytd25:69819, cajas_abr:0, fob_abr:0},
+  {linea:"Iconos", zona:"Europa", mercado:"Serbia", cc:"10647", manager:"Juan Pablo Velasco", cajas_ytd:29, fob_ytd:19640, cajas_ppto:64, fob_ppto:30524, fob_ytd25:6332, cajas_abr:0, fob_abr:0},
+  {linea:"Iconos", zona:"Asia", mercado:"Filipinas", cc:"10816", manager:"Juan Yañez", cajas_ytd:29, fob_ytd:17812, cajas_ppto:212, fob_ppto:83769, fob_ytd25:18750, cajas_abr:0, fob_abr:0},
+  {linea:"Iconos", zona:"Caribe", mercado:"Islas Virgen", cc:"10426", manager:"Patricia Osenga", cajas_ytd:26, fob_ytd:14135, cajas_ppto:18, fob_ppto:8793, fob_ytd25:2604, cajas_abr:10, fob_abr:5334},
+  {linea:"Iconos", zona:"Europa", mercado:"Dinamarca", cc:"10611", manager:"Juan Pablo Velasco", cajas_ytd:25, fob_ytd:14292, cajas_ppto:0, fob_ppto:0, fob_ytd25:0, cajas_abr:25, fob_abr:14292},
   {linea:"Iconos", zona:"Caribe", mercado:"Cruceros", cc:"10303", manager:"Patricia Osenga", cajas_ytd:18, fob_ytd:12877, cajas_ppto:0, fob_ppto:0, fob_ytd25:0, cajas_abr:0, fob_abr:0},
-  {linea:"Iconos", zona:"C. America", mercado:"Guatemala", cc:"10410", manager:"Patricia Osenga", cajas_ytd:17, fob_ytd:8490, cajas_ppto:43, fob_ppto:21512, fob_ytd25:21896, cajas_abr:0, fob_abr:0},
-  {linea:"Iconos", zona:"Europa", mercado:"Luxemburgo", cc:"10636", manager:"Juan Pablo Velasco", cajas_ytd:15, fob_ytd:6905, cajas_ppto:18, fob_ppto:7721, fob_ytd25:3889, cajas_abr:0, fob_abr:0},
-  {linea:"Iconos", zona:"Europa", mercado:"Islandia", cc:"10629", manager:"Juan Pablo Velasco", cajas_ytd:12, fob_ytd:6095, cajas_ppto:10, fob_ppto:4583, fob_ytd25:5566, cajas_abr:6, fob_abr:3047},
-  {linea:"Iconos", zona:"Caribe", mercado:"Puerto Rico", cc:"10416", manager:"Daniela Rojas", cajas_ytd:10, fob_ytd:6800, cajas_ppto:70, fob_ppto:40708, fob_ytd25:59465, cajas_abr:0, fob_abr:0},
-  {linea:"Iconos", zona:"Caribe", mercado:"Aruba", cc:"10515", manager:"Patricia Osenga", cajas_ytd:10, fob_ytd:5334, cajas_ppto:10, fob_ppto:4913, fob_ytd25:4000, cajas_abr:10, fob_abr:5334},
-  {linea:"Iconos", zona:"Europa", mercado:"Eslovaquia", cc:"10613", manager:"Juan Pablo Velasco", cajas_ytd:10, fob_ytd:5378, cajas_ppto:4, fob_ppto:1948, fob_ytd25:2406, cajas_abr:0, fob_abr:0},
-  {linea:"Iconos", zona:"Caribe", mercado:"Rep Dominicana", cc:"10417", manager:"Patricia Osenga", cajas_ytd:10, fob_ytd:5073, cajas_ppto:15, fob_ppto:8096, fob_ytd25:10680, cajas_abr:0, fob_abr:0},
-  {linea:"Iconos", zona:"S. America", mercado:"Uruguay", cc:"10513", manager:"Daniela Rojas", cajas_ytd:8, fob_ytd:7554, cajas_ppto:54, fob_ppto:30450, fob_ytd25:14113, cajas_abr:0, fob_abr:0},
-  {linea:"Iconos", zona:"Caribe", mercado:"St. Maarten", cc:"10422", manager:"Patricia Osenga", cajas_ytd:7, fob_ytd:3734, cajas_ppto:13, fob_ppto:7280, fob_ytd25:9334, cajas_abr:0, fob_abr:0},
-  {linea:"Iconos", zona:"Caribe", mercado:"Jamaica", cc:"10413", manager:"Patricia Osenga", cajas_ytd:6, fob_ytd:2934, cajas_ppto:5, fob_ppto:2834, fob_ytd25:0, cajas_abr:0, fob_abr:0},
+  {linea:"Iconos", zona:"C. America", mercado:"Guatemala", cc:"10410", manager:"Patricia Osenga", cajas_ytd:17, fob_ytd:8490, cajas_ppto:48, fob_ppto:23953, fob_ytd25:21896, cajas_abr:0, fob_abr:0},
+  {linea:"Iconos", zona:"Caribe", mercado:"Rep Dominicana", cc:"10417", manager:"Patricia Osenga", cajas_ytd:17, fob_ytd:9078, cajas_ppto:17, fob_ppto:9014, fob_ytd25:10680, cajas_abr:8, fob_abr:4005},
+  {linea:"Iconos", zona:"Europa", mercado:"Luxemburgo", cc:"10636", manager:"Juan Pablo Velasco", cajas_ytd:15, fob_ytd:6905, cajas_ppto:21, fob_ppto:8597, fob_ytd25:3889, cajas_abr:0, fob_abr:0},
+  {linea:"Iconos", zona:"Europa", mercado:"Islandia", cc:"10629", manager:"Juan Pablo Velasco", cajas_ytd:12, fob_ytd:6095, cajas_ppto:11, fob_ppto:5103, fob_ytd25:5566, cajas_abr:0, fob_abr:0},
+  {linea:"Iconos", zona:"Caribe", mercado:"Puerto Rico", cc:"10416", manager:"Daniela Rojas", cajas_ytd:10, fob_ytd:6800, cajas_ppto:78, fob_ppto:45327, fob_ytd25:59465, cajas_abr:0, fob_abr:0},
+  {linea:"Iconos", zona:"Caribe", mercado:"Aruba", cc:"10515", manager:"Patricia Osenga", cajas_ytd:10, fob_ytd:5334, cajas_ppto:11, fob_ppto:5470, fob_ytd25:4000, cajas_abr:10, fob_abr:5334},
+  {linea:"Iconos", zona:"Europa", mercado:"Eslovaquia", cc:"10613", manager:"Juan Pablo Velasco", cajas_ytd:10, fob_ytd:5378, cajas_ppto:4, fob_ppto:2169, fob_ytd25:2953, cajas_abr:0, fob_abr:0},
+  {linea:"Iconos", zona:"S. America", mercado:"Uruguay", cc:"10513", manager:"Daniela Rojas", cajas_ytd:8, fob_ytd:7554, cajas_ppto:60, fob_ppto:33904, fob_ytd25:14113, cajas_abr:0, fob_abr:0},
+  {linea:"Iconos", zona:"Caribe", mercado:"St. Maarten", cc:"10422", manager:"Patricia Osenga", cajas_ytd:7, fob_ytd:3734, cajas_ppto:15, fob_ppto:8105, fob_ytd25:9334, cajas_abr:0, fob_abr:0},
+  {linea:"Iconos", zona:"Caribe", mercado:"Jamaica", cc:"10413", manager:"Patricia Osenga", cajas_ytd:6, fob_ytd:2934, cajas_ppto:6, fob_ppto:3155, fob_ytd25:0, cajas_abr:0, fob_abr:0},
   {linea:"Iconos", zona:"Europa", mercado:"Estonia", cc:"10616", manager:"Patricia Osenga", cajas_ytd:6, fob_ytd:3052, cajas_ppto:0, fob_ppto:0, fob_ytd25:0, cajas_abr:0, fob_abr:0},
   {linea:"Iconos", zona:"C. America", mercado:"Honduras", cc:"10412", manager:"Patricia Osenga", cajas_ytd:5, fob_ytd:2667, cajas_ppto:0, fob_ppto:0, fob_ytd25:0, cajas_abr:0, fob_abr:0},
   {linea:"Iconos", zona:"Caribe", mercado:"Islas Cayman", cc:"10424", manager:"Patricia Osenga", cajas_ytd:5, fob_ytd:2670, cajas_ppto:0, fob_ppto:0, fob_ytd25:0, cajas_abr:0, fob_abr:0},
-  {linea:"Iconos", zona:"Europa", mercado:"Finlandia", cc:"10617", manager:"Juan Pablo Velasco", cajas_ytd:5, fob_ytd:2601, cajas_ppto:42, fob_ppto:20648, fob_ytd25:0, cajas_abr:0, fob_abr:0},
-  {linea:"Iconos", zona:"Europa", mercado:"Letonia", cc:"10633", manager:"Patricia Osenga", cajas_ytd:5, fob_ytd:2642, cajas_ppto:9, fob_ppto:4467, fob_ytd25:5877, cajas_abr:5, fob_abr:2642},
-  {linea:"Iconos", zona:"Europa", mercado:"Ucrania", cc:"10650", manager:"Patricia Osenga", cajas_ytd:4, fob_ytd:3274, cajas_ppto:26, fob_ppto:14413, fob_ytd25:17999, cajas_abr:0, fob_abr:0},
+  {linea:"Iconos", zona:"Europa", mercado:"Finlandia", cc:"10617", manager:"Juan Pablo Velasco", cajas_ytd:5, fob_ytd:2601, cajas_ppto:47, fob_ppto:22991, fob_ytd25:0, cajas_abr:0, fob_abr:0},
+  {linea:"Iconos", zona:"Europa", mercado:"Letonia", cc:"10633", manager:"Patricia Osenga", cajas_ytd:5, fob_ytd:2642, cajas_ppto:10, fob_ppto:4974, fob_ytd25:5877, cajas_abr:0, fob_abr:0},
+  {linea:"Iconos", zona:"Europa", mercado:"Ucrania", cc:"10650", manager:"Patricia Osenga", cajas_ytd:4, fob_ytd:3274, cajas_ppto:29, fob_ppto:16048, fob_ytd25:17999, cajas_abr:0, fob_abr:0},
   {linea:"Iconos", zona:"Caribe", mercado:"Barbados", cc:"10404", manager:"Patricia Osenga", cajas_ytd:2, fob_ytd:1335, cajas_ppto:0, fob_ppto:0, fob_ytd25:0, cajas_abr:0, fob_abr:0},
   {linea:"Iconos", zona:"Medio Oriente", mercado:"Qatar", cc:"10840", manager:"Juan Pablo Velasco", cajas_ytd:2, fob_ytd:1310, cajas_ppto:0, fob_ppto:0, fob_ytd25:3928, cajas_abr:0, fob_abr:0},
   {linea:"Iconos", zona:"Europa", mercado:"Suecia", cc:"10648", manager:"Juan Pablo Velasco", cajas_ytd:2, fob_ytd:1069, cajas_ppto:0, fob_ppto:0, fob_ytd25:0, cajas_abr:0, fob_abr:0},
-  {linea:"Iconos", zona:"Medio Oriente", mercado:"Jordania", cc:"10826", manager:"Juan Pablo Velasco", cajas_ytd:2, fob_ytd:786, cajas_ppto:6, fob_ppto:3040, fob_ytd25:3145, cajas_abr:0, fob_abr:0},
-  {linea:"Iconos", zona:"Asia", mercado:"Republic Of Maldives", cc:"10834", manager:"Patricia Osenga", cajas_ytd:1, fob_ytd:533, cajas_ppto:1, fob_ppto:404, fob_ytd25:4000, cajas_abr:0, fob_abr:0},
-  {linea:"Iconos", zona:"Europa", mercado:"Malta", cc:"10638", manager:"Juan Pablo Velasco", cajas_ytd:0, fob_ytd:253, cajas_ppto:5, fob_ppto:2650, fob_ytd25:1336, cajas_abr:0, fob_abr:0},
-  {linea:"Iconos", zona:"Oceania", mercado:"Tahiti", cc:"10305", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:11, fob_ppto:6232, fob_ytd25:0, cajas_abr:0, fob_abr:0},
-  {linea:"Iconos", zona:"Caribe", mercado:"Belize", cc:"10405", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:3, fob_ppto:1541, fob_ytd25:0, cajas_abr:0, fob_abr:0},
-  {linea:"Iconos", zona:"C. America", mercado:"Panamá", cc:"10415", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:37, fob_ppto:20239, fob_ytd25:13335, cajas_abr:0, fob_abr:0},
-  {linea:"Iconos", zona:"Caribe", mercado:"St. Lucia", cc:"10419", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:3, fob_ppto:1541, fob_ytd25:0, cajas_abr:0, fob_abr:0},
-  {linea:"Iconos", zona:"Caribe", mercado:"Trinidad & Tobago", cc:"10421", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:14, fob_ppto:7491, fob_ytd25:7812, cajas_abr:0, fob_abr:0},
-  {linea:"Iconos", zona:"Caribe", mercado:"Anguilla", cc:"10423", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:5, fob_ppto:2696, fob_ytd25:2286, cajas_abr:0, fob_abr:0},
-  {linea:"Iconos", zona:"Caribe", mercado:"Islas Caicos", cc:"10425", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:10, fob_ppto:4916, fob_ytd25:4115, cajas_abr:0, fob_abr:0},
-  {linea:"Iconos", zona:"Caribe", mercado:"St. Kitts And Nevis", cc:"10427", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:6, fob_ppto:3235, fob_ytd25:4000, cajas_abr:0, fob_abr:0},
-  {linea:"Iconos", zona:"S. America", mercado:"Bolivia", cc:"10503", manager:"Daniela Rojas", cajas_ytd:0, fob_ytd:0, cajas_ppto:27, fob_ppto:15869, fob_ytd25:0, cajas_abr:0, fob_abr:0},
-  {linea:"Iconos", zona:"S. America", mercado:"Colombia", cc:"10506", manager:"Daniela Rojas", cajas_ytd:0, fob_ytd:0, cajas_ppto:108, fob_ppto:62426, fob_ytd25:44115, cajas_abr:0, fob_abr:0},
-  {linea:"Iconos", zona:"S. America", mercado:"Ecuador", cc:"10507", manager:"Daniela Rojas", cajas_ytd:0, fob_ytd:0, cajas_ppto:24, fob_ppto:15682, fob_ytd25:8890, cajas_abr:0, fob_abr:0},
-  {linea:"Iconos", zona:"S. America", mercado:"Paraguay", cc:"10510", manager:"Daniela Rojas", cajas_ytd:0, fob_ytd:0, cajas_ppto:52, fob_ppto:27190, fob_ytd25:76179, cajas_abr:0, fob_abr:0},
-  {linea:"Iconos", zona:"Caribe", mercado:"Curacao", cc:"10516", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:6, fob_ppto:3302, fob_ytd25:2905, cajas_abr:0, fob_abr:0},
-  {linea:"Iconos", zona:"Europa", mercado:"Bulgaria", cc:"10609", manager:"Juan Pablo Velasco", cajas_ytd:0, fob_ytd:0, cajas_ppto:2, fob_ppto:819, fob_ytd25:1288, cajas_abr:0, fob_abr:0},
-  {linea:"Iconos", zona:"Europa", mercado:"Croacia", cc:"10610", manager:"Juan Pablo Velasco", cajas_ytd:0, fob_ytd:0, cajas_ppto:26, fob_ppto:13757, fob_ytd25:16247, cajas_abr:0, fob_abr:0},
-  {linea:"Iconos", zona:"Europa", mercado:"Francia", cc:"10618", manager:"Sin Responsable", cajas_ytd:0, fob_ytd:0, cajas_ppto:114, fob_ppto:154632, fob_ytd25:0, cajas_abr:0, fob_abr:0},
-  {linea:"Iconos", zona:"Europa", mercado:"Polonia", cc:"10642", manager:"Juan Pablo Velasco", cajas_ytd:0, fob_ytd:0, cajas_ppto:23, fob_ppto:10915, fob_ytd25:0, cajas_abr:0, fob_abr:0},
-  {linea:"Iconos", zona:"Europa", mercado:"Suiza", cc:"10649", manager:"Eduardo Stark", cajas_ytd:0, fob_ytd:0, cajas_ppto:114, fob_ppto:61274, fob_ytd25:96402, cajas_abr:0, fob_abr:0},
-  {linea:"Iconos", zona:"Africa", mercado:"Kenia", cc:"10719", manager:"Juan Pablo Velasco", cajas_ytd:0, fob_ytd:0, cajas_ppto:24, fob_ppto:11914, fob_ytd25:10140, cajas_abr:0, fob_abr:0},
-  {linea:"Iconos", zona:"Asia", mercado:"Laos", cc:"10830", manager:"Juan Yañez", cajas_ytd:0, fob_ytd:0, cajas_ppto:40, fob_ppto:22945, fob_ytd25:32950, cajas_abr:0, fob_abr:0},
-  {linea:"Iconos", zona:"Asia", mercado:"Myanmar", cc:"10836", manager:"Juan Yañez", cajas_ytd:0, fob_ytd:0, cajas_ppto:2, fob_ppto:791, fob_ytd25:522, cajas_abr:0, fob_abr:0},
-  {linea:"Iconos", zona:"Oceania", mercado:"Australia", cc:"10902", manager:"Sin Responsable", cajas_ytd:0, fob_ytd:0, cajas_ppto:304, fob_ppto:154680, fob_ytd25:0, cajas_abr:0, fob_abr:0},
-  {linea:"Iconos", zona:"Oceania", mercado:"Islas Cook", cc:"10904", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:10, fob_ppto:4857, fob_ytd25:0, cajas_abr:0, fob_abr:0},
-  {linea:"Iconos", zona:"Oceania", mercado:"Nueva Zelanda", cc:"10908", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:5, fob_ppto:2383, fob_ytd25:0, cajas_abr:0, fob_abr:0},
-  {linea:"Montes Alpha", zona:"Asia", mercado:"Korea", cc:"10814", manager:"Juan Pablo Velasco", cajas_ytd:30430, fob_ytd:2783489, cajas_ppto:23532, fob_ppto:2172298, fob_ytd25:2088083, cajas_abr:4258, fob_abr:384109},
-  {linea:"Montes Alpha", zona:"Chile", mercado:"Chile", cc:"10505", manager:"Evelyn Ramirez", cajas_ytd:21704, fob_ytd:1774037, cajas_ppto:24695, fob_ppto:1893825, fob_ytd25:1627369, cajas_abr:2482, fob_abr:188241},
-  {linea:"Montes Alpha", zona:"Asia", mercado:"Japón", cc:"10825", manager:"Eduardo Stark", cajas_ytd:12989, fob_ytd:1378076, cajas_ppto:14569, fob_ppto:1615066, fob_ytd25:1363058, cajas_abr:1238, fob_abr:129015},
-  {linea:"Montes Alpha", zona:"Asia", mercado:"China", cc:"10811", manager:"Jason Li", cajas_ytd:11767, fob_ytd:1341186, cajas_ppto:7510, fob_ppto:848821, fob_ytd25:709784, cajas_abr:1000, fob_abr:124178},
-  {linea:"Montes Alpha", zona:"Europa", mercado:"Alemania", cc:"10603", manager:"Eduardo Stark", cajas_ytd:10557, fob_ytd:953014, cajas_ppto:7264, fob_ppto:671541, fob_ytd25:736577, cajas_abr:812, fob_abr:72707},
-  {linea:"Montes Alpha", zona:"N. America", mercado:"Canada", cc:"10302", manager:"Danilo Buvinic", cajas_ytd:9330, fob_ytd:718067, cajas_ppto:7683, fob_ppto:596757, fob_ytd25:826148, cajas_abr:980, fob_abr:80420},
-  {linea:"Montes Alpha", zona:"Europa", mercado:"Inglaterra", cc:"10624", manager:"Eduardo Stark", cajas_ytd:3025, fob_ytd:247132, cajas_ppto:3479, fob_ppto:277674, fob_ytd25:169099, cajas_abr:180, fob_abr:14716},
-  {linea:"Montes Alpha", zona:"N. America", mercado:"Usa", cc:"10303", manager:"Danilo Buvinic", cajas_ytd:2931, fob_ytd:227443, cajas_ppto:4601, fob_ppto:411297, fob_ytd25:461200, cajas_abr:0, fob_abr:0},
-  {linea:"Montes Alpha", zona:"S. America", mercado:"Brasil", cc:"10504", manager:"Daniela Rojas", cajas_ytd:2498, fob_ytd:284457, cajas_ppto:9232, fob_ppto:979025, fob_ytd25:515810, cajas_abr:475, fob_abr:50600},
-  {linea:"Montes Alpha", zona:"Europa", mercado:"Holanda", cc:"10622", manager:"Eduardo Stark", cajas_ytd:1914, fob_ytd:194067, cajas_ppto:2562, fob_ppto:263200, fob_ytd25:138497, cajas_abr:264, fob_abr:29859},
-  {linea:"Montes Alpha", zona:"Medio Oriente", mercado:"Emiratos Arabes", cc:"10815", manager:"Juan Pablo Velasco", cajas_ytd:1796, fob_ytd:181972, cajas_ppto:1628, fob_ppto:161219, fob_ytd25:166142, cajas_abr:165, fob_abr:16803},
-  {linea:"Montes Alpha", zona:"Asia", mercado:"Tailandia", cc:"10845", manager:"Juan Yañez", cajas_ytd:1550, fob_ytd:160538, cajas_ppto:2242, fob_ppto:232328, fob_ytd25:214800, cajas_abr:1120, fob_abr:117878},
-  {linea:"Montes Alpha", zona:"Asia", mercado:"Vietnam", cc:"10850", manager:"Juan Yañez", cajas_ytd:1045, fob_ytd:117305, cajas_ppto:1263, fob_ppto:140138, fob_ytd25:136499, cajas_abr:380, fob_abr:41122},
-  {linea:"Montes Alpha", zona:"S. America", mercado:"Perú", cc:"10511", manager:"Daniela Rojas", cajas_ytd:870, fob_ytd:97165, cajas_ppto:1423, fob_ppto:156934, fob_ytd25:46426, cajas_abr:0, fob_abr:0},
-  {linea:"Montes Alpha", zona:"Europa", mercado:"Hungria", cc:"10623", manager:"Juan Pablo Velasco", cajas_ytd:800, fob_ytd:77988, cajas_ppto:214, fob_ppto:19555, fob_ytd25:19218, cajas_abr:0, fob_abr:0},
-  {linea:"Montes Alpha", zona:"Europa", mercado:"Polonia", cc:"10642", manager:"Juan Pablo Velasco", cajas_ytd:700, fob_ytd:64158, cajas_ppto:242, fob_ppto:21830, fob_ytd25:0, cajas_abr:0, fob_abr:0},
-  {linea:"Montes Alpha", zona:"Asia", mercado:"Taiwan", cc:"10846", manager:"Juan Yañez", cajas_ytd:695, fob_ytd:78295, cajas_ppto:590, fob_ppto:71977, fob_ytd25:16210, cajas_abr:435, fob_abr:50201},
+  {linea:"Iconos", zona:"Medio Oriente", mercado:"Jordania", cc:"10826", manager:"Juan Pablo Velasco", cajas_ytd:2, fob_ytd:786, cajas_ppto:7, fob_ppto:3385, fob_ytd25:3145, cajas_abr:0, fob_abr:0},
+  {linea:"Iconos", zona:"Asia", mercado:"Republic Of Maldives", cc:"10834", manager:"Patricia Osenga", cajas_ytd:1, fob_ytd:533, cajas_ppto:1, fob_ppto:450, fob_ytd25:4000, cajas_abr:0, fob_abr:0},
+  {linea:"Iconos", zona:"Europa", mercado:"Malta", cc:"10638", manager:"Juan Pablo Velasco", cajas_ytd:0, fob_ytd:253, cajas_ppto:6, fob_ppto:2951, fob_ytd25:1336, cajas_abr:0, fob_abr:0},
+  {linea:"Iconos", zona:"Oceania", mercado:"Tahiti", cc:"10305", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:12, fob_ppto:6940, fob_ytd25:4000, cajas_abr:0, fob_abr:0},
+  {linea:"Iconos", zona:"Caribe", mercado:"Belize", cc:"10405", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:4, fob_ppto:1715, fob_ytd25:0, cajas_abr:0, fob_abr:0},
+  {linea:"Iconos", zona:"C. America", mercado:"Panamá", cc:"10415", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:41, fob_ppto:22535, fob_ytd25:13335, cajas_abr:0, fob_abr:0},
+  {linea:"Iconos", zona:"Caribe", mercado:"St. Lucia", cc:"10419", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:4, fob_ppto:1715, fob_ytd25:0, cajas_abr:0, fob_abr:0},
+  {linea:"Iconos", zona:"Caribe", mercado:"Trinidad & Tobago", cc:"10421", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:16, fob_ppto:8341, fob_ytd25:7812, cajas_abr:0, fob_abr:0},
+  {linea:"Iconos", zona:"Caribe", mercado:"Anguilla", cc:"10423", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:6, fob_ppto:3002, fob_ytd25:2286, cajas_abr:0, fob_abr:0},
+  {linea:"Iconos", zona:"Caribe", mercado:"Islas Caicos", cc:"10425", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:11, fob_ppto:5474, fob_ytd25:4115, cajas_abr:0, fob_abr:0},
+  {linea:"Iconos", zona:"Caribe", mercado:"St. Kitts And Nevis", cc:"10427", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:7, fob_ppto:3602, fob_ytd25:4000, cajas_abr:0, fob_abr:0},
+  {linea:"Iconos", zona:"S. America", mercado:"Bolivia", cc:"10503", manager:"Daniela Rojas", cajas_ytd:0, fob_ytd:0, cajas_ppto:30, fob_ppto:17669, fob_ytd25:0, cajas_abr:0, fob_abr:0},
+  {linea:"Iconos", zona:"S. America", mercado:"Colombia", cc:"10506", manager:"Daniela Rojas", cajas_ytd:0, fob_ytd:0, cajas_ppto:120, fob_ppto:69509, fob_ytd25:44115, cajas_abr:0, fob_abr:0},
+  {linea:"Iconos", zona:"S. America", mercado:"Ecuador", cc:"10507", manager:"Daniela Rojas", cajas_ytd:0, fob_ytd:0, cajas_ppto:27, fob_ppto:17461, fob_ytd25:8890, cajas_abr:0, fob_abr:0},
+  {linea:"Iconos", zona:"Caribe", mercado:"Curacao", cc:"10516", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:7, fob_ppto:3677, fob_ytd25:2905, cajas_abr:0, fob_abr:0},
+  {linea:"Iconos", zona:"Europa", mercado:"Bulgaria", cc:"10609", manager:"Juan Pablo Velasco", cajas_ytd:0, fob_ytd:0, cajas_ppto:2, fob_ppto:912, fob_ytd25:1288, cajas_abr:0, fob_abr:0},
+  {linea:"Iconos", zona:"Europa", mercado:"Croacia", cc:"10610", manager:"Juan Pablo Velasco", cajas_ytd:0, fob_ytd:0, cajas_ppto:29, fob_ppto:15318, fob_ytd25:16247, cajas_abr:0, fob_abr:0},
+  {linea:"Iconos", zona:"Europa", mercado:"Francia", cc:"10618", manager:"Sin Responsable", cajas_ytd:0, fob_ytd:0, cajas_ppto:127, fob_ppto:172176, fob_ytd25:0, cajas_abr:0, fob_abr:0},
+  {linea:"Iconos", zona:"Europa", mercado:"Polonia", cc:"10642", manager:"Juan Pablo Velasco", cajas_ytd:0, fob_ytd:0, cajas_ppto:26, fob_ppto:12154, fob_ytd25:0, cajas_abr:0, fob_abr:0},
+  {linea:"Iconos", zona:"Africa", mercado:"Kenia", cc:"10719", manager:"Juan Pablo Velasco", cajas_ytd:0, fob_ytd:0, cajas_ppto:26, fob_ppto:13266, fob_ytd25:10140, cajas_abr:0, fob_abr:0},
+  {linea:"Iconos", zona:"Asia", mercado:"Myanmar", cc:"10836", manager:"Juan Yañez", cajas_ytd:0, fob_ytd:0, cajas_ppto:2, fob_ppto:881, fob_ytd25:522, cajas_abr:0, fob_abr:0},
+  {linea:"Iconos", zona:"Oceania", mercado:"Australia", cc:"10902", manager:"Sin Responsable", cajas_ytd:0, fob_ytd:0, cajas_ppto:339, fob_ppto:172230, fob_ytd25:0, cajas_abr:0, fob_abr:0},
+  {linea:"Iconos", zona:"Oceania", mercado:"Islas Cook", cc:"10904", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:11, fob_ppto:5408, fob_ytd25:0, cajas_abr:0, fob_abr:0},
+  {linea:"Iconos", zona:"Oceania", mercado:"Nueva Zelanda", cc:"10908", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:6, fob_ppto:2654, fob_ytd25:0, cajas_abr:0, fob_abr:0},
+  {linea:"Montes Alpha", zona:"Asia", mercado:"Korea", cc:"10814", manager:"Juan Pablo Velasco", cajas_ytd:31530, fob_ytd:2881213, cajas_ppto:26202, fob_ppto:2418760, fob_ytd25:2433006, cajas_abr:1100, fob_abr:97724},
+  {linea:"Montes Alpha", zona:"Chile", mercado:"Chile", cc:"10505", manager:"Evelyn Ramirez", cajas_ytd:21813, fob_ytd:1782536, cajas_ppto:27496, fob_ppto:2108692, fob_ytd25:1983438, cajas_abr:4, fob_abr:441},
+  {linea:"Montes Alpha", zona:"Asia", mercado:"Japón", cc:"10825", manager:"Eduardo Stark", cajas_ytd:13239, fob_ytd:1407530, cajas_ppto:16222, fob_ppto:1798306, fob_ytd25:1585288, cajas_abr:250, fob_abr:29454},
+  {linea:"Montes Alpha", zona:"Asia", mercado:"China", cc:"10811", manager:"Jason Li", cajas_ytd:12447, fob_ytd:1420118, cajas_ppto:8362, fob_ppto:945125, fob_ytd25:752136, cajas_abr:755, fob_abr:86402},
+  {linea:"Montes Alpha", zona:"Europa", mercado:"Alemania", cc:"10603", manager:"Eduardo Stark", cajas_ytd:12406, fob_ytd:1118195, cajas_ppto:8088, fob_ppto:747732, fob_ytd25:926874, cajas_abr:662, fob_abr:58917},
+  {linea:"Montes Alpha", zona:"N. America", mercado:"Canada", cc:"10302", manager:"Danilo Buvinic", cajas_ytd:10558, fob_ytd:818965, cajas_ppto:8555, fob_ppto:664463, fob_ytd25:898713, cajas_abr:1228, fob_abr:100899},
+  {linea:"Montes Alpha", zona:"S. America", mercado:"Brasil", cc:"10504", manager:"Daniela Rojas", cajas_ytd:5858, fob_ytd:643753, cajas_ppto:10279, fob_ppto:1090102, fob_ytd25:592847, cajas_abr:3360, fob_abr:359296},
+  {linea:"Montes Alpha", zona:"N. America", mercado:"Usa", cc:"10303", manager:"Danilo Buvinic", cajas_ytd:3547, fob_ytd:274887, cajas_ppto:5123, fob_ppto:457961, fob_ytd25:484383, cajas_abr:616, fob_abr:47444},
+  {linea:"Montes Alpha", zona:"Europa", mercado:"Inglaterra", cc:"10624", manager:"Eduardo Stark", cajas_ytd:3225, fob_ytd:263587, cajas_ppto:3874, fob_ppto:309178, fob_ytd25:185696, cajas_abr:140, fob_abr:11469},
+  {linea:"Montes Alpha", zona:"Europa", mercado:"Holanda", cc:"10622", manager:"Eduardo Stark", cajas_ytd:2772, fob_ytd:279301, cajas_ppto:2853, fob_ppto:293061, fob_ytd25:174471, cajas_abr:539, fob_abr:51833},
+  {linea:"Montes Alpha", zona:"Medio Oriente", mercado:"Emiratos Arabes", cc:"10815", manager:"Juan Pablo Velasco", cajas_ytd:2026, fob_ytd:204258, cajas_ppto:1813, fob_ppto:179510, fob_ytd25:169709, cajas_abr:395, fob_abr:39089},
+  {linea:"Montes Alpha", zona:"S. America", mercado:"Perú", cc:"10511", manager:"Daniela Rojas", cajas_ytd:1660, fob_ytd:184730, cajas_ppto:1584, fob_ppto:174740, fob_ytd25:86201, cajas_abr:790, fob_abr:87565},
+  {linea:"Montes Alpha", zona:"Asia", mercado:"Tailandia", cc:"10845", manager:"Juan Yañez", cajas_ytd:1550, fob_ytd:160538, cajas_ppto:2497, fob_ppto:258687, fob_ytd25:277361, cajas_abr:0, fob_abr:0},
+  {linea:"Montes Alpha", zona:"Asia", mercado:"Vietnam", cc:"10850", manager:"Juan Yañez", cajas_ytd:1370, fob_ytd:151706, cajas_ppto:1406, fob_ppto:156038, fob_ytd25:136499, cajas_abr:325, fob_abr:34401},
+  {linea:"Montes Alpha", zona:"Europa", mercado:"Hungria", cc:"10623", manager:"Juan Pablo Velasco", cajas_ytd:800, fob_ytd:77988, cajas_ppto:238, fob_ppto:21773, fob_ytd25:19218, cajas_abr:0, fob_abr:0},
+  {linea:"Montes Alpha", zona:"Europa", mercado:"Polonia", cc:"10642", manager:"Juan Pablo Velasco", cajas_ytd:700, fob_ytd:64158, cajas_ppto:270, fob_ppto:24307, fob_ytd25:0, cajas_abr:0, fob_abr:0},
+  {linea:"Montes Alpha", zona:"Asia", mercado:"Taiwan", cc:"10846", manager:"Juan Yañez", cajas_ytd:695, fob_ytd:78295, cajas_ppto:658, fob_ppto:80144, fob_ytd25:58210, cajas_abr:0, fob_abr:0},
+  {linea:"Montes Alpha", zona:"Europa", mercado:"Dinamarca", cc:"10611", manager:"Juan Pablo Velasco", cajas_ytd:650, fob_ytd:55127, cajas_ppto:0, fob_ppto:0, fob_ytd25:0, cajas_abr:650, fob_abr:55127},
+  {linea:"Montes Alpha", zona:"S. America", mercado:"Ecuador", cc:"10507", manager:"Daniela Rojas", cajas_ytd:640, fob_ytd:69760, cajas_ppto:354, fob_ppto:39683, fob_ytd25:29321, cajas_abr:300, fob_abr:32700},
+  {linea:"Montes Alpha", zona:"Europa", mercado:"Bélgica", cc:"10606", manager:"Juan Pablo Velasco", cajas_ytd:610, fob_ytd:50682, cajas_ppto:360, fob_ppto:29384, fob_ytd25:47882, cajas_abr:70, fob_abr:5858},
   {linea:"Montes Alpha", zona:"Europa", mercado:"Suecia", cc:"10648", manager:"Juan Pablo Velasco", cajas_ytd:570, fob_ytd:53238, cajas_ppto:0, fob_ppto:0, fob_ytd25:42307, cajas_abr:0, fob_abr:0},
-  {linea:"Montes Alpha", zona:"Europa", mercado:"Bélgica", cc:"10606", manager:"Juan Pablo Velasco", cajas_ytd:540, fob_ytd:44824, cajas_ppto:324, fob_ppto:26390, fob_ytd25:47882, cajas_abr:100, fob_abr:8229},
-  {linea:"Montes Alpha", zona:"Europa", mercado:"Chipre", cc:"10812", manager:"Juan Pablo Velasco", cajas_ytd:450, fob_ytd:42890, cajas_ppto:469, fob_ppto:43141, fob_ytd25:73749, cajas_abr:0, fob_abr:0},
-  {linea:"Montes Alpha", zona:"C. America", mercado:"Costa Rica", cc:"10406", manager:"Patricia Osenga", cajas_ytd:404, fob_ytd:44036, cajas_ppto:327, fob_ppto:35697, fob_ytd25:31174, cajas_abr:75, fob_abr:8175},
-  {linea:"Montes Alpha", zona:"Asia", mercado:"Singapur", cc:"10842", manager:"Juan Yañez", cajas_ytd:404, fob_ytd:42975, cajas_ppto:652, fob_ppto:70529, fob_ytd25:68653, cajas_abr:0, fob_abr:0},
+  {linea:"Montes Alpha", zona:"Asia", mercado:"Singapur", cc:"10842", manager:"Juan Yañez", cajas_ytd:499, fob_ytd:52825, cajas_ppto:726, fob_ppto:78531, fob_ytd25:84620, cajas_abr:95, fob_abr:9850},
+  {linea:"Montes Alpha", zona:"Europa", mercado:"Chipre", cc:"10812", manager:"Juan Pablo Velasco", cajas_ytd:450, fob_ytd:42890, cajas_ppto:522, fob_ppto:48036, fob_ytd25:73749, cajas_abr:0, fob_abr:0},
+  {linea:"Montes Alpha", zona:"Asia", mercado:"Hong Kong", cc:"10819", manager:"Juan Yañez", cajas_ytd:450, fob_ytd:52390, cajas_ppto:797, fob_ppto:88446, fob_ytd25:64231, cajas_abr:150, fob_abr:16436},
+  {linea:"Montes Alpha", zona:"C. America", mercado:"Costa Rica", cc:"10406", manager:"Patricia Osenga", cajas_ytd:443, fob_ytd:48287, cajas_ppto:364, fob_ppto:39748, fob_ytd25:31174, cajas_abr:39, fob_abr:4251},
   {linea:"Montes Alpha", zona:"Sin Zona", mercado:"Uzbekistan", cc:"10849", manager:"Juan Pablo Velasco", cajas_ytd:375, fob_ytd:40293, cajas_ppto:0, fob_ppto:0, fob_ytd25:0, cajas_abr:0, fob_abr:0},
-  {linea:"Montes Alpha", zona:"C. America", mercado:"Guatemala", cc:"10410", manager:"Patricia Osenga", cajas_ytd:370, fob_ytd:40330, cajas_ppto:416, fob_ppto:45707, fob_ytd25:41915, cajas_abr:0, fob_abr:0},
-  {linea:"Montes Alpha", zona:"S. America", mercado:"Uruguay", cc:"10513", manager:"Daniela Rojas", cajas_ytd:370, fob_ytd:40052, cajas_ppto:641, fob_ppto:70327, fob_ytd25:79714, cajas_abr:0, fob_abr:0},
-  {linea:"Montes Alpha", zona:"Asia", mercado:"Filipinas", cc:"10816", manager:"Juan Yañez", cajas_ytd:350, fob_ytd:40783, cajas_ppto:1267, fob_ppto:141512, fob_ytd25:124435, cajas_abr:0, fob_abr:0},
-  {linea:"Montes Alpha", zona:"S. America", mercado:"Ecuador", cc:"10507", manager:"Daniela Rojas", cajas_ytd:340, fob_ytd:37060, cajas_ppto:318, fob_ppto:35639, fob_ytd25:29321, cajas_abr:0, fob_abr:0},
-  {linea:"Montes Alpha", zona:"Asia", mercado:"Indonesia", cc:"10821", manager:"Juan Yañez", cajas_ytd:316, fob_ytd:33828, cajas_ppto:497, fob_ppto:54035, fob_ytd25:11240, cajas_abr:316, fob_abr:33828},
-  {linea:"Montes Alpha", zona:"C. America", mercado:"Panamá", cc:"10415", manager:"Patricia Osenga", cajas_ytd:315, fob_ytd:33760, cajas_ppto:269, fob_ppto:28462, fob_ytd25:10400, cajas_abr:0, fob_abr:0},
-  {linea:"Montes Alpha", zona:"Asia", mercado:"Hong Kong", cc:"10819", manager:"Juan Yañez", cajas_ytd:300, fob_ytd:35954, cajas_ppto:716, fob_ppto:79433, fob_ytd25:48822, cajas_abr:0, fob_abr:0},
-  {linea:"Montes Alpha", zona:"S. America", mercado:"Malvinas", cc:"10518", manager:"Daniela Rojas", cajas_ytd:270, fob_ytd:29390, cajas_ppto:296, fob_ppto:32844, fob_ytd25:0, cajas_abr:0, fob_abr:0},
-  {linea:"Montes Alpha", zona:"Europa", mercado:"Eslovaquia", cc:"10613", manager:"Juan Pablo Velasco", cajas_ytd:217, fob_ytd:21859, cajas_ppto:182, fob_ppto:16255, fob_ytd25:13158, cajas_abr:0, fob_abr:0},
-  {linea:"Montes Alpha", zona:"Asia", mercado:"Malasia", cc:"10833", manager:"Juan Yañez", cajas_ytd:212, fob_ytd:23281, cajas_ppto:231, fob_ppto:26497, fob_ytd25:0, cajas_abr:0, fob_abr:0},
-  {linea:"Montes Alpha", zona:"Europa", mercado:"Croacia", cc:"10610", manager:"Juan Pablo Velasco", cajas_ytd:175, fob_ytd:16831, cajas_ppto:235, fob_ppto:23210, fob_ytd25:16740, cajas_abr:0, fob_abr:0},
-  {linea:"Montes Alpha", zona:"Europa", mercado:"Serbia", cc:"10647", manager:"Juan Pablo Velasco", cajas_ytd:173, fob_ytd:20956, cajas_ppto:348, fob_ppto:41266, fob_ytd25:53010, cajas_abr:0, fob_abr:0},
-  {linea:"Montes Alpha", zona:"S. America", mercado:"Venezuela", cc:"10514", manager:"Daniela Rojas", cajas_ytd:170, fob_ytd:17510, cajas_ppto:83, fob_ppto:7388, fob_ytd25:25175, cajas_abr:170, fob_abr:17510},
-  {linea:"Montes Alpha", zona:"Caribe", mercado:"Islas Virgen", cc:"10426", manager:"Patricia Osenga", cajas_ytd:156, fob_ytd:16275, cajas_ppto:113, fob_ppto:11674, fob_ytd25:714, cajas_abr:91, fob_abr:9492},
-  {linea:"Montes Alpha", zona:"Europa", mercado:"Letonia", cc:"10633", manager:"Patricia Osenga", cajas_ytd:127, fob_ytd:12242, cajas_ppto:145, fob_ppto:13606, fob_ytd25:16648, cajas_abr:127, fob_abr:12242},
-  {linea:"Montes Alpha", zona:"Oceania", mercado:"Tahiti", cc:"10305", manager:"Patricia Osenga", cajas_ytd:125, fob_ytd:13125, cajas_ppto:67, fob_ppto:6952, fob_ytd25:1440, cajas_abr:30, fob_abr:3150},
-  {linea:"Montes Alpha", zona:"Europa", mercado:"Ucrania", cc:"10650", manager:"Patricia Osenga", cajas_ytd:123, fob_ytd:10441, cajas_ppto:58, fob_ppto:5174, fob_ytd25:6662, cajas_abr:0, fob_abr:0},
-  {linea:"Montes Alpha", zona:"Caribe", mercado:"Rep Dominicana", cc:"10417", manager:"Patricia Osenga", cajas_ytd:120, fob_ytd:13080, cajas_ppto:118, fob_ppto:12806, fob_ytd25:12535, cajas_abr:0, fob_abr:0},
-  {linea:"Montes Alpha", zona:"Asia", mercado:"Republic Of Maldives", cc:"10834", manager:"Patricia Osenga", cajas_ytd:115, fob_ytd:12075, cajas_ppto:86, fob_ppto:9152, fob_ytd25:8925, cajas_abr:0, fob_abr:0},
-  {linea:"Montes Alpha", zona:"S. America", mercado:"Guyana", cc:"10508", manager:"Daniela Rojas", cajas_ytd:112, fob_ytd:13550, cajas_ppto:64, fob_ppto:6284, fob_ytd25:0, cajas_abr:0, fob_abr:0},
+  {linea:"Montes Alpha", zona:"C. America", mercado:"Guatemala", cc:"10410", manager:"Patricia Osenga", cajas_ytd:370, fob_ytd:40330, cajas_ppto:463, fob_ppto:50893, fob_ytd25:41915, cajas_abr:0, fob_abr:0},
+  {linea:"Montes Alpha", zona:"S. America", mercado:"Uruguay", cc:"10513", manager:"Daniela Rojas", cajas_ytd:370, fob_ytd:40052, cajas_ppto:714, fob_ppto:78306, fob_ytd25:79714, cajas_abr:0, fob_abr:0},
+  {linea:"Montes Alpha", zona:"Asia", mercado:"Filipinas", cc:"10816", manager:"Juan Yañez", cajas_ytd:350, fob_ytd:40783, cajas_ppto:1411, fob_ppto:157568, fob_ytd25:124435, cajas_abr:0, fob_abr:0},
+  {linea:"Montes Alpha", zona:"Asia", mercado:"Indonesia", cc:"10821", manager:"Juan Yañez", cajas_ytd:316, fob_ytd:33828, cajas_ppto:554, fob_ppto:60165, fob_ytd25:11240, cajas_abr:0, fob_abr:0},
+  {linea:"Montes Alpha", zona:"C. America", mercado:"Panamá", cc:"10415", manager:"Patricia Osenga", cajas_ytd:315, fob_ytd:33760, cajas_ppto:299, fob_ppto:31691, fob_ytd25:10400, cajas_abr:0, fob_abr:0},
+  {linea:"Montes Alpha", zona:"S. America", mercado:"Malvinas", cc:"10518", manager:"Daniela Rojas", cajas_ytd:270, fob_ytd:29390, cajas_ppto:330, fob_ppto:36571, fob_ytd25:0, cajas_abr:0, fob_abr:0},
+  {linea:"Montes Alpha", zona:"S. America", mercado:"Paraguay", cc:"10510", manager:"Daniela Rojas", cajas_ytd:260, fob_ytd:31180, cajas_ppto:225, fob_ppto:25734, fob_ytd25:43210, cajas_abr:260, fob_abr:31180},
+  {linea:"Montes Alpha", zona:"Europa", mercado:"Bulgaria", cc:"10609", manager:"Juan Pablo Velasco", cajas_ytd:258, fob_ytd:24095, cajas_ppto:101, fob_ppto:8725, fob_ytd25:12015, cajas_abr:258, fob_abr:24095},
+  {linea:"Montes Alpha", zona:"Europa", mercado:"Eslovaquia", cc:"10613", manager:"Juan Pablo Velasco", cajas_ytd:217, fob_ytd:21859, cajas_ppto:202, fob_ppto:18099, fob_ytd25:23165, cajas_abr:0, fob_abr:0},
+  {linea:"Montes Alpha", zona:"Asia", mercado:"Malasia", cc:"10833", manager:"Juan Yañez", cajas_ytd:212, fob_ytd:23281, cajas_ppto:257, fob_ppto:29503, fob_ytd25:0, cajas_abr:0, fob_abr:0},
+  {linea:"Montes Alpha", zona:"Caribe", mercado:"Rep Dominicana", cc:"10417", manager:"Patricia Osenga", cajas_ytd:195, fob_ytd:21255, cajas_ppto:132, fob_ppto:14259, fob_ytd25:15805, cajas_abr:75, fob_abr:8175},
+  {linea:"Montes Alpha", zona:"S. America", mercado:"Argentina", cc:"10502", manager:"Daniela Rojas", cajas_ytd:195, fob_ytd:19110, cajas_ppto:213, fob_ppto:22028, fob_ytd25:24010, cajas_abr:90, fob_abr:8820},
+  {linea:"Montes Alpha", zona:"Europa", mercado:"Croacia", cc:"10610", manager:"Juan Pablo Velasco", cajas_ytd:175, fob_ytd:16831, cajas_ppto:262, fob_ppto:25843, fob_ytd25:16740, cajas_abr:0, fob_abr:0},
+  {linea:"Montes Alpha", zona:"Europa", mercado:"Serbia", cc:"10647", manager:"Juan Pablo Velasco", cajas_ytd:173, fob_ytd:20956, cajas_ppto:388, fob_ppto:45948, fob_ytd25:53010, cajas_abr:0, fob_abr:0},
+  {linea:"Montes Alpha", zona:"S. America", mercado:"Venezuela", cc:"10514", manager:"Daniela Rojas", cajas_ytd:170, fob_ytd:17510, cajas_ppto:92, fob_ppto:8226, fob_ytd25:25175, cajas_abr:0, fob_abr:0},
+  {linea:"Montes Alpha", zona:"Caribe", mercado:"Islas Virgen", cc:"10426", manager:"Patricia Osenga", cajas_ytd:156, fob_ytd:16275, cajas_ppto:126, fob_ppto:12998, fob_ytd25:714, cajas_abr:91, fob_abr:9492},
+  {linea:"Montes Alpha", zona:"Europa", mercado:"Letonia", cc:"10633", manager:"Patricia Osenga", cajas_ytd:127, fob_ytd:12242, cajas_ppto:162, fob_ppto:15150, fob_ytd25:16648, cajas_abr:0, fob_abr:0},
+  {linea:"Montes Alpha", zona:"Oceania", mercado:"Tahiti", cc:"10305", manager:"Patricia Osenga", cajas_ytd:125, fob_ytd:13125, cajas_ppto:75, fob_ppto:7741, fob_ytd25:2490, cajas_abr:0, fob_abr:0},
+  {linea:"Montes Alpha", zona:"Europa", mercado:"Ucrania", cc:"10650", manager:"Patricia Osenga", cajas_ytd:123, fob_ytd:10441, cajas_ppto:65, fob_ppto:5761, fob_ytd25:6662, cajas_abr:0, fob_abr:0},
+  {linea:"Montes Alpha", zona:"Oceania", mercado:"Nueva Zelanda", cc:"10908", manager:"Patricia Osenga", cajas_ytd:118, fob_ytd:12390, cajas_ppto:114, fob_ppto:11964, fob_ytd25:12600, cajas_abr:0, fob_abr:0},
+  {linea:"Montes Alpha", zona:"Asia", mercado:"Republic Of Maldives", cc:"10834", manager:"Patricia Osenga", cajas_ytd:115, fob_ytd:12075, cajas_ppto:96, fob_ppto:10191, fob_ytd25:8925, cajas_abr:0, fob_abr:0},
+  {linea:"Montes Alpha", zona:"S. America", mercado:"Guyana", cc:"10508", manager:"Daniela Rojas", cajas_ytd:112, fob_ytd:13550, cajas_ppto:71, fob_ppto:6996, fob_ytd25:0, cajas_abr:0, fob_abr:0},
+  {linea:"Montes Alpha", zona:"Caribe", mercado:"St. Lucia", cc:"10419", manager:"Patricia Osenga", cajas_ytd:112, fob_ytd:11760, cajas_ppto:99, fob_ppto:10369, fob_ytd25:12285, cajas_abr:112, fob_abr:11760},
   {linea:"Montes Alpha", zona:"Europa", mercado:"Estonia", cc:"10616", manager:"Patricia Osenga", cajas_ytd:110, fob_ytd:11148, cajas_ppto:0, fob_ppto:0, fob_ytd25:0, cajas_abr:0, fob_abr:0},
-  {linea:"Montes Alpha", zona:"Caribe", mercado:"St. Maarten", cc:"10422", manager:"Patricia Osenga", cajas_ytd:105, fob_ytd:11025, cajas_ppto:56, fob_ppto:5969, fob_ytd25:7350, cajas_abr:70, fob_abr:7350},
-  {linea:"Montes Alpha", zona:"S. America", mercado:"Argentina", cc:"10502", manager:"Daniela Rojas", cajas_ytd:105, fob_ytd:10290, cajas_ppto:191, fob_ppto:19784, fob_ytd25:24010, cajas_abr:0, fob_abr:0},
-  {linea:"Montes Alpha", zona:"C. America", mercado:"México", cc:"10304", manager:"Daniela Rojas", cajas_ytd:100, fob_ytd:10600, cajas_ppto:517, fob_ppto:56417, fob_ytd25:33157, cajas_abr:0, fob_abr:0},
-  {linea:"Montes Alpha", zona:"Caribe", mercado:"Puerto Rico", cc:"10416", manager:"Daniela Rojas", cajas_ytd:100, fob_ytd:10320, cajas_ppto:85, fob_ppto:8742, fob_ytd25:10815, cajas_abr:0, fob_abr:0},
-  {linea:"Montes Alpha", zona:"Medio Oriente", mercado:"Qatar", cc:"10840", manager:"Juan Pablo Velasco", cajas_ytd:95, fob_ytd:9680, cajas_ppto:87, fob_ppto:8883, fob_ytd25:36972, cajas_abr:0, fob_abr:0},
-  {linea:"Montes Alpha", zona:"Caribe", mercado:"Bermuda", cc:"10306", manager:"Patricia Osenga", cajas_ytd:85, fob_ytd:8850, cajas_ppto:119, fob_ppto:12434, fob_ytd25:12795, cajas_abr:0, fob_abr:0},
-  {linea:"Montes Alpha", zona:"C. America", mercado:"Honduras", cc:"10412", manager:"Patricia Osenga", cajas_ytd:75, fob_ytd:8175, cajas_ppto:97, fob_ppto:9951, fob_ytd25:0, cajas_abr:0, fob_abr:0},
+  {linea:"Montes Alpha", zona:"Caribe", mercado:"St. Maarten", cc:"10422", manager:"Patricia Osenga", cajas_ytd:105, fob_ytd:11025, cajas_ppto:63, fob_ppto:6646, fob_ytd25:7350, cajas_abr:70, fob_abr:7350},
+  {linea:"Montes Alpha", zona:"C. America", mercado:"México", cc:"10304", manager:"Daniela Rojas", cajas_ytd:100, fob_ytd:10600, cajas_ppto:576, fob_ppto:62818, fob_ytd25:33157, cajas_abr:0, fob_abr:0},
+  {linea:"Montes Alpha", zona:"Caribe", mercado:"Puerto Rico", cc:"10416", manager:"Daniela Rojas", cajas_ytd:100, fob_ytd:10320, cajas_ppto:94, fob_ppto:9734, fob_ytd25:10815, cajas_abr:0, fob_abr:0},
+  {linea:"Montes Alpha", zona:"Medio Oriente", mercado:"Qatar", cc:"10840", manager:"Juan Pablo Velasco", cajas_ytd:95, fob_ytd:9680, cajas_ppto:97, fob_ppto:9891, fob_ytd25:36972, cajas_abr:0, fob_abr:0},
+  {linea:"Montes Alpha", zona:"Caribe", mercado:"Bermuda", cc:"10306", manager:"Patricia Osenga", cajas_ytd:85, fob_ytd:8850, cajas_ppto:132, fob_ppto:13844, fob_ytd25:12795, cajas_abr:0, fob_abr:0},
+  {linea:"Montes Alpha", zona:"C. America", mercado:"Honduras", cc:"10412", manager:"Patricia Osenga", cajas_ytd:75, fob_ytd:8175, cajas_ppto:108, fob_ppto:11080, fob_ytd25:0, cajas_abr:0, fob_abr:0},
   {linea:"Montes Alpha", zona:"Caribe", mercado:"Islas Cayman", cc:"10424", manager:"Patricia Osenga", cajas_ytd:75, fob_ytd:7800, cajas_ppto:0, fob_ppto:0, fob_ytd25:0, cajas_abr:0, fob_abr:0},
-  {linea:"Montes Alpha", zona:"Europa", mercado:"Turquía", cc:"10848", manager:"Juan Pablo Velasco", cajas_ytd:75, fob_ytd:7402, cajas_ppto:76, fob_ppto:7656, fob_ytd25:0, cajas_abr:0, fob_abr:0},
-  {linea:"Montes Alpha", zona:"Oceania", mercado:"Nueva Zelanda", cc:"10908", manager:"Patricia Osenga", cajas_ytd:75, fob_ytd:7875, cajas_ppto:102, fob_ppto:10745, fob_ytd25:12600, cajas_abr:0, fob_abr:0},
-  {linea:"Montes Alpha", zona:"Caribe", mercado:"Anguilla", cc:"10423", manager:"Patricia Osenga", cajas_ytd:70, fob_ytd:7350, cajas_ppto:29, fob_ppto:3024, fob_ytd25:3675, cajas_abr:70, fob_abr:7350},
-  {linea:"Montes Alpha", zona:"Asia", mercado:"India", cc:"10820", manager:"Sin Responsable", cajas_ytd:60, fob_ytd:5892, cajas_ppto:227, fob_ppto:23877, fob_ytd25:0, cajas_abr:0, fob_abr:0},
-  {linea:"Montes Alpha", zona:"Caribe", mercado:"Jamaica", cc:"10413", manager:"Patricia Osenga", cajas_ytd:52, fob_ytd:5460, cajas_ppto:23, fob_ppto:2389, fob_ytd25:1470, cajas_abr:0, fob_abr:0},
-  {linea:"Montes Alpha", zona:"Oceania", mercado:"Islas Cook", cc:"10904", manager:"Patricia Osenga", cajas_ytd:52, fob_ytd:5430, cajas_ppto:51, fob_ppto:5380, fob_ytd25:0, cajas_abr:52, fob_abr:5430},
-  {linea:"Montes Alpha", zona:"Caribe", mercado:"Islas Caicos", cc:"10425", manager:"Patricia Osenga", cajas_ytd:50, fob_ytd:5250, cajas_ppto:46, fob_ppto:4775, fob_ytd25:5250, cajas_abr:0, fob_abr:0},
-  {linea:"Montes Alpha", zona:"Europa", mercado:"Finlandia", cc:"10617", manager:"Juan Pablo Velasco", cajas_ytd:50, fob_ytd:4868, cajas_ppto:346, fob_ppto:33209, fob_ytd25:21008, cajas_abr:0, fob_abr:0},
-  {linea:"Montes Alpha", zona:"Asia", mercado:"Cambodia", cc:"10810", manager:"Juan Yañez", cajas_ytd:50, fob_ytd:5383, cajas_ppto:124, fob_ppto:14316, fob_ytd25:14286, cajas_abr:0, fob_abr:0},
-  {linea:"Montes Alpha", zona:"Caribe", mercado:"Aruba", cc:"10515", manager:"Patricia Osenga", cajas_ytd:37, fob_ytd:3947, cajas_ppto:57, fob_ppto:5970, fob_ytd25:0, cajas_abr:37, fob_abr:3947},
-  {linea:"Montes Alpha", zona:"Europa", mercado:"Luxemburgo", cc:"10636", manager:"Juan Pablo Velasco", cajas_ytd:32, fob_ytd:3150, cajas_ppto:86, fob_ppto:8134, fob_ytd25:4450, cajas_abr:0, fob_abr:0},
-  {linea:"Montes Alpha", zona:"Caribe", mercado:"Barbados", cc:"10404", manager:"Patricia Osenga", cajas_ytd:32, fob_ytd:3419, cajas_ppto:62, fob_ppto:6368, fob_ytd25:4200, cajas_abr:0, fob_abr:0},
-  {linea:"Montes Alpha", zona:"Europa", mercado:"Malta", cc:"10638", manager:"Juan Pablo Velasco", cajas_ytd:21, fob_ytd:1910, cajas_ppto:141, fob_ppto:12940, fob_ytd25:6883, cajas_abr:0, fob_abr:0},
-  {linea:"Montes Alpha", zona:"Europa", mercado:"Islandia", cc:"10629", manager:"Juan Pablo Velasco", cajas_ytd:20, fob_ytd:2080, cajas_ppto:77, fob_ppto:7882, fob_ytd25:15600, cajas_abr:20, fob_abr:2080},
+  {linea:"Montes Alpha", zona:"Europa", mercado:"Turquía", cc:"10848", manager:"Juan Pablo Velasco", cajas_ytd:75, fob_ytd:7402, cajas_ppto:84, fob_ppto:8524, fob_ytd25:0, cajas_abr:0, fob_abr:0},
+  {linea:"Montes Alpha", zona:"Asia", mercado:"India", cc:"10820", manager:"Sin Responsable", cajas_ytd:60, fob_ytd:5892, cajas_ppto:253, fob_ppto:26586, fob_ytd25:0, cajas_abr:0, fob_abr:0},
+  {linea:"Montes Alpha", zona:"Caribe", mercado:"Jamaica", cc:"10413", manager:"Patricia Osenga", cajas_ytd:52, fob_ytd:5460, cajas_ppto:26, fob_ppto:2660, fob_ytd25:1470, cajas_abr:0, fob_abr:0},
+  {linea:"Montes Alpha", zona:"Oceania", mercado:"Islas Cook", cc:"10904", manager:"Patricia Osenga", cajas_ytd:52, fob_ytd:5430, cajas_ppto:57, fob_ppto:5990, fob_ytd25:0, cajas_abr:0, fob_abr:0},
+  {linea:"Montes Alpha", zona:"Caribe", mercado:"Islas Caicos", cc:"10425", manager:"Patricia Osenga", cajas_ytd:50, fob_ytd:5250, cajas_ppto:51, fob_ppto:5317, fob_ytd25:5250, cajas_abr:0, fob_abr:0},
+  {linea:"Montes Alpha", zona:"Europa", mercado:"Finlandia", cc:"10617", manager:"Juan Pablo Velasco", cajas_ytd:50, fob_ytd:4868, cajas_ppto:386, fob_ppto:36977, fob_ytd25:21008, cajas_abr:0, fob_abr:0},
+  {linea:"Montes Alpha", zona:"Asia", mercado:"Cambodia", cc:"10810", manager:"Juan Yañez", cajas_ytd:50, fob_ytd:5383, cajas_ppto:138, fob_ppto:15941, fob_ytd25:14286, cajas_abr:0, fob_abr:0},
+  {linea:"Montes Alpha", zona:"Caribe", mercado:"Aruba", cc:"10515", manager:"Patricia Osenga", cajas_ytd:37, fob_ytd:3947, cajas_ppto:64, fob_ppto:6647, fob_ytd25:0, cajas_abr:37, fob_abr:3947},
+  {linea:"Montes Alpha", zona:"Europa", mercado:"Luxemburgo", cc:"10636", manager:"Juan Pablo Velasco", cajas_ytd:32, fob_ytd:3150, cajas_ppto:95, fob_ppto:9056, fob_ytd25:4450, cajas_abr:0, fob_abr:0},
+  {linea:"Montes Alpha", zona:"Caribe", mercado:"Barbados", cc:"10404", manager:"Patricia Osenga", cajas_ytd:32, fob_ytd:3419, cajas_ppto:68, fob_ppto:7090, fob_ytd25:4200, cajas_abr:0, fob_abr:0},
+  {linea:"Montes Alpha", zona:"Asia", mercado:"Laos", cc:"10830", manager:"Juan Yañez", cajas_ytd:25, fob_ytd:2888, cajas_ppto:72, fob_ppto:8679, fob_ytd25:23100, cajas_abr:25, fob_abr:2888},
+  {linea:"Montes Alpha", zona:"Europa", mercado:"Malta", cc:"10638", manager:"Juan Pablo Velasco", cajas_ytd:21, fob_ytd:1910, cajas_ppto:157, fob_ppto:14408, fob_ytd25:6883, cajas_abr:0, fob_abr:0},
+  {linea:"Montes Alpha", zona:"Europa", mercado:"Islandia", cc:"10629", manager:"Juan Pablo Velasco", cajas_ytd:20, fob_ytd:2080, cajas_ppto:85, fob_ppto:8777, fob_ytd25:15600, cajas_abr:0, fob_abr:0},
+  {linea:"Montes Alpha", zona:"Europa", mercado:"Suiza", cc:"10649", manager:"Eduardo Stark", cajas_ytd:20, fob_ytd:2764, cajas_ppto:464, fob_ppto:45402, fob_ytd25:217558, cajas_abr:20, fob_abr:2764},
   {linea:"Montes Alpha", zona:"Caribe", mercado:"Cruceros", cc:"10303", manager:"Patricia Osenga", cajas_ytd:11, fob_ytd:1532, cajas_ppto:0, fob_ppto:0, fob_ytd25:0, cajas_abr:0, fob_abr:0},
-  {linea:"Montes Alpha", zona:"Caribe", mercado:"Belize", cc:"10405", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:133, fob_ppto:16038, fob_ytd25:0, cajas_abr:0, fob_abr:0},
-  {linea:"Montes Alpha", zona:"Caribe", mercado:"Granada", cc:"10409", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:21, fob_ppto:2228, fob_ytd25:2205, cajas_abr:0, fob_abr:0},
-  {linea:"Montes Alpha", zona:"Caribe", mercado:"St. Lucia", cc:"10419", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:89, fob_ppto:9313, fob_ytd25:12285, cajas_abr:0, fob_abr:0},
-  {linea:"Montes Alpha", zona:"Caribe", mercado:"Trinidad & Tobago", cc:"10421", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:84, fob_ppto:8834, fob_ytd25:10290, cajas_abr:0, fob_abr:0},
-  {linea:"Montes Alpha", zona:"Caribe", mercado:"St. Kitts And Nevis", cc:"10427", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:47, fob_ppto:4776, fob_ytd25:0, cajas_abr:0, fob_abr:0},
-  {linea:"Montes Alpha", zona:"S. America", mercado:"Bolivia", cc:"10503", manager:"Daniela Rojas", cajas_ytd:0, fob_ytd:0, cajas_ppto:115, fob_ppto:14820, fob_ytd25:0, cajas_abr:0, fob_abr:0},
-  {linea:"Montes Alpha", zona:"S. America", mercado:"Colombia", cc:"10506", manager:"Daniela Rojas", cajas_ytd:0, fob_ytd:0, cajas_ppto:810, fob_ppto:94751, fob_ytd25:50094, cajas_abr:0, fob_abr:0},
-  {linea:"Montes Alpha", zona:"S. America", mercado:"Paraguay", cc:"10510", manager:"Daniela Rojas", cajas_ytd:0, fob_ytd:0, cajas_ppto:202, fob_ppto:23112, fob_ytd25:43210, cajas_abr:0, fob_abr:0},
-  {linea:"Montes Alpha", zona:"Caribe", mercado:"Curacao", cc:"10516", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:34, fob_ppto:3583, fob_ytd25:1090, cajas_abr:0, fob_abr:0},
-  {linea:"Montes Alpha", zona:"Europa", mercado:"Bulgaria", cc:"10609", manager:"Juan Pablo Velasco", cajas_ytd:0, fob_ytd:0, cajas_ppto:91, fob_ppto:7836, fob_ytd25:12015, cajas_abr:0, fob_abr:0},
-  {linea:"Montes Alpha", zona:"Europa", mercado:"Suiza", cc:"10649", manager:"Eduardo Stark", cajas_ytd:0, fob_ytd:0, cajas_ppto:417, fob_ppto:40776, fob_ytd25:217558, cajas_abr:0, fob_abr:0},
-  {linea:"Montes Alpha", zona:"Africa", mercado:"Kenia", cc:"10719", manager:"Juan Pablo Velasco", cajas_ytd:0, fob_ytd:0, cajas_ppto:117, fob_ppto:12172, fob_ytd25:10360, cajas_abr:0, fob_abr:0},
-  {linea:"Montes Alpha", zona:"Medio Oriente", mercado:"Israel", cc:"10824", manager:"Juan Pablo Velasco", cajas_ytd:0, fob_ytd:0, cajas_ppto:38, fob_ppto:3930, fob_ytd25:24888, cajas_abr:0, fob_abr:0},
-  {linea:"Montes Alpha", zona:"Medio Oriente", mercado:"Jordania", cc:"10826", manager:"Juan Pablo Velasco", cajas_ytd:0, fob_ytd:0, cajas_ppto:8, fob_ppto:787, fob_ytd25:1018, cajas_abr:0, fob_abr:0},
-  {linea:"Montes Alpha", zona:"Asia", mercado:"Laos", cc:"10830", manager:"Juan Yañez", cajas_ytd:0, fob_ytd:0, cajas_ppto:64, fob_ppto:7794, fob_ytd25:23100, cajas_abr:0, fob_abr:0},
-  {linea:"Limited Selection", zona:"Europa", mercado:"Alemania", cc:"10603", manager:"Eduardo Stark", cajas_ytd:17112, fob_ytd:914951, cajas_ppto:17047, fob_ppto:910732, fob_ytd25:538391, cajas_abr:500, fob_abr:25826},
-  {linea:"Limited Selection", zona:"Asia", mercado:"China", cc:"10811", manager:"Jason Li", cajas_ytd:10197, fob_ytd:651321, cajas_ppto:8573, fob_ppto:539256, fob_ytd25:520198, cajas_abr:1300, fob_abr:83312},
-  {linea:"Limited Selection", zona:"Chile", mercado:"Chile", cc:"10505", manager:"Evelyn Ramirez", cajas_ytd:4832, fob_ytd:217065, cajas_ppto:6130, fob_ppto:245963, fob_ytd25:240582, cajas_abr:836, fob_abr:35050},
-  {linea:"Limited Selection", zona:"N. America", mercado:"Canada", cc:"10302", manager:"Danilo Buvinic", cajas_ytd:4090, fob_ytd:208581, cajas_ppto:3472, fob_ppto:175514, fob_ytd25:198175, cajas_abr:1286, fob_abr:66559},
-  {linea:"Limited Selection", zona:"N. America", mercado:"Usa", cc:"10303", manager:"Danilo Buvinic", cajas_ytd:3848, fob_ytd:211396, cajas_ppto:3949, fob_ppto:229610, fob_ytd25:264924, cajas_abr:300, fob_abr:18015},
-  {linea:"Limited Selection", zona:"Asia", mercado:"Korea", cc:"10814", manager:"Juan Pablo Velasco", cajas_ytd:2500, fob_ytd:134330, cajas_ppto:1583, fob_ppto:85070, fob_ytd25:139740, cajas_abr:500, fob_abr:26890},
-  {linea:"Limited Selection", zona:"Asia", mercado:"Japón", cc:"10825", manager:"Eduardo Stark", cajas_ytd:2240, fob_ytd:137649, cajas_ppto:3914, fob_ppto:239832, fob_ytd25:221858, cajas_abr:70, fob_abr:4453},
-  {linea:"Limited Selection", zona:"Asia", mercado:"Taiwan", cc:"10846", manager:"Juan Yañez", cajas_ytd:1925, fob_ytd:112523, cajas_ppto:923, fob_ppto:54585, fob_ytd25:58340, cajas_abr:550, fob_abr:32087},
-  {linea:"Limited Selection", zona:"Europa", mercado:"Inglaterra", cc:"10624", manager:"Eduardo Stark", cajas_ytd:1520, fob_ytd:78068, cajas_ppto:1843, fob_ppto:93678, fob_ytd25:82414, cajas_abr:70, fob_abr:3514},
-  {linea:"Limited Selection", zona:"Europa", mercado:"Holanda", cc:"10622", manager:"Eduardo Stark", cajas_ytd:1130, fob_ytd:67347, cajas_ppto:1781, fob_ppto:101664, fob_ytd25:67333, cajas_abr:0, fob_abr:0},
-  {linea:"Limited Selection", zona:"Asia", mercado:"Tailandia", cc:"10845", manager:"Juan Yañez", cajas_ytd:774, fob_ytd:44847, cajas_ppto:1046, fob_ppto:60465, fob_ytd25:64565, cajas_abr:204, fob_abr:11822},
-  {linea:"Limited Selection", zona:"Europa", mercado:"Finlandia", cc:"10617", manager:"Juan Pablo Velasco", cajas_ytd:625, fob_ytd:33517, cajas_ppto:873, fob_ppto:45928, fob_ytd25:71576, cajas_abr:125, fob_abr:6562},
-  {linea:"Limited Selection", zona:"Europa", mercado:"Hungria", cc:"10623", manager:"Juan Pablo Velasco", cajas_ytd:600, fob_ytd:34171, cajas_ppto:643, fob_ppto:34771, fob_ytd25:47450, cajas_abr:0, fob_abr:0},
-  {linea:"Limited Selection", zona:"Asia", mercado:"Malasia", cc:"10833", manager:"Juan Yañez", cajas_ytd:590, fob_ytd:35481, cajas_ppto:288, fob_ppto:17306, fob_ytd25:24032, cajas_abr:0, fob_abr:0},
-  {linea:"Limited Selection", zona:"C. America", mercado:"Costa Rica", cc:"10406", manager:"Patricia Osenga", cajas_ytd:380, fob_ytd:23100, cajas_ppto:636, fob_ppto:38798, fob_ytd25:40155, cajas_abr:55, fob_abr:3345},
-  {linea:"Limited Selection", zona:"Oceania", mercado:"Tahiti", cc:"10305", manager:"Patricia Osenga", cajas_ytd:350, fob_ytd:21840, cajas_ppto:63, fob_ppto:3739, fob_ytd25:0, cajas_abr:140, fob_abr:8820},
-  {linea:"Limited Selection", zona:"Medio Oriente", mercado:"Emiratos Arabes", cc:"10815", manager:"Juan Pablo Velasco", cajas_ytd:335, fob_ytd:19134, cajas_ppto:1051, fob_ppto:59687, fob_ytd25:58114, cajas_abr:30, fob_abr:1710},
+  {linea:"Montes Alpha", zona:"Caribe", mercado:"Belize", cc:"10405", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:148, fob_ppto:17857, fob_ytd25:0, cajas_abr:0, fob_abr:0},
+  {linea:"Montes Alpha", zona:"Caribe", mercado:"Granada", cc:"10409", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:24, fob_ppto:2481, fob_ytd25:2205, cajas_abr:0, fob_abr:0},
+  {linea:"Montes Alpha", zona:"Caribe", mercado:"Trinidad & Tobago", cc:"10421", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:93, fob_ppto:9836, fob_ytd25:10290, cajas_abr:0, fob_abr:0},
+  {linea:"Montes Alpha", zona:"Caribe", mercado:"Anguilla", cc:"10423", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:32, fob_ppto:3367, fob_ytd25:3675, cajas_abr:0, fob_abr:0},
+  {linea:"Montes Alpha", zona:"Caribe", mercado:"St. Kitts And Nevis", cc:"10427", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:52, fob_ppto:5318, fob_ytd25:0, cajas_abr:0, fob_abr:0},
+  {linea:"Montes Alpha", zona:"S. America", mercado:"Bolivia", cc:"10503", manager:"Daniela Rojas", cajas_ytd:0, fob_ytd:0, cajas_ppto:128, fob_ppto:16501, fob_ytd25:0, cajas_abr:0, fob_abr:0},
+  {linea:"Montes Alpha", zona:"S. America", mercado:"Colombia", cc:"10506", manager:"Daniela Rojas", cajas_ytd:0, fob_ytd:0, cajas_ppto:902, fob_ppto:105501, fob_ytd25:50094, cajas_abr:0, fob_abr:0},
+  {linea:"Montes Alpha", zona:"Caribe", mercado:"Curacao", cc:"10516", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:38, fob_ppto:3989, fob_ytd25:1090, cajas_abr:0, fob_abr:0},
+  {linea:"Montes Alpha", zona:"Africa", mercado:"Kenia", cc:"10719", manager:"Juan Pablo Velasco", cajas_ytd:0, fob_ytd:0, cajas_ppto:130, fob_ppto:13553, fob_ytd25:10360, cajas_abr:0, fob_abr:0},
+  {linea:"Montes Alpha", zona:"Medio Oriente", mercado:"Israel", cc:"10824", manager:"Juan Pablo Velasco", cajas_ytd:0, fob_ytd:0, cajas_ppto:42, fob_ppto:4376, fob_ytd25:24888, cajas_abr:0, fob_abr:0},
+  {linea:"Montes Alpha", zona:"Medio Oriente", mercado:"Jordania", cc:"10826", manager:"Juan Pablo Velasco", cajas_ytd:0, fob_ytd:0, cajas_ppto:9, fob_ppto:876, fob_ytd25:1018, cajas_abr:0, fob_abr:0},
+  {linea:"Limited Selection", zona:"Europa", mercado:"Alemania", cc:"10603", manager:"Eduardo Stark", cajas_ytd:17972, fob_ytd:958867, cajas_ppto:18981, fob_ppto:1014061, fob_ytd25:611411, cajas_abr:860, fob_abr:43915},
+  {linea:"Limited Selection", zona:"Asia", mercado:"China", cc:"10811", manager:"Jason Li", cajas_ytd:11347, fob_ytd:725177, cajas_ppto:9546, fob_ppto:600438, fob_ytd25:569843, cajas_abr:1150, fob_abr:73856},
+  {linea:"Limited Selection", zona:"Chile", mercado:"Chile", cc:"10505", manager:"Evelyn Ramirez", cajas_ytd:4849, fob_ytd:217832, cajas_ppto:6826, fob_ppto:273869, fob_ytd25:285847, cajas_abr:2, fob_abr:94},
+  {linea:"Limited Selection", zona:"N. America", mercado:"Usa", cc:"10303", manager:"Danilo Buvinic", cajas_ytd:4373, fob_ytd:238307, cajas_ppto:4397, fob_ppto:255660, fob_ytd25:274580, cajas_abr:525, fob_abr:26911},
+  {linea:"Limited Selection", zona:"N. America", mercado:"Canada", cc:"10302", manager:"Danilo Buvinic", cajas_ytd:4090, fob_ytd:208581, cajas_ppto:3866, fob_ppto:195427, fob_ytd25:250915, cajas_abr:411, fob_abr:20431},
+  {linea:"Limited Selection", zona:"Asia", mercado:"Korea", cc:"10814", manager:"Juan Pablo Velasco", cajas_ytd:2500, fob_ytd:134330, cajas_ppto:1762, fob_ppto:94721, fob_ytd25:139740, cajas_abr:0, fob_abr:0},
+  {linea:"Limited Selection", zona:"Asia", mercado:"Japón", cc:"10825", manager:"Eduardo Stark", cajas_ytd:2310, fob_ytd:141856, cajas_ppto:4358, fob_ppto:267043, fob_ytd25:247590, cajas_abr:70, fob_abr:4206},
+  {linea:"Limited Selection", zona:"Europa", mercado:"Inglaterra", cc:"10624", manager:"Eduardo Stark", cajas_ytd:1940, fob_ytd:100232, cajas_ppto:2052, fob_ppto:104307, fob_ytd25:95295, cajas_abr:420, fob_abr:22164},
+  {linea:"Limited Selection", zona:"Asia", mercado:"Taiwan", cc:"10846", manager:"Juan Yañez", cajas_ytd:1925, fob_ytd:112523, cajas_ppto:1028, fob_ppto:60778, fob_ytd25:85728, cajas_abr:550, fob_abr:32087},
+  {linea:"Limited Selection", zona:"Europa", mercado:"Holanda", cc:"10622", manager:"Eduardo Stark", cajas_ytd:1200, fob_ytd:71517, cajas_ppto:1983, fob_ppto:113198, fob_ytd25:76273, cajas_abr:70, fob_abr:4170},
+  {linea:"Limited Selection", zona:"Asia", mercado:"Tailandia", cc:"10845", manager:"Juan Yañez", cajas_ytd:944, fob_ytd:54697, cajas_ppto:1165, fob_ppto:67326, fob_ytd25:70446, cajas_abr:170, fob_abr:9850},
+  {linea:"Limited Selection", zona:"Europa", mercado:"Finlandia", cc:"10617", manager:"Juan Pablo Velasco", cajas_ytd:625, fob_ytd:33517, cajas_ppto:972, fob_ppto:51138, fob_ytd25:95782, cajas_abr:0, fob_abr:0},
+  {linea:"Limited Selection", zona:"Europa", mercado:"Hungria", cc:"10623", manager:"Juan Pablo Velasco", cajas_ytd:600, fob_ytd:34171, cajas_ppto:716, fob_ppto:38716, fob_ytd25:47450, cajas_abr:0, fob_abr:0},
+  {linea:"Limited Selection", zona:"Asia", mercado:"Malasia", cc:"10833", manager:"Juan Yañez", cajas_ytd:590, fob_ytd:35481, cajas_ppto:321, fob_ppto:19270, fob_ytd25:24032, cajas_abr:0, fob_abr:0},
+  {linea:"Limited Selection", zona:"Medio Oriente", mercado:"Emiratos Arabes", cc:"10815", manager:"Juan Pablo Velasco", cajas_ytd:495, fob_ytd:28110, cajas_ppto:1170, fob_ppto:66459, fob_ytd25:62742, cajas_abr:190, fob_abr:10686},
+  {linea:"Limited Selection", zona:"C. America", mercado:"Costa Rica", cc:"10406", manager:"Patricia Osenga", cajas_ytd:425, fob_ytd:25830, cajas_ppto:708, fob_ppto:43200, fob_ytd25:40155, cajas_abr:45, fob_abr:2730},
+  {linea:"Limited Selection", zona:"Oceania", mercado:"Tahiti", cc:"10305", manager:"Patricia Osenga", cajas_ytd:350, fob_ytd:21840, cajas_ppto:70, fob_ppto:4163, fob_ytd25:4200, cajas_abr:0, fob_abr:0},
   {linea:"Limited Selection", zona:"Europa", mercado:"Bélgica", cc:"10606", manager:"Juan Pablo Velasco", cajas_ytd:300, fob_ytd:18561, cajas_ppto:0, fob_ppto:0, fob_ytd25:0, cajas_abr:0, fob_abr:0},
-  {linea:"Limited Selection", zona:"Asia", mercado:"Cambodia", cc:"10810", manager:"Juan Yañez", cajas_ytd:295, fob_ytd:17727, cajas_ppto:360, fob_ppto:21636, fob_ytd25:16825, cajas_abr:0, fob_abr:0},
-  {linea:"Limited Selection", zona:"Europa", mercado:"Islandia", cc:"10629", manager:"Juan Pablo Velasco", cajas_ytd:280, fob_ytd:16996, cajas_ppto:849, fob_ppto:51532, fob_ytd25:42917, cajas_abr:140, fob_abr:8498},
-  {linea:"Limited Selection", zona:"Medio Oriente", mercado:"Qatar", cc:"10840", manager:"Juan Pablo Velasco", cajas_ytd:265, fob_ytd:16142, cajas_ppto:137, fob_ppto:8368, fob_ytd25:9755, cajas_abr:40, fob_abr:2395},
-  {linea:"Limited Selection", zona:"C. America", mercado:"Guatemala", cc:"10410", manager:"Patricia Osenga", cajas_ytd:250, fob_ytd:15075, cajas_ppto:484, fob_ppto:29260, fob_ytd25:32115, cajas_abr:0, fob_abr:0},
-  {linea:"Limited Selection", zona:"S. America", mercado:"Malvinas", cc:"10518", manager:"Daniela Rojas", cajas_ytd:235, fob_ytd:14220, cajas_ppto:190, fob_ppto:11431, fob_ytd25:0, cajas_abr:0, fob_abr:0},
-  {linea:"Limited Selection", zona:"Europa", mercado:"Croacia", cc:"10610", manager:"Juan Pablo Velasco", cajas_ytd:210, fob_ytd:10565, cajas_ppto:227, fob_ppto:11625, fob_ytd25:7550, cajas_abr:0, fob_abr:0},
-  {linea:"Limited Selection", zona:"Asia", mercado:"Filipinas", cc:"10816", manager:"Juan Yañez", cajas_ytd:210, fob_ytd:13010, cajas_ppto:238, fob_ppto:14702, fob_ytd25:12930, cajas_abr:0, fob_abr:0},
-  {linea:"Limited Selection", zona:"S. America", mercado:"Guyana", cc:"10508", manager:"Daniela Rojas", cajas_ytd:200, fob_ytd:12500, cajas_ppto:27, fob_ppto:1706, fob_ytd25:0, cajas_abr:0, fob_abr:0},
-  {linea:"Limited Selection", zona:"Asia", mercado:"Singapur", cc:"10842", manager:"Juan Yañez", cajas_ytd:200, fob_ytd:12194, cajas_ppto:192, fob_ppto:11818, fob_ytd25:11169, cajas_abr:0, fob_abr:0},
-  {linea:"Limited Selection", zona:"Caribe", mercado:"Islas Virgen", cc:"10426", manager:"Patricia Osenga", cajas_ytd:196, fob_ytd:12096, cajas_ppto:219, fob_ppto:13387, fob_ytd25:3528, cajas_abr:70, fob_abr:4410},
-  {linea:"Limited Selection", zona:"C. America", mercado:"México", cc:"10304", manager:"Daniela Rojas", cajas_ytd:175, fob_ytd:10905, cajas_ppto:428, fob_ppto:26080, fob_ytd25:21024, cajas_abr:0, fob_abr:0},
-  {linea:"Limited Selection", zona:"Caribe", mercado:"Bermuda", cc:"10306", manager:"Patricia Osenga", cajas_ytd:170, fob_ytd:10410, cajas_ppto:180, fob_ppto:10918, fob_ytd25:12810, cajas_abr:0, fob_abr:0},
-  {linea:"Limited Selection", zona:"Europa", mercado:"Eslovaquia", cc:"10613", manager:"Juan Pablo Velasco", cajas_ytd:155, fob_ytd:8716, cajas_ppto:265, fob_ppto:14941, fob_ytd25:0, cajas_abr:0, fob_abr:0},
-  {linea:"Limited Selection", zona:"Asia", mercado:"Indonesia", cc:"10821", manager:"Juan Yañez", cajas_ytd:149, fob_ytd:9496, cajas_ppto:225, fob_ppto:14190, fob_ytd25:9352, cajas_abr:80, fob_abr:5034},
-  {linea:"Limited Selection", zona:"Caribe", mercado:"Islas Caicos", cc:"10425", manager:"Patricia Osenga", cajas_ytd:140, fob_ytd:8610, cajas_ppto:57, fob_ppto:3411, fob_ytd25:4200, cajas_abr:0, fob_abr:0},
-  {linea:"Limited Selection", zona:"S. America", mercado:"Ecuador", cc:"10507", manager:"Daniela Rojas", cajas_ytd:140, fob_ytd:8400, cajas_ppto:75, fob_ppto:4720, fob_ytd25:0, cajas_abr:0, fob_abr:0},
-  {linea:"Limited Selection", zona:"S. America", mercado:"Perú", cc:"10511", manager:"Daniela Rojas", cajas_ytd:140, fob_ytd:8400, cajas_ppto:224, fob_ppto:13673, fob_ytd25:4680, cajas_abr:0, fob_abr:0},
-  {linea:"Limited Selection", zona:"Asia", mercado:"Vietnam", cc:"10850", manager:"Juan Yañez", cajas_ytd:125, fob_ytd:7799, cajas_ppto:290, fob_ppto:17632, fob_ytd25:22821, cajas_abr:40, fob_abr:2521},
-  {linea:"Limited Selection", zona:"Europa", mercado:"Malta", cc:"10638", manager:"Juan Pablo Velasco", cajas_ytd:117, fob_ytd:6317, cajas_ppto:107, fob_ppto:5510, fob_ytd25:4859, cajas_abr:0, fob_abr:0},
-  {linea:"Limited Selection", zona:"C. America", mercado:"Honduras", cc:"10412", manager:"Patricia Osenga", cajas_ytd:100, fob_ytd:6175, cajas_ppto:27, fob_ppto:1630, fob_ytd25:2475, cajas_abr:0, fob_abr:0},
-  {linea:"Limited Selection", zona:"S. America", mercado:"Brasil", cc:"10504", manager:"Daniela Rojas", cajas_ytd:70, fob_ytd:4480, cajas_ppto:1836, fob_ppto:114083, fob_ytd25:77231, cajas_abr:70, fob_abr:4480},
+  {linea:"Limited Selection", zona:"Asia", mercado:"Cambodia", cc:"10810", manager:"Juan Yañez", cajas_ytd:295, fob_ytd:17727, cajas_ppto:401, fob_ppto:24090, fob_ytd25:16825, cajas_abr:0, fob_abr:0},
+  {linea:"Limited Selection", zona:"Europa", mercado:"Islandia", cc:"10629", manager:"Juan Pablo Velasco", cajas_ytd:280, fob_ytd:16996, cajas_ppto:945, fob_ppto:57378, fob_ytd25:42917, cajas_abr:0, fob_abr:0},
+  {linea:"Limited Selection", zona:"Medio Oriente", mercado:"Qatar", cc:"10840", manager:"Juan Pablo Velasco", cajas_ytd:265, fob_ytd:16142, cajas_ppto:152, fob_ppto:9317, fob_ytd25:9755, cajas_abr:40, fob_abr:2395},
+  {linea:"Limited Selection", zona:"C. America", mercado:"Guatemala", cc:"10410", manager:"Patricia Osenga", cajas_ytd:250, fob_ytd:15075, cajas_ppto:538, fob_ppto:32580, fob_ytd25:32115, cajas_abr:0, fob_abr:0},
+  {linea:"Limited Selection", zona:"Asia", mercado:"Laos", cc:"10830", manager:"Juan Yañez", cajas_ytd:245, fob_ytd:15009, cajas_ppto:124, fob_ppto:7600, fob_ytd25:21441, cajas_abr:245, fob_abr:15009},
+  {linea:"Limited Selection", zona:"S. America", mercado:"Malvinas", cc:"10518", manager:"Daniela Rojas", cajas_ytd:235, fob_ytd:14220, cajas_ppto:211, fob_ppto:12728, fob_ytd25:0, cajas_abr:0, fob_abr:0},
+  {linea:"Limited Selection", zona:"Europa", mercado:"Croacia", cc:"10610", manager:"Juan Pablo Velasco", cajas_ytd:210, fob_ytd:10565, cajas_ppto:253, fob_ppto:12944, fob_ytd25:7550, cajas_abr:0, fob_abr:0},
+  {linea:"Limited Selection", zona:"Asia", mercado:"Filipinas", cc:"10816", manager:"Juan Yañez", cajas_ytd:210, fob_ytd:13010, cajas_ppto:265, fob_ppto:16370, fob_ytd25:12930, cajas_abr:0, fob_abr:0},
+  {linea:"Limited Selection", zona:"S. America", mercado:"Guyana", cc:"10508", manager:"Daniela Rojas", cajas_ytd:200, fob_ytd:12500, cajas_ppto:30, fob_ppto:1899, fob_ytd25:0, cajas_abr:0, fob_abr:0},
+  {linea:"Limited Selection", zona:"Asia", mercado:"Singapur", cc:"10842", manager:"Juan Yañez", cajas_ytd:200, fob_ytd:12194, cajas_ppto:214, fob_ppto:13159, fob_ytd25:14174, cajas_abr:0, fob_abr:0},
+  {linea:"Limited Selection", zona:"Caribe", mercado:"Islas Virgen", cc:"10426", manager:"Patricia Osenga", cajas_ytd:196, fob_ytd:12096, cajas_ppto:243, fob_ppto:14905, fob_ytd25:3528, cajas_abr:70, fob_abr:4410},
+  {linea:"Limited Selection", zona:"C. America", mercado:"México", cc:"10304", manager:"Daniela Rojas", cajas_ytd:175, fob_ytd:10905, cajas_ppto:477, fob_ppto:29040, fob_ytd25:21024, cajas_abr:0, fob_abr:0},
+  {linea:"Limited Selection", zona:"Caribe", mercado:"Bermuda", cc:"10306", manager:"Patricia Osenga", cajas_ytd:170, fob_ytd:10410, cajas_ppto:200, fob_ppto:12157, fob_ytd25:12810, cajas_abr:0, fob_abr:0},
+  {linea:"Limited Selection", zona:"S. America", mercado:"Paraguay", cc:"10510", manager:"Daniela Rojas", cajas_ytd:170, fob_ytd:10480, cajas_ppto:437, fob_ppto:26558, fob_ytd25:37200, cajas_abr:170, fob_abr:10480},
+  {linea:"Limited Selection", zona:"S. America", mercado:"Perú", cc:"10511", manager:"Daniela Rojas", cajas_ytd:170, fob_ytd:10260, cajas_ppto:249, fob_ppto:15224, fob_ytd25:6955, cajas_abr:30, fob_abr:1860},
+  {linea:"Limited Selection", zona:"Europa", mercado:"Eslovaquia", cc:"10613", manager:"Juan Pablo Velasco", cajas_ytd:155, fob_ytd:8716, cajas_ppto:295, fob_ppto:16637, fob_ytd25:10567, cajas_abr:0, fob_abr:0},
+  {linea:"Limited Selection", zona:"Asia", mercado:"Indonesia", cc:"10821", manager:"Juan Yañez", cajas_ytd:149, fob_ytd:9496, cajas_ppto:250, fob_ppto:15800, fob_ytd25:9352, cajas_abr:0, fob_abr:0},
+  {linea:"Limited Selection", zona:"Caribe", mercado:"Islas Caicos", cc:"10425", manager:"Patricia Osenga", cajas_ytd:140, fob_ytd:8610, cajas_ppto:64, fob_ppto:3798, fob_ytd25:4200, cajas_abr:0, fob_abr:0},
+  {linea:"Limited Selection", zona:"S. America", mercado:"Ecuador", cc:"10507", manager:"Daniela Rojas", cajas_ytd:140, fob_ytd:8400, cajas_ppto:84, fob_ppto:5256, fob_ytd25:0, cajas_abr:0, fob_abr:0},
+  {linea:"Limited Selection", zona:"Asia", mercado:"Vietnam", cc:"10850", manager:"Juan Yañez", cajas_ytd:125, fob_ytd:7799, cajas_ppto:323, fob_ppto:19633, fob_ytd25:22821, cajas_abr:0, fob_abr:0},
+  {linea:"Limited Selection", zona:"Europa", mercado:"Malta", cc:"10638", manager:"Juan Pablo Velasco", cajas_ytd:117, fob_ytd:6317, cajas_ppto:119, fob_ppto:6136, fob_ytd25:4859, cajas_abr:0, fob_abr:0},
+  {linea:"Limited Selection", zona:"Europa", mercado:"Bulgaria", cc:"10609", manager:"Juan Pablo Velasco", cajas_ytd:105, fob_ytd:5531, cajas_ppto:50, fob_ppto:2537, fob_ytd25:3497, cajas_abr:105, fob_abr:5531},
+  {linea:"Limited Selection", zona:"C. America", mercado:"Honduras", cc:"10412", manager:"Patricia Osenga", cajas_ytd:100, fob_ytd:6175, cajas_ppto:30, fob_ppto:1815, fob_ytd25:2475, cajas_abr:0, fob_abr:0},
+  {linea:"Limited Selection", zona:"S. America", mercado:"Brasil", cc:"10504", manager:"Daniela Rojas", cajas_ytd:70, fob_ytd:4480, cajas_ppto:2044, fob_ppto:127026, fob_ytd25:81627, cajas_abr:0, fob_abr:0},
   {linea:"Limited Selection", zona:"Europa", mercado:"Serbia", cc:"10647", manager:"Juan Pablo Velasco", cajas_ytd:70, fob_ytd:4919, cajas_ppto:0, fob_ppto:0, fob_ytd25:5969, cajas_abr:0, fob_abr:0},
   {linea:"Limited Selection", zona:"Sin Zona", mercado:"Uzbekistan", cc:"10849", manager:"Juan Pablo Velasco", cajas_ytd:70, fob_ytd:4290, cajas_ppto:0, fob_ppto:0, fob_ytd25:0, cajas_abr:0, fob_abr:0},
-  {linea:"Limited Selection", zona:"Europa", mercado:"Luxemburgo", cc:"10636", manager:"Juan Pablo Velasco", cajas_ytd:65, fob_ytd:3472, cajas_ppto:25, fob_ppto:1293, fob_ytd25:0, cajas_abr:0, fob_abr:0},
-  {linea:"Limited Selection", zona:"Europa", mercado:"Chipre", cc:"10812", manager:"Juan Pablo Velasco", cajas_ytd:35, fob_ytd:2176, cajas_ppto:344, fob_ppto:18732, fob_ytd25:32123, cajas_abr:0, fob_abr:0},
-  {linea:"Limited Selection", zona:"Caribe", mercado:"Barbados", cc:"10404", manager:"Patricia Osenga", cajas_ytd:30, fob_ytd:1920, cajas_ppto:84, fob_ppto:5139, fob_ytd25:6000, cajas_abr:0, fob_abr:0},
-  {linea:"Limited Selection", zona:"Caribe", mercado:"Granada", cc:"10409", manager:"Patricia Osenga", cajas_ytd:28, fob_ytd:1722, cajas_ppto:26, fob_ppto:1624, fob_ytd25:2142, cajas_abr:0, fob_abr:0},
+  {linea:"Limited Selection", zona:"Europa", mercado:"Luxemburgo", cc:"10636", manager:"Juan Pablo Velasco", cajas_ytd:65, fob_ytd:3472, cajas_ppto:27, fob_ppto:1440, fob_ytd25:0, cajas_abr:0, fob_abr:0},
+  {linea:"Limited Selection", zona:"Europa", mercado:"Chipre", cc:"10812", manager:"Juan Pablo Velasco", cajas_ytd:35, fob_ytd:2176, cajas_ppto:383, fob_ppto:20858, fob_ytd25:32123, cajas_abr:0, fob_abr:0},
+  {linea:"Limited Selection", zona:"Caribe", mercado:"Barbados", cc:"10404", manager:"Patricia Osenga", cajas_ytd:30, fob_ytd:1920, cajas_ppto:93, fob_ppto:5722, fob_ytd25:6000, cajas_abr:0, fob_abr:0},
+  {linea:"Limited Selection", zona:"Caribe", mercado:"Granada", cc:"10409", manager:"Patricia Osenga", cajas_ytd:28, fob_ytd:1722, cajas_ppto:30, fob_ppto:1808, fob_ytd25:2142, cajas_abr:0, fob_abr:0},
   {linea:"Limited Selection", zona:"Caribe", mercado:"Islas Cayman", cc:"10424", manager:"Patricia Osenga", cajas_ytd:28, fob_ytd:1792, cajas_ppto:0, fob_ppto:0, fob_ytd25:0, cajas_abr:0, fob_abr:0},
-  {linea:"Limited Selection", zona:"Europa", mercado:"Ucrania", cc:"10650", manager:"Patricia Osenga", cajas_ytd:28, fob_ytd:1446, cajas_ppto:61, fob_ppto:3199, fob_ytd25:4046, cajas_abr:0, fob_abr:0},
+  {linea:"Limited Selection", zona:"Europa", mercado:"Ucrania", cc:"10650", manager:"Patricia Osenga", cajas_ytd:28, fob_ytd:1446, cajas_ppto:68, fob_ppto:3562, fob_ytd25:4046, cajas_abr:0, fob_abr:0},
   {linea:"Limited Selection", zona:"Caribe", mercado:"Cruceros", cc:"10303", manager:"Patricia Osenga", cajas_ytd:20, fob_ytd:1200, cajas_ppto:0, fob_ppto:0, fob_ytd25:0, cajas_abr:0, fob_abr:0},
-  {linea:"Limited Selection", zona:"Oceania", mercado:"Islas Cook", cc:"10904", manager:"Patricia Osenga", cajas_ytd:8, fob_ytd:513, cajas_ppto:24, fob_ppto:1462, fob_ytd25:0, cajas_abr:8, fob_abr:513},
-  {linea:"Limited Selection", zona:"Caribe", mercado:"Aruba", cc:"10515", manager:"Patricia Osenga", cajas_ytd:7, fob_ytd:420, cajas_ppto:12, fob_ppto:682, fob_ytd25:0, cajas_abr:7, fob_abr:420},
-  {linea:"Limited Selection", zona:"Caribe", mercado:"Belize", cc:"10405", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:84, fob_ppto:5276, fob_ytd25:0, cajas_abr:0, fob_abr:0},
-  {linea:"Limited Selection", zona:"C. America", mercado:"Panamá", cc:"10415", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:26, fob_ppto:1592, fob_ytd25:0, cajas_abr:0, fob_abr:0},
-  {linea:"Limited Selection", zona:"Caribe", mercado:"Puerto Rico", cc:"10416", manager:"Daniela Rojas", cajas_ytd:0, fob_ytd:0, cajas_ppto:42, fob_ppto:2759, fob_ytd25:3900, cajas_abr:0, fob_abr:0},
-  {linea:"Limited Selection", zona:"Caribe", mercado:"St. Lucia", cc:"10419", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:76, fob_ppto:4662, fob_ytd25:0, cajas_abr:0, fob_abr:0},
-  {linea:"Limited Selection", zona:"Caribe", mercado:"Trinidad & Tobago", cc:"10421", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:102, fob_ppto:6276, fob_ytd25:6888, cajas_abr:0, fob_abr:0},
-  {linea:"Limited Selection", zona:"Caribe", mercado:"Anguilla", cc:"10423", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:45, fob_ppto:2716, fob_ytd25:3402, cajas_abr:0, fob_abr:0},
-  {linea:"Limited Selection", zona:"S. America", mercado:"Bolivia", cc:"10503", manager:"Daniela Rojas", cajas_ytd:0, fob_ytd:0, cajas_ppto:159, fob_ppto:10612, fob_ytd25:0, cajas_abr:0, fob_abr:0},
-  {linea:"Limited Selection", zona:"S. America", mercado:"Colombia", cc:"10506", manager:"Daniela Rojas", cajas_ytd:0, fob_ytd:0, cajas_ppto:423, fob_ppto:26233, fob_ytd25:10480, cajas_abr:0, fob_abr:0},
-  {linea:"Limited Selection", zona:"S. America", mercado:"Paraguay", cc:"10510", manager:"Daniela Rojas", cajas_ytd:0, fob_ytd:0, cajas_ppto:392, fob_ppto:23852, fob_ytd25:37200, cajas_abr:0, fob_abr:0},
-  {linea:"Limited Selection", zona:"S. America", mercado:"Uruguay", cc:"10513", manager:"Daniela Rojas", cajas_ytd:0, fob_ytd:0, cajas_ppto:221, fob_ppto:13848, fob_ytd25:20350, cajas_abr:0, fob_abr:0},
-  {linea:"Limited Selection", zona:"Caribe", mercado:"Curacao", cc:"10516", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:23, fob_ppto:1394, fob_ytd25:1550, cajas_abr:0, fob_abr:0},
-  {linea:"Limited Selection", zona:"Europa", mercado:"Bulgaria", cc:"10609", manager:"Juan Pablo Velasco", cajas_ytd:0, fob_ytd:0, cajas_ppto:45, fob_ppto:2278, fob_ytd25:3497, cajas_abr:0, fob_abr:0},
-  {linea:"Limited Selection", zona:"Africa", mercado:"Kenia", cc:"10719", manager:"Juan Pablo Velasco", cajas_ytd:0, fob_ytd:0, cajas_ppto:141, fob_ppto:8629, fob_ytd25:7344, cajas_abr:0, fob_abr:0},
-  {linea:"Limited Selection", zona:"Asia", mercado:"Hong Kong", cc:"10819", manager:"Juan Yañez", cajas_ytd:0, fob_ytd:0, cajas_ppto:38, fob_ppto:2278, fob_ytd25:4206, cajas_abr:0, fob_abr:0},
-  {linea:"Limited Selection", zona:"Asia", mercado:"Laos", cc:"10830", manager:"Juan Yañez", cajas_ytd:0, fob_ytd:0, cajas_ppto:111, fob_ppto:6826, fob_ytd25:21441, cajas_abr:0, fob_abr:0},
-  {linea:"Limited Selection", zona:"Oceania", mercado:"Nueva Zelanda", cc:"10908", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:8, fob_ppto:455, fob_ytd25:0, cajas_abr:0, fob_abr:0},
-  {linea:"Classic Series", zona:"Asia", mercado:"China", cc:"10811", manager:"Jason Li", cajas_ytd:76542, fob_ytd:3981942, cajas_ppto:89869, fob_ppto:4735406, fob_ytd25:4335888, cajas_abr:8425, fob_abr:439965},
-  {linea:"Classic Series", zona:"Asia", mercado:"Japón", cc:"10825", manager:"Eduardo Stark", cajas_ytd:25570, fob_ytd:1302536, cajas_ppto:28262, fob_ppto:1445271, fob_ytd25:1690189, cajas_abr:2240, fob_abr:114106},
-  {linea:"Classic Series", zona:"Asia", mercado:"Korea", cc:"10814", manager:"Juan Pablo Velasco", cajas_ytd:18548, fob_ytd:898118, cajas_ppto:23657, fob_ppto:1149585, fob_ytd25:1164259, cajas_abr:0, fob_abr:0},
-  {linea:"Classic Series", zona:"Europa", mercado:"Alemania", cc:"10603", manager:"Eduardo Stark", cajas_ytd:10438, fob_ytd:461260, cajas_ppto:17646, fob_ppto:787783, fob_ytd25:804405, cajas_abr:0, fob_abr:0},
-  {linea:"Classic Series", zona:"Medio Oriente", mercado:"Emiratos Arabes", cc:"10815", manager:"Juan Pablo Velasco", cajas_ytd:4805, fob_ytd:236060, cajas_ppto:6382, fob_ppto:313748, fob_ytd25:258932, cajas_abr:185, fob_abr:9158},
-  {linea:"Classic Series", zona:"Chile", mercado:"Chile", cc:"10505", manager:"Evelyn Ramirez", cajas_ytd:3567, fob_ytd:137010, cajas_ppto:6694, fob_ppto:238142, fob_ytd25:226122, cajas_abr:432, fob_abr:16250},
-  {linea:"Classic Series", zona:"N. America", mercado:"Canada", cc:"10302", manager:"Danilo Buvinic", cajas_ytd:3497, fob_ytd:152156, cajas_ppto:3875, fob_ppto:162222, fob_ytd25:215225, cajas_abr:460, fob_abr:20789},
-  {linea:"Classic Series", zona:"Europa", mercado:"Holanda", cc:"10622", manager:"Eduardo Stark", cajas_ytd:2728, fob_ytd:129344, cajas_ppto:3600, fob_ppto:166694, fob_ytd25:103530, cajas_abr:119, fob_abr:5722},
-  {linea:"Classic Series", zona:"Europa", mercado:"Inglaterra", cc:"10624", manager:"Eduardo Stark", cajas_ytd:2380, fob_ytd:90391, cajas_ppto:2683, fob_ppto:98541, fob_ytd25:83803, cajas_abr:70, fob_abr:2774},
-  {linea:"Classic Series", zona:"Asia", mercado:"Tailandia", cc:"10845", manager:"Juan Yañez", cajas_ytd:2368, fob_ytd:120480, cajas_ppto:3674, fob_ppto:186387, fob_ytd25:195560, cajas_abr:1288, fob_abr:65367},
-  {linea:"Classic Series", zona:"Asia", mercado:"Malasia", cc:"10833", manager:"Juan Yañez", cajas_ytd:2150, fob_ytd:109129, cajas_ppto:1326, fob_ppto:67534, fob_ytd25:15282, cajas_abr:0, fob_abr:0},
-  {linea:"Classic Series", zona:"Europa", mercado:"Islandia", cc:"10629", manager:"Juan Pablo Velasco", cajas_ytd:1750, fob_ytd:89425, cajas_ppto:2918, fob_ppto:149126, fob_ytd25:114464, cajas_abr:840, fob_abr:42924},
-  {linea:"Classic Series", zona:"C. America", mercado:"Guatemala", cc:"10410", manager:"Patricia Osenga", cajas_ytd:1700, fob_ytd:91800, cajas_ppto:2205, fob_ppto:119034, fob_ytd25:140400, cajas_abr:0, fob_abr:0},
-  {linea:"Classic Series", zona:"N. America", mercado:"Usa", cc:"10303", manager:"Danilo Buvinic", cajas_ytd:1500, fob_ytd:75465, cajas_ppto:3311, fob_ppto:170553, fob_ytd25:151495, cajas_abr:0, fob_abr:0},
-  {linea:"Classic Series", zona:"Europa", mercado:"Chipre", cc:"10812", manager:"Juan Pablo Velasco", cajas_ytd:1465, fob_ytd:62287, cajas_ppto:1373, fob_ppto:55521, fob_ytd25:95012, cajas_abr:0, fob_abr:0},
-  {linea:"Classic Series", zona:"S. America", mercado:"Brasil", cc:"10504", manager:"Daniela Rojas", cajas_ytd:1991, fob_ytd:112507, cajas_ppto:5209, fob_ppto:273258, fob_ytd25:201627, cajas_abr:450, fob_abr:23400},
-  {linea:"Classic Series", zona:"Europa", mercado:"Eslovaquia", cc:"10613", manager:"Juan Pablo Velasco", cajas_ytd:982, fob_ytd:43306, cajas_ppto:810, fob_ppto:34256, fob_ytd25:18395, cajas_abr:0, fob_abr:0},
-  {linea:"Classic Series", zona:"Asia", mercado:"Hong Kong", cc:"10819", manager:"Juan Yañez", cajas_ytd:910, fob_ytd:46283, cajas_ppto:849, fob_ppto:43179, fob_ytd25:46283, cajas_abr:0, fob_abr:0},
-  {linea:"Classic Series", zona:"Caribe", mercado:"Curacao", cc:"10516", manager:"Patricia Osenga", cajas_ytd:890, fob_ytd:48060, cajas_ppto:598, fob_ppto:32337, fob_ytd25:34560, cajas_abr:0, fob_abr:0},
-  {linea:"Classic Series", zona:"Asia", mercado:"Cambodia", cc:"10810", manager:"Juan Yañez", cajas_ytd:850, fob_ytd:43299, cajas_ppto:683, fob_ppto:34828, fob_ytd25:35149, cajas_abr:0, fob_abr:0},
-  {linea:"Classic Series", zona:"Asia", mercado:"Filipinas", cc:"10816", manager:"Juan Yañez", cajas_ytd:845, fob_ytd:43213, cajas_ppto:1679, fob_ppto:85863, fob_ytd25:75432, cajas_abr:0, fob_abr:0},
-  {linea:"Classic Series", zona:"Oceania", mercado:"Tahiti", cc:"10305", manager:"Patricia Osenga", cajas_ytd:840, fob_ytd:45360, cajas_ppto:844, fob_ppto:45639, fob_ytd25:26460, cajas_abr:420, fob_abr:22680},
-  {linea:"Classic Series", zona:"Europa", mercado:"Hungria", cc:"10623", manager:"Juan Pablo Velasco", cajas_ytd:825, fob_ytd:39819, cajas_ppto:790, fob_ppto:35462, fob_ytd25:48666, cajas_abr:0, fob_abr:0},
-  {linea:"Classic Series", zona:"Europa", mercado:"Polonia", cc:"10642", manager:"Juan Pablo Velasco", cajas_ytd:825, fob_ytd:35961, cajas_ppto:1296, fob_ppto:55928, fob_ytd25:54366, cajas_abr:150, fob_abr:6300},
-  {linea:"Classic Series", zona:"Europa", mercado:"Turquía", cc:"10848", manager:"Juan Pablo Velasco", cajas_ytd:815, fob_ytd:41646, cajas_ppto:266, fob_ppto:13557, fob_ytd25:0, cajas_abr:0, fob_abr:0},
-  {linea:"Classic Series", zona:"Asia", mercado:"Vietnam", cc:"10850", manager:"Juan Yañez", cajas_ytd:810, fob_ytd:41261, cajas_ppto:1210, fob_ppto:61935, fob_ytd25:59487, cajas_abr:350, fob_abr:17829},
-  {linea:"Classic Series", zona:"C. America", mercado:"Costa Rica", cc:"10406", manager:"Patricia Osenga", cajas_ytd:775, fob_ytd:41850, cajas_ppto:807, fob_ppto:43606, fob_ytd25:42390, cajas_abr:100, fob_abr:5400},
-  {linea:"Classic Series", zona:"S. America", mercado:"Perú", cc:"10511", manager:"Daniela Rojas", cajas_ytd:676, fob_ytd:35152, cajas_ppto:881, fob_ppto:45769, fob_ytd25:22620, cajas_abr:0, fob_abr:0},
-  {linea:"Classic Series", zona:"Europa", mercado:"Serbia", cc:"10647", manager:"Juan Pablo Velasco", cajas_ytd:650, fob_ytd:37410, cajas_ppto:1023, fob_ppto:57019, fob_ytd25:24507, cajas_abr:0, fob_abr:0},
-  {linea:"Classic Series", zona:"Caribe", mercado:"Islas Virgen", cc:"10426", manager:"Patricia Osenga", cajas_ytd:630, fob_ytd:34020, cajas_ppto:601, fob_ppto:32448, fob_ytd25:12096, cajas_abr:378, fob_abr:20412},
-  {linea:"Classic Series", zona:"Asia", mercado:"Taiwan", cc:"10846", manager:"Juan Yañez", cajas_ytd:625, fob_ytd:31804, cajas_ppto:1536, fob_ppto:77720, fob_ytd25:76253, cajas_abr:50, fob_abr:2547},
-  {linea:"Classic Series", zona:"Europa", mercado:"Bélgica", cc:"10606", manager:"Juan Pablo Velasco", cajas_ytd:560, fob_ytd:24295, cajas_ppto:889, fob_ppto:38410, fob_ytd25:23920, cajas_abr:0, fob_abr:0},
-  {linea:"Classic Series", zona:"Asia", mercado:"Indonesia", cc:"10821", manager:"Juan Yañez", cajas_ytd:560, fob_ytd:28638, cajas_ppto:880, fob_ppto:44967, fob_ytd25:30428, cajas_abr:360, fob_abr:18410},
-  {linea:"Classic Series", zona:"Europa", mercado:"Malta", cc:"10638", manager:"Juan Pablo Velasco", cajas_ytd:510, fob_ytd:20996, cajas_ppto:1096, fob_ppto:43319, fob_ytd25:37993, cajas_abr:0, fob_abr:0},
-  {linea:"Classic Series", zona:"C. America", mercado:"Honduras", cc:"10412", manager:"Patricia Osenga", cajas_ytd:495, fob_ytd:26730, cajas_ppto:220, fob_ppto:11871, fob_ytd25:12960, cajas_abr:0, fob_abr:0},
-  {linea:"Classic Series", zona:"Europa", mercado:"Letonia", cc:"10633", manager:"Patricia Osenga", cajas_ytd:414, fob_ytd:18916, cajas_ppto:122, fob_ppto:5496, fob_ytd25:6724, cajas_abr:414, fob_abr:18916},
-  {linea:"Classic Series", zona:"S. America", mercado:"Malvinas", cc:"10518", manager:"Daniela Rojas", cajas_ytd:400, fob_ytd:20800, cajas_ppto:341, fob_ppto:17737, fob_ytd25:0, cajas_abr:0, fob_abr:0},
-  {linea:"Classic Series", zona:"Asia", mercado:"Republic Of Maldives", cc:"10834", manager:"Patricia Osenga", cajas_ytd:357, fob_ytd:19278, cajas_ppto:270, fob_ppto:14599, fob_ytd25:9990, cajas_abr:0, fob_abr:0},
-  {linea:"Classic Series", zona:"Europa", mercado:"Croacia", cc:"10610", manager:"Juan Pablo Velasco", cajas_ytd:350, fob_ytd:15207, cajas_ppto:910, fob_ppto:40162, fob_ytd25:30428, cajas_abr:0, fob_abr:0},
+  {linea:"Limited Selection", zona:"Oceania", mercado:"Islas Cook", cc:"10904", manager:"Patricia Osenga", cajas_ytd:8, fob_ytd:513, cajas_ppto:26, fob_ppto:1628, fob_ytd25:0, cajas_abr:0, fob_abr:0},
+  {linea:"Limited Selection", zona:"Caribe", mercado:"Aruba", cc:"10515", manager:"Patricia Osenga", cajas_ytd:7, fob_ytd:420, cajas_ppto:13, fob_ppto:760, fob_ytd25:0, cajas_abr:7, fob_abr:420},
+  {linea:"Limited Selection", zona:"Caribe", mercado:"Belize", cc:"10405", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:93, fob_ppto:5875, fob_ytd25:0, cajas_abr:0, fob_abr:0},
+  {linea:"Limited Selection", zona:"C. America", mercado:"Panamá", cc:"10415", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:29, fob_ppto:1772, fob_ytd25:0, cajas_abr:0, fob_abr:0},
+  {linea:"Limited Selection", zona:"Caribe", mercado:"Puerto Rico", cc:"10416", manager:"Daniela Rojas", cajas_ytd:0, fob_ytd:0, cajas_ppto:47, fob_ppto:3072, fob_ytd25:3900, cajas_abr:0, fob_abr:0},
+  {linea:"Limited Selection", zona:"Caribe", mercado:"St. Lucia", cc:"10419", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:84, fob_ppto:5191, fob_ytd25:0, cajas_abr:0, fob_abr:0},
+  {linea:"Limited Selection", zona:"Caribe", mercado:"Trinidad & Tobago", cc:"10421", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:114, fob_ppto:6988, fob_ytd25:6888, cajas_abr:0, fob_abr:0},
+  {linea:"Limited Selection", zona:"Caribe", mercado:"Anguilla", cc:"10423", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:50, fob_ppto:3024, fob_ytd25:3402, cajas_abr:0, fob_abr:0},
+  {linea:"Limited Selection", zona:"S. America", mercado:"Bolivia", cc:"10503", manager:"Daniela Rojas", cajas_ytd:0, fob_ytd:0, cajas_ppto:177, fob_ppto:11816, fob_ytd25:0, cajas_abr:0, fob_abr:0},
+  {linea:"Limited Selection", zona:"S. America", mercado:"Colombia", cc:"10506", manager:"Daniela Rojas", cajas_ytd:0, fob_ytd:0, cajas_ppto:471, fob_ppto:29209, fob_ytd25:10480, cajas_abr:0, fob_abr:0},
+  {linea:"Limited Selection", zona:"S. America", mercado:"Uruguay", cc:"10513", manager:"Daniela Rojas", cajas_ytd:0, fob_ytd:0, cajas_ppto:246, fob_ppto:15420, fob_ytd25:20350, cajas_abr:0, fob_abr:0},
+  {linea:"Limited Selection", zona:"Caribe", mercado:"Curacao", cc:"10516", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:26, fob_ppto:1553, fob_ytd25:1550, cajas_abr:0, fob_abr:0},
+  {linea:"Limited Selection", zona:"Africa", mercado:"Kenia", cc:"10719", manager:"Juan Pablo Velasco", cajas_ytd:0, fob_ytd:0, cajas_ppto:157, fob_ppto:9608, fob_ytd25:7344, cajas_abr:0, fob_abr:0},
+  {linea:"Limited Selection", zona:"Asia", mercado:"Hong Kong", cc:"10819", manager:"Juan Yañez", cajas_ytd:0, fob_ytd:0, cajas_ppto:42, fob_ppto:2536, fob_ytd25:7211, cajas_abr:0, fob_abr:0},
+  {linea:"Limited Selection", zona:"Oceania", mercado:"Nueva Zelanda", cc:"10908", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:9, fob_ppto:506, fob_ytd25:0, cajas_abr:0, fob_abr:0},
+  {linea:"Classic Series", zona:"Asia", mercado:"China", cc:"10811", manager:"Jason Li", cajas_ytd:89047, fob_ytd:4643820, cajas_ppto:100065, fob_ppto:5272668, fob_ytd25:4692960, cajas_abr:13930, fob_abr:734866},
+  {linea:"Classic Series", zona:"Asia", mercado:"Japón", cc:"10825", manager:"Eduardo Stark", cajas_ytd:28930, fob_ytd:1473694, cajas_ppto:31468, fob_ppto:1609246, fob_ytd25:1897006, cajas_abr:3360, fob_abr:171158},
+  {linea:"Classic Series", zona:"Asia", mercado:"Korea", cc:"10814", manager:"Juan Pablo Velasco", cajas_ytd:20548, fob_ytd:994958, cajas_ppto:26341, fob_ppto:1280013, fob_ytd25:1323561, cajas_abr:2000, fob_abr:96840},
+  {linea:"Classic Series", zona:"Europa", mercado:"Alemania", cc:"10603", manager:"Eduardo Stark", cajas_ytd:13320, fob_ytd:583158, cajas_ppto:19648, fob_ppto:877162, fob_ytd25:886540, cajas_abr:2882, fob_abr:121897},
+  {linea:"Classic Series", zona:"Medio Oriente", mercado:"Emiratos Arabes", cc:"10815", manager:"Juan Pablo Velasco", cajas_ytd:5275, fob_ytd:258150, cajas_ppto:7106, fob_ppto:349344, fob_ytd25:310412, cajas_abr:655, fob_abr:31248},
+  {linea:"Classic Series", zona:"N. America", mercado:"Canada", cc:"10302", manager:"Danilo Buvinic", cajas_ytd:4097, fob_ytd:179782, cajas_ppto:4315, fob_ppto:180627, fob_ytd25:226056, cajas_abr:642, fob_abr:29386},
+  {linea:"Classic Series", zona:"Europa", mercado:"Holanda", cc:"10622", manager:"Eduardo Stark", cajas_ytd:3754, fob_ytd:180500, cajas_ppto:4009, fob_ppto:185606, fob_ytd25:124688, cajas_abr:396, fob_abr:18774},
+  {linea:"Classic Series", zona:"Chile", mercado:"Chile", cc:"10505", manager:"Evelyn Ramirez", cajas_ytd:3571, fob_ytd:137203, cajas_ppto:7454, fob_ppto:265161, fob_ytd25:256123, cajas_abr:1, fob_abr:57},
+  {linea:"Classic Series", zona:"Asia", mercado:"Tailandia", cc:"10845", manager:"Juan Yañez", cajas_ytd:3378, fob_ytd:171538, cajas_ppto:4090, fob_ppto:207534, fob_ytd25:232439, cajas_abr:1010, fob_abr:51058},
+  {linea:"Classic Series", zona:"Europa", mercado:"Inglaterra", cc:"10624", manager:"Eduardo Stark", cajas_ytd:2900, fob_ytd:109816, cajas_ppto:2987, fob_ppto:109721, fob_ytd25:91710, cajas_abr:380, fob_abr:14054},
+  {linea:"Classic Series", zona:"Asia", mercado:"Malasia", cc:"10833", manager:"Juan Yañez", cajas_ytd:2150, fob_ytd:109129, cajas_ppto:1477, fob_ppto:75196, fob_ytd25:15282, cajas_abr:0, fob_abr:0},
+  {linea:"Classic Series", zona:"S. America", mercado:"Brasil", cc:"10504", manager:"Daniela Rojas", cajas_ytd:2503, fob_ytd:139131, cajas_ppto:5800, fob_ppto:304261, fob_ytd25:221886, cajas_abr:512, fob_abr:26624},
+  {linea:"Classic Series", zona:"Europa", mercado:"Islandia", cc:"10629", manager:"Juan Pablo Velasco", cajas_ytd:1750, fob_ytd:89425, cajas_ppto:3248, fob_ppto:166045, fob_ytd25:114464, cajas_abr:0, fob_abr:0},
+  {linea:"Classic Series", zona:"C. America", mercado:"Guatemala", cc:"10410", manager:"Patricia Osenga", cajas_ytd:1700, fob_ytd:91800, cajas_ppto:2455, fob_ppto:132540, fob_ytd25:140400, cajas_abr:0, fob_abr:0},
+  {linea:"Classic Series", zona:"N. America", mercado:"Usa", cc:"10303", manager:"Danilo Buvinic", cajas_ytd:1500, fob_ytd:75465, cajas_ppto:3686, fob_ppto:189903, fob_ytd25:173832, cajas_abr:0, fob_abr:0},
+  {linea:"Classic Series", zona:"Europa", mercado:"Chipre", cc:"10812", manager:"Juan Pablo Velasco", cajas_ytd:1465, fob_ytd:62287, cajas_ppto:1529, fob_ppto:61820, fob_ytd25:95012, cajas_abr:0, fob_abr:0},
+  {linea:"Classic Series", zona:"Asia", mercado:"Taiwan", cc:"10846", manager:"Juan Yañez", cajas_ytd:1410, fob_ytd:71791, cajas_ppto:1711, fob_ppto:86537, fob_ytd25:129544, cajas_abr:785, fob_abr:39988},
+  {linea:"Classic Series", zona:"S. America", mercado:"Perú", cc:"10511", manager:"Daniela Rojas", cajas_ytd:1261, fob_ytd:65572, cajas_ppto:980, fob_ppto:50962, fob_ytd25:37804, cajas_abr:585, fob_abr:30420},
+  {linea:"Classic Series", zona:"Asia", mercado:"Vietnam", cc:"10850", manager:"Juan Yañez", cajas_ytd:1210, fob_ytd:61637, cajas_ppto:1348, fob_ppto:68962, fob_ytd25:59487, cajas_abr:400, fob_abr:20376},
+  {linea:"Classic Series", zona:"Europa", mercado:"Eslovaquia", cc:"10613", manager:"Juan Pablo Velasco", cajas_ytd:982, fob_ytd:43306, cajas_ppto:902, fob_ppto:38142, fob_ytd25:33850, cajas_abr:0, fob_abr:0},
+  {linea:"Classic Series", zona:"Europa", mercado:"Bulgaria", cc:"10609", manager:"Juan Pablo Velasco", cajas_ytd:950, fob_ytd:40356, cajas_ppto:716, fob_ppto:28463, fob_ytd25:39156, cajas_abr:950, fob_abr:40356},
+  {linea:"Classic Series", zona:"Asia", mercado:"Hong Kong", cc:"10819", manager:"Juan Yañez", cajas_ytd:910, fob_ytd:46283, cajas_ppto:945, fob_ppto:48078, fob_ytd25:53403, cajas_abr:0, fob_abr:0},
+  {linea:"Classic Series", zona:"Caribe", mercado:"Curacao", cc:"10516", manager:"Patricia Osenga", cajas_ytd:890, fob_ytd:48060, cajas_ppto:666, fob_ppto:36005, fob_ytd25:34560, cajas_abr:0, fob_abr:0},
+  {linea:"Classic Series", zona:"Asia", mercado:"Cambodia", cc:"10810", manager:"Juan Yañez", cajas_ytd:850, fob_ytd:43299, cajas_ppto:761, fob_ppto:38780, fob_ytd25:35149, cajas_abr:0, fob_abr:0},
+  {linea:"Classic Series", zona:"Asia", mercado:"Filipinas", cc:"10816", manager:"Juan Yañez", cajas_ytd:845, fob_ytd:43213, cajas_ppto:1870, fob_ppto:95605, fob_ytd25:75432, cajas_abr:0, fob_abr:0},
+  {linea:"Classic Series", zona:"Oceania", mercado:"Tahiti", cc:"10305", manager:"Patricia Osenga", cajas_ytd:840, fob_ytd:45360, cajas_ppto:940, fob_ppto:50817, fob_ytd25:56700, cajas_abr:0, fob_abr:0},
+  {linea:"Classic Series", zona:"C. America", mercado:"Costa Rica", cc:"10406", manager:"Patricia Osenga", cajas_ytd:840, fob_ytd:45360, cajas_ppto:899, fob_ppto:48554, fob_ytd25:42390, cajas_abr:65, fob_abr:3510},
+  {linea:"Classic Series", zona:"Europa", mercado:"Hungria", cc:"10623", manager:"Juan Pablo Velasco", cajas_ytd:825, fob_ytd:39819, cajas_ppto:879, fob_ppto:39486, fob_ytd25:48666, cajas_abr:0, fob_abr:0},
+  {linea:"Classic Series", zona:"Europa", mercado:"Turquía", cc:"10848", manager:"Juan Pablo Velasco", cajas_ytd:815, fob_ytd:41646, cajas_ppto:296, fob_ppto:15095, fob_ytd25:38325, cajas_abr:0, fob_abr:0},
+  {linea:"Classic Series", zona:"Europa", mercado:"Polonia", cc:"10642", manager:"Juan Pablo Velasco", cajas_ytd:675, fob_ytd:29661, cajas_ppto:1443, fob_ppto:62273, fob_ytd25:61020, cajas_abr:0, fob_abr:0},
+  {linea:"Classic Series", zona:"Europa", mercado:"Serbia", cc:"10647", manager:"Juan Pablo Velasco", cajas_ytd:650, fob_ytd:37410, cajas_ppto:1139, fob_ppto:63488, fob_ytd25:24507, cajas_abr:0, fob_abr:0},
+  {linea:"Classic Series", zona:"Caribe", mercado:"Islas Virgen", cc:"10426", manager:"Patricia Osenga", cajas_ytd:630, fob_ytd:34020, cajas_ppto:669, fob_ppto:36130, fob_ytd25:12096, cajas_abr:378, fob_abr:20412},
+  {linea:"Classic Series", zona:"Europa", mercado:"Bélgica", cc:"10606", manager:"Juan Pablo Velasco", cajas_ytd:560, fob_ytd:24295, cajas_ppto:990, fob_ppto:42768, fob_ytd25:23920, cajas_abr:0, fob_abr:0},
+  {linea:"Classic Series", zona:"Asia", mercado:"Indonesia", cc:"10821", manager:"Juan Yañez", cajas_ytd:560, fob_ytd:28638, cajas_ppto:979, fob_ppto:50069, fob_ytd25:30428, cajas_abr:0, fob_abr:0},
+  {linea:"Classic Series", zona:"Europa", mercado:"Dinamarca", cc:"10611", manager:"Juan Pablo Velasco", cajas_ytd:525, fob_ytd:23479, cajas_ppto:0, fob_ppto:0, fob_ytd25:0, cajas_abr:525, fob_abr:23479},
+  {linea:"Classic Series", zona:"Europa", mercado:"Malta", cc:"10638", manager:"Juan Pablo Velasco", cajas_ytd:510, fob_ytd:20996, cajas_ppto:1220, fob_ppto:48234, fob_ytd25:37993, cajas_abr:0, fob_abr:0},
+  {linea:"Classic Series", zona:"C. America", mercado:"Honduras", cc:"10412", manager:"Patricia Osenga", cajas_ytd:495, fob_ytd:26730, cajas_ppto:244, fob_ppto:13217, fob_ytd25:12960, cajas_abr:0, fob_abr:0},
+  {linea:"Classic Series", zona:"Europa", mercado:"Letonia", cc:"10633", manager:"Patricia Osenga", cajas_ytd:414, fob_ytd:18916, cajas_ppto:135, fob_ppto:6120, fob_ytd25:6724, cajas_abr:0, fob_abr:0},
+  {linea:"Classic Series", zona:"S. America", mercado:"Malvinas", cc:"10518", manager:"Daniela Rojas", cajas_ytd:400, fob_ytd:20800, cajas_ppto:380, fob_ppto:19750, fob_ytd25:0, cajas_abr:0, fob_abr:0},
+  {linea:"Classic Series", zona:"Asia", mercado:"Republic Of Maldives", cc:"10834", manager:"Patricia Osenga", cajas_ytd:357, fob_ytd:19278, cajas_ppto:300, fob_ppto:16256, fob_ytd25:9990, cajas_abr:0, fob_abr:0},
+  {linea:"Classic Series", zona:"Europa", mercado:"Croacia", cc:"10610", manager:"Juan Pablo Velasco", cajas_ytd:350, fob_ytd:15207, cajas_ppto:1013, fob_ppto:44719, fob_ytd25:30428, cajas_abr:0, fob_abr:0},
   {linea:"Classic Series", zona:"Sin Zona", mercado:"Uzbekistan", cc:"10849", manager:"Juan Pablo Velasco", cajas_ytd:350, fob_ytd:18046, cajas_ppto:0, fob_ppto:0, fob_ytd25:0, cajas_abr:0, fob_abr:0},
-  {linea:"Classic Series", zona:"Medio Oriente", mercado:"Qatar", cc:"10840", manager:"Juan Pablo Velasco", cajas_ytd:330, fob_ytd:16500, cajas_ppto:160, fob_ppto:7959, fob_ytd25:3500, cajas_abr:150, fob_abr:7500},
-  {linea:"Classic Series", zona:"Europa", mercado:"Ucrania", cc:"10650", manager:"Patricia Osenga", cajas_ytd:300, fob_ytd:13207, cajas_ppto:303, fob_ppto:12937, fob_ytd25:16146, cajas_abr:0, fob_abr:0},
-  {linea:"Classic Series", zona:"Caribe", mercado:"St. Maarten", cc:"10422", manager:"Patricia Osenga", cajas_ytd:280, fob_ytd:15120, cajas_ppto:106, fob_ppto:5731, fob_ytd25:7560, cajas_abr:140, fob_abr:7560},
-  {linea:"Classic Series", zona:"S. America", mercado:"Uruguay", cc:"10513", manager:"Daniela Rojas", cajas_ytd:225, fob_ytd:11700, cajas_ppto:256, fob_ppto:13303, fob_ytd25:14300, cajas_abr:0, fob_abr:0},
-  {linea:"Classic Series", zona:"Europa", mercado:"Luxemburgo", cc:"10636", manager:"Juan Pablo Velasco", cajas_ytd:210, fob_ytd:8946, cajas_ppto:188, fob_ppto:7978, fob_ytd25:1391, cajas_abr:0, fob_abr:0},
-  {linea:"Classic Series", zona:"Europa", mercado:"Suecia", cc:"10648", manager:"Juan Pablo Velasco", cajas_ytd:210, fob_ytd:10094, cajas_ppto:295, fob_ppto:14158, fob_ytd25:11639, cajas_abr:0, fob_abr:0},
-  {linea:"Classic Series", zona:"Caribe", mercado:"Puerto Rico", cc:"10416", manager:"Daniela Rojas", cajas_ytd:200, fob_ytd:10400, cajas_ppto:379, fob_ppto:19703, fob_ytd25:29120, cajas_abr:0, fob_abr:0},
-  {linea:"Classic Series", zona:"Caribe", mercado:"Bermuda", cc:"10306", manager:"Patricia Osenga", cajas_ytd:190, fob_ytd:10260, cajas_ppto:220, fob_ppto:11812, fob_ytd25:11340, cajas_abr:0, fob_abr:0},
-  {linea:"Classic Series", zona:"Medio Oriente", mercado:"Jordania", cc:"10826", manager:"Juan Pablo Velasco", cajas_ytd:188, fob_ytd:8775, cajas_ppto:145, fob_ppto:6784, fob_ytd25:0, cajas_abr:0, fob_abr:0},
-  {linea:"Classic Series", zona:"S. America", mercado:"Ecuador", cc:"10507", manager:"Daniela Rojas", cajas_ytd:170, fob_ytd:8840, cajas_ppto:308, fob_ppto:16003, fob_ytd25:0, cajas_abr:0, fob_abr:0},
+  {linea:"Classic Series", zona:"Medio Oriente", mercado:"Qatar", cc:"10840", manager:"Juan Pablo Velasco", cajas_ytd:330, fob_ytd:16500, cajas_ppto:178, fob_ppto:8862, fob_ytd25:3500, cajas_abr:150, fob_abr:7500},
+  {linea:"Classic Series", zona:"Europa", mercado:"Ucrania", cc:"10650", manager:"Patricia Osenga", cajas_ytd:300, fob_ytd:13207, cajas_ppto:338, fob_ppto:14405, fob_ytd25:16146, cajas_abr:0, fob_abr:0},
+  {linea:"Classic Series", zona:"Caribe", mercado:"St. Maarten", cc:"10422", manager:"Patricia Osenga", cajas_ytd:280, fob_ytd:15120, cajas_ppto:118, fob_ppto:6381, fob_ytd25:7560, cajas_abr:140, fob_abr:7560},
+  {linea:"Classic Series", zona:"Asia", mercado:"Laos", cc:"10830", manager:"Juan Yañez", cajas_ytd:280, fob_ytd:14263, cajas_ppto:194, fob_ppto:9932, fob_ytd25:28526, cajas_abr:280, fob_abr:14263},
+  {linea:"Classic Series", zona:"S. America", mercado:"Uruguay", cc:"10513", manager:"Daniela Rojas", cajas_ytd:225, fob_ytd:11700, cajas_ppto:285, fob_ppto:14812, fob_ytd25:14300, cajas_abr:0, fob_abr:0},
+  {linea:"Classic Series", zona:"Europa", mercado:"Luxemburgo", cc:"10636", manager:"Juan Pablo Velasco", cajas_ytd:210, fob_ytd:8946, cajas_ppto:209, fob_ppto:8883, fob_ytd25:1391, cajas_abr:0, fob_abr:0},
+  {linea:"Classic Series", zona:"Europa", mercado:"Suecia", cc:"10648", manager:"Juan Pablo Velasco", cajas_ytd:210, fob_ytd:10094, cajas_ppto:329, fob_ppto:15764, fob_ytd25:18678, cajas_abr:0, fob_abr:0},
+  {linea:"Classic Series", zona:"Caribe", mercado:"Puerto Rico", cc:"10416", manager:"Daniela Rojas", cajas_ytd:200, fob_ytd:10400, cajas_ppto:422, fob_ppto:21938, fob_ytd25:29120, cajas_abr:0, fob_abr:0},
+  {linea:"Classic Series", zona:"Caribe", mercado:"Bermuda", cc:"10306", manager:"Patricia Osenga", cajas_ytd:190, fob_ytd:10260, cajas_ppto:245, fob_ppto:13152, fob_ytd25:11340, cajas_abr:0, fob_abr:0},
+  {linea:"Classic Series", zona:"Medio Oriente", mercado:"Jordania", cc:"10826", manager:"Juan Pablo Velasco", cajas_ytd:188, fob_ytd:8775, cajas_ppto:162, fob_ppto:7554, fob_ytd25:0, cajas_abr:0, fob_abr:0},
+  {linea:"Classic Series", zona:"S. America", mercado:"Ecuador", cc:"10507", manager:"Daniela Rojas", cajas_ytd:170, fob_ytd:8840, cajas_ppto:343, fob_ppto:17818, fob_ytd25:0, cajas_abr:0, fob_abr:0},
   {linea:"Classic Series", zona:"Caribe", mercado:"Islas Cayman", cc:"10424", manager:"Patricia Osenga", cajas_ytd:162, fob_ytd:8748, cajas_ppto:0, fob_ppto:0, fob_ytd25:0, cajas_abr:0, fob_abr:0},
-  {linea:"Classic Series", zona:"Caribe", mercado:"Barbados", cc:"10404", manager:"Patricia Osenga", cajas_ytd:160, fob_ytd:8640, cajas_ppto:144, fob_ppto:7777, fob_ytd25:8100, cajas_abr:0, fob_abr:0},
-  {linea:"Classic Series", zona:"Caribe", mercado:"Trinidad & Tobago", cc:"10421", manager:"Patricia Osenga", cajas_ytd:140, fob_ytd:7560, cajas_ppto:384, fob_ppto:20752, fob_ytd25:26460, cajas_abr:0, fob_abr:0},
-  {linea:"Classic Series", zona:"C. America", mercado:"Panamá", cc:"10415", manager:"Patricia Osenga", cajas_ytd:125, fob_ytd:7000, cajas_ppto:144, fob_ppto:7777, fob_ytd25:7000, cajas_abr:0, fob_abr:0},
-  {linea:"Classic Series", zona:"S. America", mercado:"Guyana", cc:"10508", manager:"Daniela Rojas", cajas_ytd:100, fob_ytd:5200, cajas_ppto:114, fob_ppto:5912, fob_ytd25:0, cajas_abr:0, fob_abr:0},
-  {linea:"Classic Series", zona:"Caribe", mercado:"Jamaica", cc:"10413", manager:"Patricia Osenga", cajas_ytd:98, fob_ytd:5292, cajas_ppto:34, fob_ppto:1842, fob_ytd25:2268, cajas_abr:0, fob_abr:0},
-  {linea:"Classic Series", zona:"S. America", mercado:"Venezuela", cc:"10514", manager:"Daniela Rojas", cajas_ytd:84, fob_ytd:4368, cajas_ppto:137, fob_ppto:7095, fob_ytd25:23400, cajas_abr:84, fob_abr:4368},
-  {linea:"Classic Series", zona:"Europa", mercado:"Finlandia", cc:"10617", manager:"Juan Pablo Velasco", cajas_ytd:75, fob_ytd:3247, cajas_ppto:379, fob_ppto:16494, fob_ytd25:6391, cajas_abr:25, fob_abr:1082},
-  {linea:"Classic Series", zona:"Oceania", mercado:"Nueva Zelanda", cc:"10908", manager:"Patricia Osenga", cajas_ytd:75, fob_ytd:4050, cajas_ppto:140, fob_ppto:7572, fob_ytd25:9720, cajas_abr:0, fob_abr:0},
-  {linea:"Classic Series", zona:"Caribe", mercado:"Aruba", cc:"10515", manager:"Patricia Osenga", cajas_ytd:56, fob_ytd:3024, cajas_ppto:92, fob_ppto:4912, fob_ytd25:3780, cajas_abr:56, fob_abr:3024},
-  {linea:"Classic Series", zona:"C. America", mercado:"México", cc:"10304", manager:"Daniela Rojas", cajas_ytd:55, fob_ytd:2860, cajas_ppto:804, fob_ppto:41789, fob_ytd25:19760, cajas_abr:0, fob_abr:0},
-  {linea:"Classic Series", zona:"Caribe", mercado:"Rep Dominicana", cc:"10417", manager:"Patricia Osenga", cajas_ytd:47, fob_ytd:2444, cajas_ppto:26, fob_ppto:1432, fob_ytd25:1040, cajas_abr:0, fob_abr:0},
-  {linea:"Classic Series", zona:"Asia", mercado:"India", cc:"10820", manager:"Sin Responsable", cajas_ytd:40, fob_ytd:1940, cajas_ppto:152, fob_ppto:8186, fob_ytd25:0, cajas_abr:0, fob_abr:0},
-  {linea:"Classic Series", zona:"Caribe", mercado:"Granada", cc:"10409", manager:"Patricia Osenga", cajas_ytd:28, fob_ytd:1512, cajas_ppto:92, fob_ppto:4911, fob_ytd25:6048, cajas_abr:0, fob_abr:0},
-  {linea:"Classic Series", zona:"Caribe", mercado:"Belize", cc:"10405", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:107, fob_ppto:5730, fob_ytd25:0, cajas_abr:0, fob_abr:0},
-  {linea:"Classic Series", zona:"Caribe", mercado:"St. Lucia", cc:"10419", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:155, fob_ppto:8391, fob_ytd25:7560, cajas_abr:0, fob_abr:0},
-  {linea:"Classic Series", zona:"Caribe", mercado:"Islas Caicos", cc:"10425", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:61, fob_ppto:3274, fob_ytd25:3780, cajas_abr:0, fob_abr:0},
-  {linea:"Classic Series", zona:"Caribe", mercado:"St. Kitts And Nevis", cc:"10427", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:174, fob_ppto:9415, fob_ytd25:3780, cajas_abr:0, fob_abr:0},
-  {linea:"Classic Series", zona:"S. America", mercado:"Bolivia", cc:"10503", manager:"Daniela Rojas", cajas_ytd:0, fob_ytd:0, cajas_ppto:53, fob_ppto:2865, fob_ytd25:0, cajas_abr:0, fob_abr:0},
-  {linea:"Classic Series", zona:"S. America", mercado:"Colombia", cc:"10506", manager:"Daniela Rojas", cajas_ytd:0, fob_ytd:0, cajas_ppto:1326, fob_ppto:68978, fob_ytd25:78962, cajas_abr:0, fob_abr:0},
-  {linea:"Classic Series", zona:"S. America", mercado:"Paraguay", cc:"10510", manager:"Daniela Rojas", cajas_ytd:0, fob_ytd:0, cajas_ppto:232, fob_ppto:12032, fob_ytd25:5200, cajas_abr:0, fob_abr:0},
-  {linea:"Classic Series", zona:"Europa", mercado:"Bulgaria", cc:"10609", manager:"Juan Pablo Velasco", cajas_ytd:0, fob_ytd:0, cajas_ppto:643, fob_ppto:25563, fob_ytd25:39156, cajas_abr:0, fob_abr:0},
-  {linea:"Classic Series", zona:"Africa", mercado:"Kenia", cc:"10719", manager:"Juan Pablo Velasco", cajas_ytd:0, fob_ytd:0, cajas_ppto:35, fob_ppto:1811, fob_ytd25:1542, cajas_abr:0, fob_abr:0},
-  {linea:"Classic Series", zona:"Medio Oriente", mercado:"Israel", cc:"10824", manager:"Juan Pablo Velasco", cajas_ytd:0, fob_ytd:0, cajas_ppto:190, fob_ppto:9740, fob_ytd25:31354, cajas_abr:0, fob_abr:0},
-  {linea:"Classic Series", zona:"Asia", mercado:"Laos", cc:"10830", manager:"Juan Yañez", cajas_ytd:0, fob_ytd:0, cajas_ppto:174, fob_ppto:8920, fob_ytd25:28526, cajas_abr:0, fob_abr:0},
-  {linea:"Classic Series", zona:"Asia", mercado:"Myanmar", cc:"10836", manager:"Juan Yañez", cajas_ytd:0, fob_ytd:0, cajas_ppto:183, fob_ppto:9268, fob_ytd25:14263, cajas_abr:0, fob_abr:0},
-  {linea:"Classic Series", zona:"Oceania", mercado:"Islas Cook", cc:"10904", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:10, fob_ppto:532, fob_ytd25:0, cajas_abr:0, fob_abr:0}
-];;;;;;;;;;;;;;;;;;;;;;
+  {linea:"Classic Series", zona:"Caribe", mercado:"Barbados", cc:"10404", manager:"Patricia Osenga", cajas_ytd:160, fob_ytd:8640, cajas_ppto:160, fob_ppto:8660, fob_ytd25:8100, cajas_abr:0, fob_abr:0},
+  {linea:"Classic Series", zona:"Caribe", mercado:"Trinidad & Tobago", cc:"10421", manager:"Patricia Osenga", cajas_ytd:140, fob_ytd:7560, cajas_ppto:428, fob_ppto:23107, fob_ytd25:26460, cajas_abr:0, fob_abr:0},
+  {linea:"Classic Series", zona:"C. America", mercado:"Panamá", cc:"10415", manager:"Patricia Osenga", cajas_ytd:125, fob_ytd:7000, cajas_ppto:160, fob_ppto:8660, fob_ytd25:7000, cajas_abr:0, fob_abr:0},
+  {linea:"Classic Series", zona:"Oceania", mercado:"Nueva Zelanda", cc:"10908", manager:"Patricia Osenga", cajas_ytd:110, fob_ytd:5940, cajas_ppto:156, fob_ppto:8431, fob_ytd25:9720, cajas_abr:0, fob_abr:0},
+  {linea:"Classic Series", zona:"S. America", mercado:"Guyana", cc:"10508", manager:"Daniela Rojas", cajas_ytd:100, fob_ytd:5200, cajas_ppto:127, fob_ppto:6583, fob_ytd25:0, cajas_abr:0, fob_abr:0},
+  {linea:"Classic Series", zona:"Caribe", mercado:"Jamaica", cc:"10413", manager:"Patricia Osenga", cajas_ytd:98, fob_ytd:5292, cajas_ppto:38, fob_ppto:2051, fob_ytd25:2268, cajas_abr:0, fob_abr:0},
+  {linea:"Classic Series", zona:"S. America", mercado:"Venezuela", cc:"10514", manager:"Daniela Rojas", cajas_ytd:84, fob_ytd:4368, cajas_ppto:152, fob_ppto:7900, fob_ytd25:23400, cajas_abr:0, fob_abr:0},
+  {linea:"Classic Series", zona:"Europa", mercado:"Finlandia", cc:"10617", manager:"Juan Pablo Velasco", cajas_ytd:75, fob_ytd:3247, cajas_ppto:422, fob_ppto:18365, fob_ytd25:12988, cajas_abr:0, fob_abr:0},
+  {linea:"Classic Series", zona:"Caribe", mercado:"Rep Dominicana", cc:"10417", manager:"Patricia Osenga", cajas_ytd:57, fob_ytd:2984, cajas_ppto:30, fob_ppto:1595, fob_ytd25:1560, cajas_abr:10, fob_abr:540},
+  {linea:"Classic Series", zona:"Caribe", mercado:"Aruba", cc:"10515", manager:"Patricia Osenga", cajas_ytd:56, fob_ytd:3024, cajas_ppto:102, fob_ppto:5469, fob_ytd25:3780, cajas_abr:56, fob_abr:3024},
+  {linea:"Classic Series", zona:"C. America", mercado:"México", cc:"10304", manager:"Daniela Rojas", cajas_ytd:55, fob_ytd:2860, cajas_ppto:895, fob_ppto:46530, fob_ytd25:19760, cajas_abr:0, fob_abr:0},
+  {linea:"Classic Series", zona:"Asia", mercado:"India", cc:"10820", manager:"Sin Responsable", cajas_ytd:40, fob_ytd:1940, cajas_ppto:169, fob_ppto:9115, fob_ytd25:0, cajas_abr:0, fob_abr:0},
+  {linea:"Classic Series", zona:"Caribe", mercado:"Granada", cc:"10409", manager:"Patricia Osenga", cajas_ytd:28, fob_ytd:1512, cajas_ppto:102, fob_ppto:5468, fob_ytd25:6048, cajas_abr:0, fob_abr:0},
+  {linea:"Classic Series", zona:"Caribe", mercado:"Belize", cc:"10405", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:119, fob_ppto:6380, fob_ytd25:0, cajas_abr:0, fob_abr:0},
+  {linea:"Classic Series", zona:"Caribe", mercado:"St. Lucia", cc:"10419", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:173, fob_ppto:9343, fob_ytd25:7560, cajas_abr:0, fob_abr:0},
+  {linea:"Classic Series", zona:"Caribe", mercado:"Islas Caicos", cc:"10425", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:68, fob_ppto:3646, fob_ytd25:3780, cajas_abr:0, fob_abr:0},
+  {linea:"Classic Series", zona:"Caribe", mercado:"St. Kitts And Nevis", cc:"10427", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:193, fob_ppto:10483, fob_ytd25:3780, cajas_abr:0, fob_abr:0},
+  {linea:"Classic Series", zona:"S. America", mercado:"Bolivia", cc:"10503", manager:"Daniela Rojas", cajas_ytd:0, fob_ytd:0, cajas_ppto:59, fob_ppto:3190, fob_ytd25:0, cajas_abr:0, fob_abr:0},
+  {linea:"Classic Series", zona:"S. America", mercado:"Colombia", cc:"10506", manager:"Daniela Rojas", cajas_ytd:0, fob_ytd:0, cajas_ppto:1477, fob_ppto:76804, fob_ytd25:78962, cajas_abr:0, fob_abr:0},
+  {linea:"Classic Series", zona:"S. America", mercado:"Paraguay", cc:"10510", manager:"Daniela Rojas", cajas_ytd:0, fob_ytd:0, cajas_ppto:259, fob_ppto:13397, fob_ytd25:5200, cajas_abr:0, fob_abr:0},
+  {linea:"Classic Series", zona:"Africa", mercado:"Kenia", cc:"10719", manager:"Juan Pablo Velasco", cajas_ytd:0, fob_ytd:0, cajas_ppto:39, fob_ppto:2017, fob_ytd25:1542, cajas_abr:0, fob_abr:0},
+  {linea:"Classic Series", zona:"Medio Oriente", mercado:"Israel", cc:"10824", manager:"Juan Pablo Velasco", cajas_ytd:0, fob_ytd:0, cajas_ppto:211, fob_ppto:10844, fob_ytd25:31354, cajas_abr:0, fob_abr:0},
+  {linea:"Classic Series", zona:"Asia", mercado:"Myanmar", cc:"10836", manager:"Juan Yañez", cajas_ytd:0, fob_ytd:0, cajas_ppto:204, fob_ppto:10320, fob_ytd25:14263, cajas_abr:0, fob_abr:0},
+  {linea:"Classic Series", zona:"Oceania", mercado:"Islas Cook", cc:"10904", manager:"Patricia Osenga", cajas_ytd:0, fob_ytd:0, cajas_ppto:12, fob_ppto:592, fob_ytd25:0, cajas_abr:0, fob_abr:0}
+];;;;;;;;;;;;;;;;;;;;;;;
 // MARKETS (total, all lines combined — used when filterLinea === 'ALL')
 const EM_MONTHLY = {
-  "Jason Li":           {fob:[688119,1125704,1467126,1027976,1185820,771229,121589,788726,957486,421394],   cj:[5690,16338,19342,17125,14496,8000,836,9685,11294,3160]},
-  "Patricia Osenga":    {fob:[43877,101997,140888,56040,81573,80572,127601,81687,178494,54517],              cj:[550,1655,1470,677,1107,1236,1721,740,2388,460]},
-  "Eduardo Stark":      {fob:[756710,642566,592355,307107,937583,653528,1221842,891697,647116,797896],       cj:[11097,9878,8072,4540,11439,9770,18974,13208,6072,11693]},
-  "Danilo Buvinic":     {fob:[192056,306875,270679,305789,138457,275821,367606,294756,318370,297642],        cj:[1350,4286,3451,3918,2076,4336,4262,3233,3332,3534]},
-  "Juan Pablo Velasco": {fob:[584499,457871,513277,303881,486315,1059476,1013607,842442,527287,524627],      cj:[7788,7646,5321,3202,6150,14915,12482,11359,6734,7258]},
-  "Juan Yañez":         {fob:[0,283093,196212,274127,421253,93087,89926,226644,624008,298685],               cj:[0,2488,1622,2878,3386,799,782,2609,5508,3012]},
-  "Evelyn Ramirez":     {fob:[267297,283592,183349,386820,330867,303803,406137,373787,340732,0],             cj:[2989,3047,1846,3986,3343,3171,4370,4539,3958,0]},
-  "Daniela Rojas":      {fob:[11365,77722,102361,71870,106436,260312,101009,145384,168984,762844],           cj:[145,936,968,742,962,1796,844,1421,1360,6315]},
-  "Sin Responsable":    {fob:[0,7832,0,0,0,0,0,0,0,0],                                                       cj:[0,101,0,0,0,0,0,0,0,0]},
-  "Sin China":          {fob:[1855804,2161547,1999120,1705633,2502484,2726598,3327728,2856397,2804991,2736210], cj:[23919,30037,22751,19943,28463,36023,43434,37109,29351,32273]},
+  "Jason Li":           {fob:[688119,1125704,1467126,1027976,1185820,771229,121589,788726,620402,1445906,0],      cj:[5690,16338,19342,17125,14496,8000,836,9685,9325,16854,0]},
+  "Patricia Osenga":    {fob:[43877,101997,140888,56040,81573,80572,127601,81687,110266,115070,36015],             cj:[550,1655,1470,677,1107,1236,1721,740,1528,1246,422]},
+  "Eduardo Stark":      {fob:[756710,642566,592355,307107,937583,653528,1221842,891697,865491,635096,254104],      cj:[11097,9878,8072,4540,11439,9770,18974,13208,8429,10208,2340]},
+  "Danilo Buvinic":     {fob:[192056,306875,270679,305789,138457,275821,367606,294756,273643,316384,195782],       cj:[1350,4286,3451,3918,2076,4336,4262,3233,2823,3637,1648]},
+  "Juan Pablo Velasco": {fob:[584499,457871,513277,303881,486315,1059476,1013607,842442,483421,564458,65884],      cj:[7788,7646,5321,3202,6150,14915,12482,11359,6014,7350,828]},
+  "Juan Yañez":         {fob:[0,283093,196212,274127,421253,93087,89926,226644,591921,465113,0],                   cj:[0,2488,1622,2878,3386,799,782,2609,4958,4424,0]},
+  "Evelyn Ramirez":     {fob:[267297,283592,183349,386820,330867,303803,406137,373787,367549,713,0],               cj:[2989,3047,1846,3986,3343,3171,4370,4539,4144,7,0]},
+  "Daniela Rojas":      {fob:[11365,77722,102361,71870,106436,260312,101009,145384,168984,804664,0],               cj:[145,936,968,742,962,1796,844,1421,1360,6480,0]},
+  "Sin Responsable":    {fob:[0,7832,0,0,0,0,0,0,0,0,0],                                                           cj:[0,101,0,0,0,0,0,0,0,0,0]},
+  "Sin China":          {fob:[1855804,2161547,1999120,1705633,2502484,2726598,3327728,2856397,2861276,2901498,551785], cj:[23919,30037,22751,19943,28463,36023,43434,37109,29255,33354,5237]},
 };
 
 const EM_PPTO = {
-  "Jason Li":           {fob_mes:[760887,934803,934803,934803,934802,934803,934803,934803,934803,934803], cj_mes:[10142,12460,12460,12460,12460,12460,12460,12460,12460,12460], fob_ytd:[760887,1695690,2630493,3565296,4500098,5434901,6369704,7304507,8239310,9174113], cj_ytd:[10142,22602,35062,47522,59982,72442,84902,97362,109822,122282]},
-  "Eduardo Stark":      {fob_mes:[682994,839106,839106,839106,839107,839106,839106,839106,839106,839106], cj_mes:[9835,12083,12083,12083,12083,12083,12083,12083,12083,12083], fob_ytd:[682994,1522100,2361206,3200312,4039419,4878525,5717631,6556737,7395843,8234949], cj_ytd:[9835,21918,34001,46084,58167,70250,82333,94416,106499,118582]},
-  "Juan Pablo Velasco": {fob_mes:[500207,614539,614540,614539,614539,614539,614539,614539,614539,614539], cj_mes:[6965,8557,8557,8557,8557,8557,8557,8557,8557,8557], fob_ytd:[500207,1114746,1729286,2343825,2958364,3572903,4187442,4801981,5416520,6031059], cj_ytd:[6965,15522,24079,32636,41193,49750,58307,66864,75421,83978]},
-  "Evelyn Ramirez":     {fob_mes:[284259,349232,349232,349232,349233,349232,349232,349232,349232,349232], cj_mes:[3570,4386,4386,4386,4386,4386,4386,4386,4386,4386], fob_ytd:[284259,633491,982723,1331955,1681188,2030420,2379652,2728884,3078116,3427348], cj_ytd:[3570,7956,12342,16728,21114,25500,29886,34272,38658,43044]},
-  "Danilo Buvinic":         {fob_mes:[286031,351410,351409,351410,351410,351410,351410,351410,351410,351410], cj_mes:[3311,4069,4069,4069,4069,4069,4069,4069,4069,4069], fob_ytd:[286031,637441,988850,1340260,1691670,2043080,2394490,2745900,3097310,3448720], cj_ytd:[3311,7380,11449,15518,19587,23656,27725,31794,35863,39932]},
-  "Patricia Osenga":    {fob_mes:[87596,107619,107619,107619,107619,107619,107619,107619,107619,107619], cj_mes:[1112,1367,1367,1367,1367,1367,1367,1367,1367,1367], fob_ytd:[87596,195215,302834,410453,518072,625691,733310,840929,948548,1056167], cj_ytd:[1112,2479,3846,5213,6580,7947,9314,10681,12048,13415]},
-  "Daniela Rojas":      {fob_mes:[263490,323716,323717,323717,323716,323716,323716,323716,323716,323716], cj_mes:[2517,3091,3091,3091,3091,3091,3091,3091,3091,3091], fob_ytd:[263490,587206,910923,1234640,1558356,1882072,2205788,2529504,2853220,3176936], cj_ytd:[2517,5608,8699,11790,14881,17972,21063,24154,27245,30336]},
-  "Sin Responsable":    {fob_mes:[31526,38731,38731,38731,38732,38731,38731,38731,38731,38731], cj_mes:[74,90,90,90,90,90,90,90,90,90], fob_ytd:[31526,70257,108988,147719,186451,225182,263913,302644,341375,380106], cj_ytd:[74,164,254,344,434,524,614,704,794,884]},
-  "Juan Yañez":         {fob_mes:[237621,291936,291936,291936,291936,291936,291936,291936,291936,291936], cj_mes:[2343,2877,2877,2877,2877,2877,2877,2877,2877,2877], fob_ytd:[237621,529557,821493,1113429,1405365,1697301,1989237,2281173,2573109,2865045], cj_ytd:[2343,5220,8097,10974,13851,16728,19605,22482,25359,28236]},
-  "TOTAL":              {fob_mes:[3134611,3851092,3851093,3851093,3851094,3851093,3851093,3851093,3851093,3851093], cj_mes:[39869,48980,48980,48980,48980,48981,48981,48981,48981,48981], fob_ytd:[3134611,6985703,10836796,14687889,18538983,22390076,26241169,30092262,33943355,37794448], cj_ytd:[39869,88849,137829,186809,235789,284770,333751,382732,431713,480694]},
-  "Sin China":          {fob_mes:[2373724,2916290,2916290,2916290,2916290,2916290,2916290,2916290,2916290,2916290], cj_mes:[29726,36521,36521,36521,36521,36521,36521,36521,36521,36521], fob_ytd:[2373724,5290014,8206304,11122594,14038884,16955174,19871464,22787754,25704044,28620334], cj_ytd:[29726,66247,102768,139289,175810,212331,248852,285373,321894,358415]},
+  "Jason Li":           {fob_mes:[760887,934803,934803,934803,934802,934803,934803,934803,934803,934803,934803], cj_mes:[10142,12460,12460,12460,12460,12460,12460,12460,12460,12460,12460], fob_ytd:[760887,1695690,2630493,3565296,4500098,5434901,6369704,7304507,8239310,9174113,10108916], cj_ytd:[10142,22602,35062,47522,59982,72442,84902,97362,109822,122282,134742]},
+  "Eduardo Stark":      {fob_mes:[682994,839106,839106,839106,839107,839106,839106,839106,839106,839106,839106], cj_mes:[9835,12083,12083,12083,12083,12083,12083,12083,12083,12083,12083], fob_ytd:[682994,1522100,2361206,3200312,4039419,4878525,5717631,6556737,7395843,8234949,9074055], cj_ytd:[9835,21918,34001,46084,58167,70250,82333,94416,106499,118582,130665]},
+  "Juan Pablo Velasco": {fob_mes:[500207,614539,614540,614539,614539,614539,614539,614539,614539,614539,614539], cj_mes:[6965,8557,8557,8557,8557,8557,8557,8557,8557,8557,8557], fob_ytd:[500207,1114746,1729286,2343825,2958364,3572903,4187442,4801981,5416520,6031059,6645598], cj_ytd:[6965,15522,24079,32636,41193,49750,58307,66864,75421,83978,92535]},
+  "Evelyn Ramirez":     {fob_mes:[284259,349232,349232,349232,349233,349232,349232,349232,349232,349232,349232], cj_mes:[3570,4386,4386,4386,4386,4386,4386,4386,4386,4386,4386], fob_ytd:[284259,633491,982723,1331955,1681188,2030420,2379652,2728884,3078116,3427348,3776580], cj_ytd:[3570,7956,12342,16728,21114,25500,29886,34272,38658,43044,47430]},
+  "Danilo Buvinic":     {fob_mes:[286031,351410,351409,351410,351410,351410,351410,351410,351410,351410,351410], cj_mes:[3311,4069,4069,4069,4069,4069,4069,4069,4069,4069,4069], fob_ytd:[286031,637441,988850,1340260,1691670,2043080,2394490,2745900,3097310,3448720,3800130], cj_ytd:[3311,7380,11449,15518,19587,23656,27725,31794,35863,39932,44001]},
+  "Patricia Osenga":    {fob_mes:[87596,107619,107619,107619,107619,107619,107619,107619,107619,107619,107619], cj_mes:[1112,1367,1367,1367,1367,1367,1367,1367,1367,1367,1367], fob_ytd:[87596,195215,302834,410453,518072,625691,733310,840929,948548,1056167,1163786], cj_ytd:[1112,2479,3846,5213,6580,7947,9314,10681,12048,13415,14782]},
+  "Daniela Rojas":      {fob_mes:[263490,323716,323717,323717,323716,323716,323716,323716,323716,323716,323716], cj_mes:[2517,3091,3091,3091,3091,3091,3091,3091,3091,3091,3091], fob_ytd:[263490,587206,910923,1234640,1558356,1882072,2205788,2529504,2853220,3176936,3500652], cj_ytd:[2517,5608,8699,11790,14881,17972,21063,24154,27245,30336,33427]},
+  "Sin Responsable":    {fob_mes:[31526,38731,38731,38731,38732,38731,38731,38731,38731,38731,38731], cj_mes:[74,90,90,90,90,90,90,90,90,90,90], fob_ytd:[31526,70257,108988,147719,186451,225182,263913,302644,341375,380106,418837], cj_ytd:[74,164,254,344,434,524,614,704,794,884,974]},
+  "Juan Yañez":         {fob_mes:[237621,291936,291936,291936,291936,291936,291936,291936,291936,291936,291936], cj_mes:[2343,2877,2877,2877,2877,2877,2877,2877,2877,2877,2877], fob_ytd:[237621,529557,821493,1113429,1405365,1697301,1989237,2281173,2573109,2865045,3156981], cj_ytd:[2343,5220,8097,10974,13851,16728,19605,22482,25359,28236,31113]},
+  "TOTAL":              {fob_mes:[3134611,3851092,3851093,3851093,3851094,3851093,3851093,3851093,3851093,3851093,3851093], cj_mes:[39869,48980,48980,48980,48980,48981,48981,48981,48981,48981,48981], fob_ytd:[3134611,6985703,10836796,14687889,18538983,22390076,26241169,30092262,33943355,37794448,41645541], cj_ytd:[39869,88849,137829,186809,235789,284770,333751,382732,431713,480694,529675]},
+  "Sin China":          {fob_mes:[2373724,2916290,2916290,2916290,2916290,2916290,2916290,2916290,2916290,2916290,2916290], cj_mes:[29726,36521,36521,36521,36521,36521,36521,36521,36521,36521,36521], fob_ytd:[2373724,5290014,8206304,11122594,14038884,16955174,19871464,22787754,25704044,28620334,31536624], cj_ytd:[29726,66247,102768,139289,175810,212331,248852,285373,321894,358415,394936]},
 };
 
 const MARKETS = MARKETS_BY_LINE.reduce((acc, d) => {
@@ -1263,84 +1272,84 @@ Object.values(MARKETS).forEach(m => {
 const MARKETS_ARR = Object.values(MARKETS);
 
 const EM_DATA = [
-  {name:"Jason Li",           cajas_abr:11294, cajas_ytd:102805, fob_ytd:8133776,  fob_ppto:8239310,  fob_ytd25:8543330,  dif_ppto:-0.0128, dif_25:-0.0478, precio:79.12},
-  {name:"Patricia Osenga",    cajas_abr:2388,  cajas_ytd:12472,  fob_ytd:952984,   fob_ppto:948548,   fob_ytd25:948367,   dif_ppto:0.0047,  dif_25:0.0049,  precio:76.41},
-  {name:"Danilo Buvinic",     cajas_abr:3332,  cajas_ytd:26872,  fob_ytd:2251118,  fob_ppto:3097310,  fob_ytd25:3617488,  dif_ppto:-0.2732, dif_25:-0.3778, precio:83.77},
-  {name:"Juan Pablo Velasco", cajas_abr:6734,  cajas_ytd:78040,  fob_ytd:5947690,  fob_ppto:5416520,  fob_ytd25:5278572,  dif_ppto:0.0981,  dif_25:0.1267,  precio:76.21},
-  {name:"Eduardo Stark",      cajas_abr:6072,  cajas_ytd:93051,  fob_ytd:6650504,  fob_ppto:7395843,  fob_ytd25:6815348,  dif_ppto:-0.1007, dif_25:-0.0242, precio:71.47},
-  {name:"Evelyn Ramirez",     cajas_abr:3958,  cajas_ytd:31248,  fob_ytd:2876383,  fob_ppto:3078116,  fob_ytd25:2772931,  dif_ppto:-0.0655, dif_25:0.0374,  precio:92.05},
-  {name:"Juan Yañez",         cajas_abr:5508,  cajas_ytd:20073,  fob_ytd:2208349,  fob_ppto:2573109,  fob_ytd25:2309004,  dif_ppto:-0.1418, dif_25:-0.0379, precio:110.02},
-  {name:"Daniela Rojas",      cajas_abr:1360,  cajas_ytd:9174,   fob_ytd:1045443,  fob_ppto:2853220,  fob_ytd25:1470453,  dif_ppto:-0.6336, dif_25:-0.2889, precio:113.95},
-  {name:"Sin Responsable",    cajas_abr:0,     cajas_ytd:101,    fob_ytd:7832,     fob_ppto:341375,   fob_ytd25:0,        dif_ppto:-0.9771, dif_25:null,    precio:77.93},
+  {name:"Jason Li",           cajas_abr:16854, cajas_ytd:117690, fob_ytd:9242598,  fob_ppto:9174113,  fob_ytd25:9118024,  dif_ppto:0.0075,  dif_25:0.0137,  precio:78.53},
+  {name:"Patricia Osenga",    cajas_abr:1246,  cajas_ytd:12858,  fob_ytd:999826,   fob_ppto:1056167,  fob_ytd25:1062060,  dif_ppto:-0.0533, dif_25:-0.0585, precio:77.76},
+  {name:"Danilo Buvinic",     cajas_abr:3637,  cajas_ytd:30000,  fob_ytd:2522775,  fob_ppto:3448720,  fob_ytd25:3480040,  dif_ppto:-0.2684, dif_25:-0.2750, precio:84.09},
+  {name:"Juan Pablo Velasco", cajas_abr:7350,  cajas_ytd:84670,  fob_ytd:6468283,  fob_ppto:6031059,  fob_ytd25:6314752,  dif_ppto:0.0725,  dif_25:0.0244,  precio:76.39},
+  {name:"Eduardo Stark",      cajas_abr:10208, cajas_ytd:105667, fob_ytd:7503975,  fob_ppto:8234949,  fob_ytd25:7671726,  dif_ppto:-0.0888, dif_25:-0.0218, precio:71.02},
+  {name:"Evelyn Ramirez",     cajas_abr:7,     cajas_ytd:31442,  fob_ytd:2903913,  fob_ppto:3427348,  fob_ytd25:3308988,  dif_ppto:-0.1527, dif_25:-0.1223, precio:92.36},
+  {name:"Juan Yañez",         cajas_abr:4424,  cajas_ytd:23947,  fob_ytd:2641375,  fob_ppto:2865045,  fob_ytd25:2467668,  dif_ppto:-0.0781, dif_25:0.0704,  precio:110.30},
+  {name:"Daniela Rojas",      cajas_abr:6480,  cajas_ytd:15654,  fob_ytd:1850107,  fob_ppto:3176936,  fob_ytd25:2171990,  dif_ppto:-0.4177, dif_25:-0.1482, precio:118.18},
+  {name:"Sin Responsable",    cajas_abr:0,     cajas_ytd:101,    fob_ytd:7832,     fob_ppto:380106,   fob_ytd25:0,        dif_ppto:-0.9794, dif_25:null,    precio:77.93},
 ];
 
 // China FOB exacto por range — extraído de hojas "Range - YTD 2026" del Excel S18
 // Necesario porque MARKETS_BY_LINE puede tener valores de semanas anteriores
 const CHINA_BY_RANGE = {
-  "Iconos":            { fob: 2159327, fob_ppto: 2115827 },
-  "Montes Alpha":      { fob: 1341186, fob_ppto: 848821  },
-  "Limited Selection": { fob: 651321,  fob_ppto: 539256  },
-  "Classic Series":    { fob: 3981942, fob_ppto: 4735406 }
+  "Iconos":            { fob: 2453483, fob_ppto: 2355881 },
+  "Montes Alpha":      { fob: 1420118, fob_ppto: 945125  },
+  "Limited Selection": { fob: 725177,  fob_ppto: 600438  },
+  "Classic Series":    { fob: 4643820, fob_ppto: 5272668 }
 };
 
 // FOB y cajas mensuales exactos por Zona
 const MONTHLY_BY_ZONA = {
-  "Asia":          {fob:[1328584,2075901,2513557,1841462,2354879,2046298,1203981,1958391,2295547,1167850], cj:[14040,29149,30766,26545,27483,25401,13643,24870,25226,12990]},
-  "Europa":        {fob:[593884,434577,270200,172618,734138,311104,1132040,588740,456584,761815],           cj:[9164,7158,3818,2587,9044,5406,17906,9125,4357,10596]},
-  "Chile":         {fob:[267297,283592,183349,386820,330867,303803,406137,373787,340732,0],                 cj:[2989,3047,1846,3986,3343,3171,4370,4539,3958,0]},
-  "N. America":    {fob:[192056,274989,255890,204800,80411,275821,354025,294756,318370,297642],             cj:[1350,3814,3224,2531,1020,4336,4034,3233,3332,3534]},
-  "S. America":    {fob:[0,102403,59306,71870,90281,323678,101009,160957,168984,762844],                    cj:[0,1352,604,742,797,2333,844,1654,1360,6315]},
-  "C. America":    {fob:[0,56322,111312,32139,67713,23988,127601,0,29469,23632],                            cj:[0,930,975,351,917,348,1721,0,254,178]},
-  "Caribe":        {fob:[55242,0,60706,23901,30015,56584,0,67487,74633,24480],                              cj:[694,0,710,326,355,888,0,624,939,204]},
-  "Medio Oriente": {fob:[106861,13792,0,0,0,156552,61896,201005,37566,87489],                               cj:[1372,200,0,0,0,2140,958,2750,570,1298]},
-  "Oceania":       {fob:[0,45675,11925,0,0,0,0,0,40593,6405],                                               cj:[0,725,150,0,0,0,0,0,650,78]},
-  "Africa":        {fob:[0,0,0,0,0,0,0,0,0,25447],                                                          cj:[0,0,0,0,0,0,0,0,0,240]},
+  "Asia":          {fob:[1328584,2075901,2513557,1841462,2354879,2046298,1203981,1958391,1926376,2420641,254104], cj:[14040,29149,30766,26545,27483,25401,13643,24870,22658,28296,2340]},
+  "Europa":        {fob:[593884,434577,270200,172618,734138,311104,1132040,588740,668659,599015,6300],             cj:[9164,7158,3818,2587,9044,5406,17906,9125,6614,9111,150]},
+  "Chile":         {fob:[267297,283592,183349,386820,330867,303803,406137,373787,367549,713,0],                    cj:[2989,3047,1846,3986,3343,3171,4370,4539,4144,7,0]},
+  "N. America":    {fob:[192056,274989,255890,204800,80411,275821,354025,294756,273643,316384,195782],             cj:[1350,3814,3224,2531,1020,4336,4034,3233,2823,3637,1648]},
+  "S. America":    {fob:[0,102403,59306,71870,90281,323678,101009,160957,168984,804664,0],                         cj:[0,1352,604,742,797,2333,844,1654,1360,6480,0]},
+  "C. America":    {fob:[0,56322,111312,32139,67713,23988,127601,0,29469,23307,28665],                             cj:[0,930,975,351,917,348,1721,0,254,173,352]},
+  "Caribe":        {fob:[55242,0,60706,23901,30015,56584,0,67487,0,91763,7350],                                    cj:[694,0,710,326,355,888,0,624,0,1074,70]},
+  "Medio Oriente": {fob:[106861,13792,0,0,0,156552,61896,201005,0,90918,34137],                                    cj:[1372,200,0,0,0,2140,958,2750,0,1430,438]},
+  "Oceania":       {fob:[0,45675,11925,0,0,0,0,0,46998,0,0],                                                       cj:[0,725,150,0,0,0,0,0,728,0,0]},
+  "Africa":        {fob:[0,0,0,0,0,0,0,0,0,0,25447],                                                               cj:[0,0,0,0,0,0,0,0,0,0,240]},
 };
 
 const TOTALS_GLOBAL = {
-  septiembre: {
-    cajas:40645, cajas_ppto:48981, precio:92.57, fob:3762477,
-    cajas_dif:-8336, cajas_pct:-0.1702, precio_dif:13.95, precio_pct:0.1775
+  octubre: {
+    cajas:50208, cajas_ppto:48981, precio:86.59, fob:4347404,
+    cajas_dif:1227, cajas_pct:0.0251, precio_dif:7.97, precio_pct:0.1014
   },
   ytd: {
-    cajas:373836, cajas_ppto:431715, precio:80.45, fob:30074079, fob_ppto:33943354,
-    cajas_dif:-57879, cajas_pct:-0.1341, precio_dif:1.83, precio_pct:0.0233,
-    fob_dif:-3869275, fob_pct:-0.1140
+    cajas:422029, cajas_ppto:480696, precio:80.90, fob:34140684, fob_ppto:37794447,
+    cajas_dif:-58667, cajas_pct:-0.1220, precio_dif:2.28, precio_pct:0.0290,
+    fob_dif:-3653763, fob_pct:-0.0967
   }
 };
 
 // TOTALES SIN CHINA
 const TOTALS_SIN_CHINA = {
-  septiembre: {
-    cajas:29351, cajas_ppto:36521, precio:95.57, fob:2804991,
-    cajas_dif:-7170, cajas_pct:-0.1963, precio_dif:16.95, precio_pct:0.2157
+  octubre: {
+    cajas:33354, cajas_ppto:36521, precio:86.99, fob:2901498,
+    cajas_dif:-3167, cajas_pct:-0.0867, precio_dif:8.37, precio_pct:0.1064
   },
   ytd: {
-    cajas:271031, cajas_ppto:321895, precio:80.96, fob:21940303, fob_ppto:25704044,
-    fob_ytd25:23345260, cajas_dif:-50864, cajas_pct:-0.1580,
-    precio_dif:2.34, precio_pct:0.0298, fob_dif:-3763741, fob_pct:-0.1464,
-    fob_dif_25:-1404957, fob_pct_25:-0.0602
+    cajas:304339, cajas_ppto:357416, precio:81.82, fob:24898086, fob_ppto:28620334,
+    fob_ytd25:26416765, cajas_dif:-53077, cajas_pct:-0.1485,
+    precio_dif:3.20, precio_pct:0.0407, fob_dif:-3722248, fob_pct:-0.1301,
+    fob_dif_25:-1518679, fob_pct_25:-0.0575
   }
 };
 
 // TOTALES POR LÍNEA - YTD 2026
 const RANGE_TOTALS_YTD = {
-  "Iconos":            { cajas:12450,  cajas_ppto:13602,  fob:6237243,  fob_ppto:7101373  },
-  "Montes Alpha":      { cajas:123338, cajas_ppto:125520, fob:11587866, fob_ppto:11897062 },
-  "Limited Selection": { cajas:57558,  cajas_ppto:62963,  fob:3217985,  fob_ppto:3490668  },
-  "Classic Series":    { cajas:180491, cajas_ppto:229630, fob:9030985,  fob_ppto:11454251 }
+  "Iconos":            { cajas:14517,  cajas_ppto:15146,  fob:7310516,  fob_ppto:7907070  },
+  "Montes Alpha":      { cajas:137051, cajas_ppto:139761, fob:12932303, fob_ppto:13246861 },
+  "Limited Selection": { cajas:61595,  cajas_ppto:70107,  fob:3448410,  fob_ppto:3886707  },
+  "Classic Series":    { cajas:208865, cajas_ppto:255683, fob:10449455, fob_ppto:12753810 }
 };
 
 const MONTHLY = {
-  labels: ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre'],
-  fob26:   [2543923,3287251,3466246,2733609,3688304,3497827,3449318,3645124,3762477,3157604],
-  fob25:   [2569031,3063169,4440479,3526199,4343374,3851093,3851093,3851093,3851093,3851093],
-  cajas26: [29609,46375,42093,37068,42958,44023,44270,46794,40645,35433],
-  cajas25: [39933,51402,58235,51128,43384,48981,48981,48981,48981,48981],
-  px_ytd:  [85.92,76.74,78.74,77.55,79.35,79.37,79.14,78.97,80.45,81.20],
-  fob_acum26:    [2543923,5831174,9297420,12031029,15719334,19217161,22666478,26311602,30074079,33231683],
-  fob_acum25:    [2569031,6332392,10772672,14298871,18642245,20762245,24613338,28678636,31395718,null],
-  fob_ppto_acum: [3134611,6985704,10836796,14687889,18538982,22390075,26241168,30092261,33943354,37794447],
+  labels: ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre'],
+  fob26:   [2543923,3287251,3466246,2733609,3688304,3497827,3449318,3645124,3481678,4347404,551785],
+  fob25:   [2569031,3063169,4440479,3526199,4343374,3851093,3851093,3851093,3851093,3851093,3851093],
+  cajas26: [29609,46375,42093,37068,42958,44023,44270,46794,38580,50208,5237],
+  cajas25: [39933,51402,58235,51128,43384,48981,48981,48981,48981,48981,48981],
+  px_ytd:  [85.92,76.74,78.74,77.55,79.35,79.37,79.14,78.97,80.14,80.90,81.20],
+  fob_acum26:    [2543923,5831174,9297420,12031029,15719334,19217161,22666478,26311602,29793280,34140684,34692469],
+  fob_acum25:    [2569031,6332392,10772672,14298871,18642245,20762245,24613338,28678636,31395718,35171627,null],
+  fob_ppto_acum: [3134611,6985704,10836796,14687889,18538982,22390075,26241168,30092261,33943354,37794447,41645540],
 };
 
 // ══════════ STATE ══════════
@@ -1505,10 +1514,10 @@ function renderKPIs(fd) {
     fob      = totals.ytd.fob;
     cajasPpto = totals.ytd.cajas_ppto;  // Usar presupuesto del escenario (con o sin China)
     cajas    = totals.ytd.cajas;
-    fob25    = useSinChina ? 23345260 : 31395718;  // YTD 2025 real S37 (Septiembre)
+    fob25    = useSinChina ? 26416765 : 35171627;  // YTD 2025 real S41 (Octubre)
     cajas25  = fob25 / 73.66;
-    fobAbr   = totals.septiembre.fob;
-    cajasAbr = totals.septiembre.cajas;
+    fobAbr   = totals.octubre.fob;
+    cajasAbr = totals.octubre.cajas;
     ptoMkt   = fd.filter(d=>d.fob_abr>0 && (!excludeChina || d.manager !== 'Jason Li')).length;
     
     // FOB Ppto: usar según escenario
@@ -1559,9 +1568,9 @@ function renderKPIs(fd) {
   const elMkt = document.getElementById('k-mkt-count'); if(elMkt) elMkt.textContent = ptoMkt + ' mercados activos';
   const ppKeyAbr  = activeEM !== 'ALL' ? activeEM : (excludeChina ? 'Sin China' : 'TOTAL');
   const ppAbr     = EM_PPTO[ppKeyAbr] || EM_PPTO['TOTAL'];
-  const fobPptoAbr = ppAbr ? ppAbr.fob_mes[8] : 0;
+  const fobPptoAbr = ppAbr ? ppAbr.fob_mes[9] : 0;
   const pMesPP    = fobPptoAbr > 0 ? (fobAbr - fobPptoAbr) / fobPptoAbr : null;
-  const cjPptoAbr = ppAbr ? ppAbr.cj_mes[8] : 0;
+  const cjPptoAbr = ppAbr ? ppAbr.cj_mes[9] : 0;
   // — Badges variación vs ppto tarjetas mensuales —
   const _setMesBadge = (idAbs, idPct, real, ppto, unit) => {
     const eAbs = document.getElementById(idAbs);
